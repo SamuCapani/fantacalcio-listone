@@ -7,7 +7,7 @@
     "valorizzato": "SÌ (Porta solida)",
     "slot": "2° Slot",
     "prezzo": 24,
-    "alternanza": "Inter (92%)"
+    "alternanza": "Sassuolo (95%)"
   },
   {
     "ruolo": "D",
@@ -17,7 +17,7 @@
     "valorizzato": "SÌ (Bonus + Spinta)",
     "slot": "2° Slot",
     "prezzo": 16,
-    "alternanza": "Inter (92%)"
+    "alternanza": "Sassuolo (95%)"
   },
   {
     "ruolo": "C",
@@ -27,7 +27,7 @@
     "valorizzato": "SÌ (Inserimenti top)",
     "slot": "3° Slot",
     "prezzo": 14,
-    "alternanza": "Inter (92%)"
+    "alternanza": "Monza (92%)"
   },
   {
     "ruolo": "A",
@@ -37,7 +37,7 @@
     "valorizzato": "SÌ (Rigorista e leader)",
     "slot": "1° Slot",
     "prezzo": 42,
-    "alternanza": "Inter (92%)"
+    "alternanza": "Sassuolo (95%)"
   },
   {
     "ruolo": "A",
@@ -47,7 +47,7 @@
     "valorizzato": "SÌ (Perno d'attacco)",
     "slot": "1° Slot",
     "prezzo": 36,
-    "alternanza": "Inter (92%)"
+    "alternanza": "Sassuolo (95%)"
   },
   {
     "ruolo": "C",
@@ -57,7 +57,7 @@
     "valorizzato": "SÌ (Rigorista)",
     "slot": "2° Slot",
     "prezzo": 22,
-    "alternanza": "Fiorentina (78%)"
+    "alternanza": "Roma (95%)"
   },
   {
     "ruolo": "D",
@@ -67,7 +67,7 @@
     "valorizzato": "NO (Rotazioni coppe)",
     "slot": "4° Slot",
     "prezzo": 6,
-    "alternanza": "Fiorentina (78%)"
+    "alternanza": "Inter (95%)"
   },
   {
     "ruolo": "A",
@@ -77,7 +77,7 @@
     "valorizzato": "SÌ (Piazzati e rigori)",
     "slot": "2° Slot",
     "prezzo": 28,
-    "alternanza": "Bologna (78%)"
+    "alternanza": "Milan (93%)"
   },
   {
     "ruolo": "A",
@@ -87,7 +87,7 @@
     "valorizzato": "SÌ (Centravanti titolare)",
     "slot": "2° Slot",
     "prezzo": 26,
-    "alternanza": "Bologna (78%)"
+    "alternanza": "Como (92%)"
   },
   {
     "ruolo": "P",
@@ -97,7 +97,7 @@
     "valorizzato": "SÌ (Porta blindata)",
     "slot": "3° Slot",
     "prezzo": 18,
-    "alternanza": "Sampdoria (60%)"
+    "alternanza": "Lecce (93%)"
   },
   {
     "ruolo": "A",
@@ -107,17 +107,7 @@
     "valorizzato": "SÌ (Rigorista)",
     "slot": "3° Slot",
     "prezzo": 20,
-    "alternanza": "Sampdoria (60%)"
-  },
-  {
-    "ruolo": "A",
-    "nome": "VITINHA",
-    "squadra": "Genoa",
-    "status": "Ballottaggio",
-    "valorizzato": "NO (Alternanza attacco)",
-    "slot": "4° Slot",
-    "prezzo": 10,
-    "alternanza": "Sampdoria (60%)"
+    "alternanza": "Verona (92%)"
   },
   {
     "ruolo": "P",
@@ -127,7 +117,7 @@
     "valorizzato": "SÌ (Porta difesa top)",
     "slot": "1° Slot",
     "prezzo": 34,
-    "alternanza": "Milan (95%)"
+    "alternanza": "Bologna (95%)"
   },
   {
     "ruolo": "D",
@@ -137,7 +127,7 @@
     "valorizzato": "SÌ (Assist e piazzati)",
     "slot": "1° Slot",
     "prezzo": 26,
-    "alternanza": "Atalanta (92%)"
+    "alternanza": "Cagliari (93%)"
   },
   {
     "ruolo": "D",
@@ -147,7 +137,7 @@
     "valorizzato": "SÌ (Modificatore top)",
     "slot": "1° Slot",
     "prezzo": 21,
-    "alternanza": "Atalanta (92%)"
+    "alternanza": "Monza (93%)"
   },
   {
     "ruolo": "C",
@@ -157,7 +147,7 @@
     "valorizzato": "SÌ (Rigorista infallibile)",
     "slot": "1° Slot",
     "prezzo": 32,
-    "alternanza": "Atalanta (92%)"
+    "alternanza": "Bologna (95%)"
   },
   {
     "ruolo": "C",
@@ -167,7 +157,7 @@
     "valorizzato": "NO (Titolare ma pochi bonus)",
     "slot": "2° Slot",
     "prezzo": 16,
-    "alternanza": "Atalanta (92%)"
+    "alternanza": "Bologna (95%)"
   },
   {
     "ruolo": "A",
@@ -177,7 +167,7 @@
     "valorizzato": "SÌ (Top assoluto e rigori)",
     "slot": "1° Slot",
     "prezzo": 55,
-    "alternanza": "Atalanta (92%)"
+    "alternanza": "Bologna (95%)"
   },
   {
     "ruolo": "A",
@@ -187,17 +177,17 @@
     "valorizzato": "SÌ (Titolare inamovibile)",
     "slot": "1° Slot",
     "prezzo": 38,
-    "alternanza": "Atalanta (92%)"
+    "alternanza": "Bologna (95%)"
   },
   {
     "ruolo": "P",
     "nome": "DI GREGORIO",
     "squadra": "Juventus",
     "status": "Titolare",
-    "valorizzato": "SÌ (Rendimento costanti)",
+    "valorizzato": "SÌ (Rendimento costante)",
     "slot": "1° Slot",
     "prezzo": 32,
-    "alternanza": "Torino (90%)"
+    "alternanza": "Bologna (92%)"
   },
   {
     "ruolo": "D",
@@ -207,7 +197,7 @@
     "valorizzato": "SÌ (Saltatore e perno)",
     "slot": "1° Slot",
     "prezzo": 20,
-    "alternanza": "Torino (90%)"
+    "alternanza": "Cagliari (92%)"
   },
   {
     "ruolo": "C",
@@ -217,7 +207,7 @@
     "valorizzato": "SÌ (Inserimenti e piazzati)",
     "slot": "1° Slot",
     "prezzo": 28,
-    "alternanza": "Torino (90%)"
+    "alternanza": "Torino (92%)"
   },
   {
     "ruolo": "A",
@@ -227,7 +217,7 @@
     "valorizzato": "SÌ (Rigorista)",
     "slot": "1° Slot",
     "prezzo": 46,
-    "alternanza": "Torino (90%)"
+    "alternanza": "Bologna (92%)"
   },
   {
     "ruolo": "A",
@@ -237,7 +227,7 @@
     "valorizzato": "SÌ (Fantasia e gol)",
     "slot": "2° Slot",
     "prezzo": 25,
-    "alternanza": "Torino (90%)"
+    "alternanza": "Cagliari (92%)"
   },
   {
     "ruolo": "A",
@@ -247,7 +237,7 @@
     "valorizzato": "SÌ (Rigorista e capitano)",
     "slot": "2° Slot",
     "prezzo": 27,
-    "alternanza": "Roma (88%)"
+    "alternanza": "Lecce (93%)"
   },
   {
     "ruolo": "A",
@@ -257,7 +247,7 @@
     "valorizzato": "SÌ (Punta titolare)",
     "slot": "2° Slot",
     "prezzo": 26,
-    "alternanza": "Roma (88%)"
+    "alternanza": "Cagliari (92%)"
   },
   {
     "ruolo": "P",
@@ -267,7 +257,7 @@
     "valorizzato": "SÌ (Pararigori)",
     "slot": "1° Slot",
     "prezzo": 33,
-    "alternanza": "Inter (95%)"
+    "alternanza": "Fiorentina (93%)"
   },
   {
     "ruolo": "D",
@@ -277,7 +267,7 @@
     "valorizzato": "SÌ (Fisicità)",
     "slot": "2° Slot",
     "prezzo": 14,
-    "alternanza": "Inter (95%)"
+    "alternanza": "Parma (93%)"
   },
   {
     "ruolo": "C",
@@ -287,7 +277,7 @@
     "valorizzato": "SÌ (Piazzati e gol)",
     "slot": "1° Slot",
     "prezzo": 32,
-    "alternanza": "Inter (95%)"
+    "alternanza": "Fiorentina (93%)"
   },
   {
     "ruolo": "A",
@@ -297,7 +287,7 @@
     "valorizzato": "SÌ (Inamovibile)",
     "slot": "1° Slot",
     "prezzo": 40,
-    "alternanza": "Inter (95%)"
+    "alternanza": "Fiorentina (93%)"
   },
   {
     "ruolo": "P",
@@ -307,7 +297,7 @@
     "valorizzato": "SÌ (Difesa solida)",
     "slot": "1° Slot",
     "prezzo": 30,
-    "alternanza": "Roma (85%)"
+    "alternanza": "Lecce (93%)"
   },
   {
     "ruolo": "D",
@@ -317,7 +307,7 @@
     "valorizzato": "SÌ (Bonus costante)",
     "slot": "1° Slot",
     "prezzo": 18,
-    "alternanza": "Roma (85%)"
+    "alternanza": "Udinese (93%)"
   },
   {
     "ruolo": "D",
@@ -327,7 +317,7 @@
     "valorizzato": "SÌ (Modificatore)",
     "slot": "1° Slot",
     "prezzo": 19,
-    "alternanza": "Roma (85%)"
+    "alternanza": "Lecce (93%)"
   },
   {
     "ruolo": "C",
@@ -337,7 +327,7 @@
     "valorizzato": "SÌ (Inserimenti da gol)",
     "slot": "1° Slot",
     "prezzo": 30,
-    "alternanza": "Roma (85%)"
+    "alternanza": "Lecce (93%)"
   },
   {
     "ruolo": "A",
@@ -347,7 +337,7 @@
     "valorizzato": "SÌ (Rigorista e perno)",
     "slot": "1° Slot",
     "prezzo": 45,
-    "alternanza": "Roma (85%)"
+    "alternanza": "Lecce (93%)"
   },
   {
     "ruolo": "A",
@@ -357,7 +347,7 @@
     "valorizzato": "SÌ (Top slot)",
     "slot": "1° Slot",
     "prezzo": 40,
-    "alternanza": "Roma (85%)"
+    "alternanza": "Lecce (93%)"
   },
   {
     "ruolo": "A",
@@ -367,7 +357,7 @@
     "valorizzato": "SÌ (Rigori e spinta)",
     "slot": "2° Slot",
     "prezzo": 22,
-    "alternanza": "Sassuolo (75%)"
+    "alternanza": "Milan (93%)"
   },
   {
     "ruolo": "P",
@@ -377,7 +367,7 @@
     "valorizzato": "SÌ (Rendimento alto)",
     "slot": "1° Slot",
     "prezzo": 26,
-    "alternanza": "Lazio (88%)"
+    "alternanza": "Bologna (95%)"
   },
   {
     "ruolo": "D",
@@ -387,7 +377,7 @@
     "valorizzato": "SÌ (Saltatore)",
     "slot": "2° Slot",
     "prezzo": 13,
-    "alternanza": "Lazio (88%)"
+    "alternanza": "Monza (93%)"
   },
   {
     "ruolo": "A",
@@ -397,7 +387,7 @@
     "valorizzato": "SÌ (Punta centrale e rigori)",
     "slot": "1° Slot",
     "prezzo": 38,
-    "alternanza": "Lazio (88%)"
+    "alternanza": "Bologna (95%)"
   },
   {
     "ruolo": "A",
@@ -407,7 +397,7 @@
     "valorizzato": "SÌ (Classe pura, minutaggio gestito)",
     "slot": "2° Slot",
     "prezzo": 28,
-    "alternanza": "Lazio (88%)"
+    "alternanza": "Bologna (95%)"
   },
   {
     "ruolo": "A",
@@ -417,7 +407,7 @@
     "valorizzato": "SÌ (Rigorista e perno)",
     "slot": "2° Slot",
     "prezzo": 28,
-    "alternanza": "Juventus (90%)"
+    "alternanza": "Como (92%)"
   },
   {
     "ruolo": "A",
@@ -427,7 +417,7 @@
     "valorizzato": "SÌ (Fisicità e gol)",
     "slot": "3° Slot",
     "prezzo": 18,
-    "alternanza": "Venezia (80%)"
+    "alternanza": "Como (93%)"
   },
   {
     "ruolo": "A",
@@ -437,6 +427,6 @@
     "valorizzato": "SÌ (Rigorista)",
     "slot": "3° Slot",
     "prezzo": 20,
-    "alternanza": "Udinese (80%)"
+    "alternanza": "Roma (92%)"
   }
 ]

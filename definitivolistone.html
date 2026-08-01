@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Listone Ufficiale Serie A 2026/2027 - Database Completo</title>
+  <style>
+    :root {
+      --bg-color: #0b1329;
+      --card-bg: #1e293b;
+      --accent: #38bdf8;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --green: #22c55e;
+      --yellow: #f59e0b;
+      --red: #ef4444;
+      --border: #334155;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text);
+      margin: 0;
+      padding: 20px;
+    }
+
+    .header-box {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    h1 {
+      color: var(--accent);
+      margin-bottom: 5px;
+      font-size: 2.2rem;
+    }
+
+    p.subtitle {
+      color: var(--text-muted);
+      margin-bottom: 15px;
+    }
+
+    .controls-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 25px;
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .search-input, .select-input {
+      background-color: var(--card-bg);
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 10px 14px;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      outline: none;
+    }
+
+    .search-input {
+      width: 240px;
+    }
+
+    .select-input {
+      cursor: pointer;
+    }
+
+    .search-input:focus, .select-input:focus {
+      border-color: var(--accent);
+    }
+
+    .filter-group {
+      display: flex;
+      gap: 6px;
+    }
+
+    .btn-filter {
+      background-color: var(--card-bg);
+      color: var(--text);
+      border: 1px solid var(--border);
+      padding: 10px 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: all 0.2s ease;
+    }
+
+    .btn-filter:hover, .btn-filter.active {
+      background-color: var(--accent);
+      color: var(--bg-color);
+      border-color: var(--accent);
+    }
+
+    .table-container {
+      overflow-x: auto;
+      max-width: 1450px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.4);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 0.9rem;
+    }
+
+    th, td {
+      padding: 11px 14px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    th {
+      background-color: #0f172a;
+      color: var(--accent);
+      text-transform: uppercase;
+      font-size: 0.78rem;
+      letter-spacing: 0.05em;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    tr:hover {
+      background-color: #26334d;
+    }
+
+    .badge-ruolo {
+      font-weight: bold;
+      padding: 4px 8px;
+      border-radius: 6px;
+      font-size: 0.78rem;
+      display: inline-block;
+      text-align: center;
+      width: 22px;
+    }
+
+    .ruolo-P { background-color: #eab308; color: #000; }
+    .ruolo-D { background-color: #3b82f6; color: #fff; }
+    .ruolo-C { background-color: #22c55e; color: #000; }
+    .ruolo-A { background-color: #ef4444; color: #fff; }
+
+    .status-badge {
+      font-weight: bold;
+      font-size: 0.8rem;
+      padding: 3px 8px;
+      border-radius: 4px;
+      display: inline-block;
+    }
+    .status-titolare { background-color: rgba(34, 197, 94, 0.15); color: var(--green); border: 1px solid var(--green); }
+    .status-ballottaggio { background-color: rgba(245, 158, 11, 0.15); color: var(--yellow); border: 1px solid var(--yellow); }
+    .status-riserva { background-color: rgba(239, 68, 68, 0.15); color: var(--red); border: 1px solid var(--red); }
+
+    .tag-val { font-weight: bold; font-size: 0.83rem; }
+    .val-si { color: var(--green); }
+    .val-no { color: var(--red); }
+    .val-neutral { color: var(--text-muted); }
+
+    .price { font-weight: bold; color: var(--accent); }
+    
+    .alt-green { color: var(--green); font-weight: bold; }
+    .alt-yellow { color: var(--yellow); font-weight: bold; }
+    .alt-red { color: var(--red); font-weight: bold; }
+
+    .counter { text-align: center; color: var(--text-muted); font-size: 0.9rem; margin-top: 10px; }
+  </style>
+</head>
+<body>
+
+  <div class="header-box">
+    <h1>⚽ Listone Asta Fantacalcio Serie A 2026/2027</h1>
+    <p class="subtitle">Database Orchestrato: Ruoli (P, D, C, A) &rarr; Squadra (A-Z) &rarr; Gerarchia &rarr; Prezzo & Alternanza FantaLab</p>
+  </div>
+
+  <!-- FILTRI E RICERCA -->
+  <div class="controls-container">
+    <input type="text" id="searchInput" class="search-input" placeholder="Cerca giocatore..." oninput="filterData()">
+    
+    <!-- SELEZIONE SQUADRA -->
+    <select id="teamSelect" class="select-input" onchange="filterData()">
+      <option value="ALL">Tutte le Squadre</option>
+      <option value="Atalanta">Atalanta</option>
+      <option value="Bologna">Bologna</option>
+      <option value="Cagliari">Cagliari</option>
+      <option value="Como">Como</option>
+      <option value="Fiorentina">Fiorentina</option>
+      <option value="Frosinone">Frosinone</option>
+      <option value="Genoa">Genoa</option>
+      <option value="Inter">Inter</option>
+      <option value="Juventus">Juventus</option>
+      <option value="Lazio">Lazio</option>
+      <option value="Lecce">Lecce</option>
+      <option value="Milan">Milan</option>
+      <option value="Monza">Monza</option>
+      <option value="Napoli">Napoli</option>
+      <option value="Parma">Parma</option>
+      <option value="Roma">Roma</option>
+      <option value="Sassuolo">Sassuolo</option>
+      <option value="Torino">Torino</option>
+      <option value="Udinese">Udinese</option>
+      <option value="Venezia">Venezia</option>
+    </select>
+
+    <div class="filter-group">
+      <button class="btn-filter active" onclick="filterRuolo('ALL', this)">TUTTI</button>
+      <button class="btn-filter" onclick="filterRuolo('P', this)">P</button>
+      <button class="btn-filter" onclick="filterRuolo('D', this)">D</button>
+      <button class="btn-filter" onclick="filterRuolo('C', this)">C</button>
+      <button class="btn-filter" onclick="filterRuolo('A', this)">A</button>
+    </div>
+  </div>
+
+  <div class="counter" id="recordCounter">Mostrati: 0 giocatori</div>
+
+  <!-- TABELLA DATABASE -->
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>R</th>
+          <th>Giocatore</th>
+          <th>Squadra</th>
+          <th>Status Gerarchico</th>
+          <th>Valorizzato Tatticamente</th>
+          <th>Slot Occupato</th>
+          <th>Prezzo Consigliato (500 cr)</th>
+          <th>Squadra % di alternanza più alta (nn%)</th>
+        </tr>
+      </thead>
+      <tbody id="listone-body">
+      </tbody>
+    </table>
+  </div>
+
+  <script>
+    let rawDatabase = [];
+    let currentRuolo = 'ALL';
+
+    function getAlternanzaClass(alternanzaText) {
+      if (!alternanzaText) return 'alt-red';
+      const matches = alternanzaText.match(/\d+/g);
+      if (!matches || matches.length === 0) return 'alt-red';
+
+      const maxVal = Math.max(...matches.map(Number));
+
+      if (maxVal >= 90) {
+        return 'alt-green';
+      } else if (maxVal >= 75) {
+        return 'alt-yellow';
+      } else {
+        return 'alt-red';
+      }
+    }
+
+    function getSortedDatabase(data) {
+      const ruoloOrder = { 'P': 1, 'D': 2, 'C': 3, 'A': 4 };
+      const statusOrder = { 'Titolare': 1, 'Ballottaggio': 2, 'Riserva': 3 };
+
+      return [...data].sort((a, b) => {
+        if (ruoloOrder[a.ruolo] !== ruoloOrder[b.ruolo]) {
+          return ruoloOrder[a.ruolo] - ruoloOrder[b.ruolo];
+        }
+        if (a.squadra.localeCompare(b.squadra) !== 0) {
+          return a.squadra.localeCompare(b.squadra);
+        }
+        return statusOrder[a.status] - statusOrder[b.status];
+      });
+    }
+
+    function renderTable(data) {
+      const tbody = document.getElementById('listone-body');
+      tbody.innerHTML = '';
+
+      data.forEach(g => {
+        let valClass = 'val-neutral';
+        if (g.valorizzato && g.valorizzato.startsWith('SÌ')) valClass = 'val-si';
+        if (g.valorizzato && g.valorizzato.startsWith('NO')) valClass = 'val-no';
+
+        let statusClass = 'status-riserva';
+        if (g.status === 'Titolare') statusClass = 'status-titolare';
+        if (g.status === 'Ballottaggio') statusClass = 'status-ballottaggio';
+
+        const altClass = getAlternanzaClass(g.alternanza);
+
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+          <td><span class="badge-ruolo ruolo-${g.ruolo}">${g.ruolo}</span></td>
+          <td><strong>${g.nome}</strong></td>
+          <td>${g.squadra}</td>
+          <td><span class="status-badge ${statusClass}">${g.status}</span></td>
+          <td class="tag-val ${valClass}">${g.valorizzato || ''}</td>
+          <td>${g.slot || ''}</td>
+          <td class="price">${g.prezzo || ''}</td>
+          <td class="${altClass}">${g.alternanza || ''}</td>
+        `;
+        tbody.appendChild(tr);
+      });
+
+      document.getElementById('recordCounter').innerText = `Mostrati: ${data.length} giocatori`;
+    }
+
+    function filterRuolo(ruolo, element) {
+      currentRuolo = ruolo;
+      const buttons = document.querySelectorAll('.btn-filter');
+      buttons.forEach(btn => btn.classList.remove('active'));
+      element.classList.add('active');
+      filterData();
+    }
+
+    function filterData() {
+      const query = document.getElementById('searchInput').value.toLowerCase().trim();
+      const teamQuery = document.getElementById('teamSelect').value;
+
+      const filtered = rawDatabase.filter(g => {
+        const matchRuolo = (currentRuolo === 'ALL') || (g.ruolo === currentRuolo);
+        const matchTeam = (teamQuery === 'ALL') || (g.squadra === teamQuery);
+        const matchQuery = g.nome.toLowerCase().includes(query) || g.squadra.toLowerCase().includes(query);
+        return matchRuolo && matchTeam && matchQuery;
+      });
+
+      const sortedAndFiltered = getSortedDatabase(filtered);
+      renderTable(sortedAndFiltered);
+    }
+
+    // Caricamento Dati dal file esterno database.json
+    window.onload = function() {
+      fetch('database.json')
+        .then(response => response.json())
+        .then(data => {
+          rawDatabase = data;
+          filterData();
+        })
+        .catch(error => {
+          console.error('Errore nel caricamento del file database.json:', error);
+          document.getElementById('recordCounter').innerText = 'Errore nel caricamento del database.json!';
+        });
+    };
+  </script>
+</body>
+</html>

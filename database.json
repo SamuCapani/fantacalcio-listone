@@ -1,545 +1,466 @@
-[
-  { "ruolo": "P", "nome": "Carnesecchi Marco", "squadra": "Atalanta", "status": "Titolare", "valorizzato": "SÌ (Porta solida)", "slot": "1° Slot", "prezzo": 35, "alternanza": "Sassuolo (95%)" },
-  { "ruolo": "P", "nome": "Pardel Piotr", "squadra": "Atalanta", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Sassuolo (95%)" },
-  { "ruolo": "P", "nome": "Rossi Francesco", "squadra": "Atalanta", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Sassuolo (95%)" },
-  { "ruolo": "P", "nome": "Sportiello Marco", "squadra": "Atalanta", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Sassuolo (95%)" },
-  { "ruolo": "P", "nome": "Happonen Ukko", "squadra": "Bologna", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Roma (95%)" },
-  { "ruolo": "P", "nome": "Pessina Massimo", "squadra": "Bologna", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Roma (95%)" },
-  { "ruolo": "P", "nome": "Ravaglia Federico", "squadra": "Bologna", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "5° Slot", "prezzo": 2, "alternanza": "Roma (95%)" },
-  { "ruolo": "P", "nome": "Skorupski Lukasz", "squadra": "Bologna", "status": "Titolare", "valorizzato": "SÌ (Titolare)", "slot": "2° Slot", "prezzo": 25, "alternanza": "Roma (95%)" },
-  { "ruolo": "P", "nome": "Caprile Elia", "squadra": "Cagliari", "status": "Titolare", "valorizzato": "SÌ (Titolare)", "slot": "2° Slot", "prezzo": 23, "alternanza": "Inter (93%)" },
-  { "ruolo": "P", "nome": "Ciocci Giuseppe", "squadra": "Cagliari", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Inter (93%)" },
-  { "ruolo": "P", "nome": "Sherri Alen", "squadra": "Cagliari", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Inter (93%)" },
-  { "ruolo": "P", "nome": "Audero Emil", "squadra": "Como", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Bologna (93%)" },
-  { "ruolo": "P", "nome": "Butez Jean", "squadra": "Como", "status": "Titolare", "valorizzato": "SÌ (Titolare)", "slot": "3° Slot", "prezzo": 21, "alternanza": "Bologna (93%)" },
-  { "ruolo": "P", "nome": "Menke Henrique", "squadra": "Como", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Bologna (93%)" },
-  { "ruolo": "P", "nome": "Tornqvist Noel", "squadra": "Como", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Bologna (93%)" },
-  { "ruolo": "P", "nome": "Vigorito Mauro", "squadra": "Como", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Bologna (93%)" },
-  { "ruolo": "P", "nome": "Christensen Oliver", "squadra": "Fiorentina", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Milan (93%)" },
-  { "ruolo": "P", "nome": "De Gea David", "squadra": "Fiorentina", "status": "Titolare", "valorizzato": "SÌ (Titolare)", "slot": "2° Slot", "prezzo": 27, "alternanza": "Milan (93%)" },
-  { "ruolo": "P", "nome": "Lezzerini Luca", "squadra": "Fiorentina", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Milan (93%)" },
-  { "ruolo": "P", "nome": "Desplanches Sebastiano", "squadra": "Frosinone", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Lazio (93%)" },
-  { "ruolo": "P", "nome": "Lolic Eldin", "squadra": "Frosinone", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Lazio (93%)" },
-  { "ruolo": "P", "nome": "Palmisani Lorenzo", "squadra": "Frosinone", "status": "Titolare", "valorizzato": "SÌ (Titolare)", "slot": "4° Slot", "prezzo": 14, "alternanza": "Lazio (93%)" },
-  { "ruolo": "P", "nome": "Bijlow Justin", "squadra": "Genoa", "status": "Titolare", "valorizzato": "SÌ (Titolare)", "slot": "2° Slot", "prezzo": 22, "alternanza": "Lecce (93%)" },
-  { "ruolo": "P", "nome": "Lysionok Ernestas", "squadra": "Genoa", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Lecce (93%)" },
-  { "ruolo": "P", "nome": "Sommariva Daniele", "squadra": "Genoa", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Lecce (93%)" },
-  { "ruolo": "P", "nome": "Di Gennaro Raffaele", "squadra": "Inter", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Milan (95%)" },
-  { "ruolo": "P", "nome": "Martinez Josep", "squadra": "Inter", "status": "Titolare", "valorizzato": "SÌ (Porta difesa top)", "slot": "1° Slot", "prezzo": 32, "alternanza": "Milan (95%)" },
-  { "ruolo": "P", "nome": "Provedel Ivan", "squadra": "Inter", "status": "Riserva", "valorizzato": "NO (Secondo portiere)", "slot": "5° Slot", "prezzo": 3, "alternanza": "Milan (95%)" },
-  { "ruolo": "P", "nome": "Di Gregorio Michele", "squadra": "Juventus", "status": "Titolare", "valorizzato": "SÌ (Titolare)", "slot": "1° Slot", "prezzo": 30, "alternanza": "Torino (92%)" },
-  { "ruolo": "P", "nome": "Perin Mattia", "squadra": "Juventus", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Torino (92%)" },
-  { "ruolo": "P", "nome": "Pinsoglio Carlo", "squadra": "Juventus", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Torino (92%)" },
-  { "ruolo": "P", "nome": "Furlanetto Alessio", "squadra": "Lazio", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Roma (93%)" },
-  { "ruolo": "P", "nome": "Mandas Christos", "squadra": "Lazio", "status": "Titolare", "valorizzato": "SÌ (Titolare)", "slot": "2° Slot", "prezzo": 25, "alternanza": "Roma (93%)" },
-  { "ruolo": "P", "nome": "Motta Edoardo", "squadra": "Lazio", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Roma (93%)" },
-  { "ruolo": "P", "nome": "Falcone Wladimiro", "squadra": "Lecce", "status": "Titolare", "valorizzato": "SÌ (Titolare)", "slot": "2° Slot", "prezzo": 23, "alternanza": "Napoli (93%)" },
-  { "ruolo": "P", "nome": "Fruchtl Christian", "squadra": "Lecce", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Napoli (93%)" },
-  { "ruolo": "P", "nome": "Samooja Jasper", "squadra": "Lecce", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Napoli (93%)" },
-  { "ruolo": "P", "nome": "Maignan Mike", "squadra": "Milan", "status": "Titolare", "valorizzato": "SÌ (Pararigori)", "slot": "1° Slot", "prezzo": 34, "alternanza": "Inter (95%)" },
-  { "ruolo": "P", "nome": "Pittarella Matteo", "squadra": "Milan", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Inter (95%)" },
-  { "ruolo": "P", "nome": "Terracciano Pietro", "squadra": "Milan", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Inter (95%)" },
-  { "ruolo": "P", "nome": "Torriani Lorenzo", "squadra": "Milan", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Inter (95%)" },
-  { "ruolo": "P", "nome": "Pizzignacco Semuel", "squadra": "Monza", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Inter (93%)" },
-  { "ruolo": "P", "nome": "Strajnar Aljaz", "squadra": "Monza", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Inter (93%)" },
-  { "ruolo": "P", "nome": "Thiam Demba", "squadra": "Monza", "status": "Titolare", "valorizzato": "SÌ (Titolare)", "slot": "4° Slot", "prezzo": 14, "alternanza": "Inter (93%)" },
-  { "ruolo": "P", "nome": "Contini Nikita", "squadra": "Napoli", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Lecce (93%)" },
-  { "ruolo": "P", "nome": "Meret Alex", "squadra": "Napoli", "status": "Ballottaggio", "valorizzato": "NO (Coppia porta)", "slot": "5° Slot", "prezzo": 5, "alternanza": "Lecce (93%)" },
-  { "ruolo": "P", "nome": "Milinkovic Savic Vanja", "squadra": "Napoli", "status": "Titolare", "valorizzato": "SÌ (Titolare)", "slot": "4° Slot", "prezzo": 16, "alternanza": "Lecce (93%)" },
-  { "ruolo": "P", "nome": "Corvi Edoardo", "squadra": "Parma", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Milan (93%)" },
-  { "ruolo": "P", "nome": "Daffara Giovanni", "squadra": "Parma", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Milan (93%)" },
-  { "ruolo": "P", "nome": "Rinaldi Filippo", "squadra": "Parma", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Milan (93%)" },
-  { "ruolo": "P", "nome": "Suzuki Zion", "squadra": "Parma", "status": "Titolare", "valorizzato": "SÌ (Titolare)", "slot": "4° Slot", "prezzo": 14, "alternanza": "Milan (93%)" },
-  { "ruolo": "P", "nome": "Devis Vasquez", "squadra": "Roma", "status": "Ballottaggio", "valorizzato": "SÌ (Coppia)", "slot": "3° Slot", "prezzo": 12, "alternanza": "Bologna (95%)" },
-  { "ruolo": "P", "nome": "Gollini Pierluigi", "squadra": "Roma", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Bologna (95%)" },
-  { "ruolo": "P", "nome": "Svilar Mile", "squadra": "Roma", "status": "Titolare", "valorizzato": "SÌ (Porta blindata)", "slot": "1° Slot", "prezzo": 29, "alternanza": "Bologna (95%)" },
-  { "ruolo": "P", "nome": "Vasquez Devis", "squadra": "Roma", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Bologna (95%)" },
-  { "ruolo": "P", "nome": "Zelezny Radoslaw", "squadra": "Roma", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Bologna (95%)" },
-  { "ruolo": "P", "nome": "Muric Arijanet", "squadra": "Sassuolo", "status": "Titolare", "valorizzato": "SÌ (Titolare)", "slot": "4° Slot", "prezzo": 14, "alternanza": "Atalanta (95%)" },
-  { "ruolo": "P", "nome": "Turati Stefano", "squadra": "Sassuolo", "status": "Ballottaggio", "valorizzato": "NO (Coppia)", "slot": "5° Slot", "prezzo": 9, "alternanza": "Atalanta (95%)" },
-  { "ruolo": "P", "nome": "Zacchi Gioele", "squadra": "Sassuolo", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Atalanta (95%)" },
-  { "ruolo": "P", "nome": "Israel Franco", "squadra": "Torino", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Juventus (92%)" },
-  { "ruolo": "P", "nome": "Mascardi Diego", "squadra": "Torino", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Juventus (92%)" },
-  { "ruolo": "P", "nome": "Paleari Alberto", "squadra": "Torino", "status": "Titolare", "valorizzato": "SÌ (Titolare)", "slot": "3° Slot", "prezzo": 18, "alternanza": "Juventus (92%)" },
-  { "ruolo": "P", "nome": "Plaia Francesco", "squadra": "Torino", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Juventus (92%)" },
-  { "ruolo": "P", "nome": "Siviero Lapo", "squadra": "Torino", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Juventus (92%)" },
-  { "ruolo": "P", "nome": "Malusa Joel", "squadra": "Udinese", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Como (93%)" },
-  { "ruolo": "P", "nome": "Mosca Federico", "squadra": "Udinese", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Como (93%)" },
-  { "ruolo": "P", "nome": "Nunziante Alessandro", "squadra": "Udinese", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Como (93%)" },
-  { "ruolo": "P", "nome": "Okoye Maduka", "squadra": "Udinese", "status": "Titolare", "valorizzato": "SÌ (Titolare)", "slot": "2° Slot", "prezzo": 21, "alternanza": "Como (93%)" },
-  { "ruolo": "P", "nome": "Padelli Daniele", "squadra": "Udinese", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Como (93%)" },
-  { "ruolo": "P", "nome": "Piana Edoardo", "squadra": "Udinese", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Como (93%)" },
-  { "ruolo": "P", "nome": "Sava Razvan", "squadra": "Udinese", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Como (93%)" },
-  { "ruolo": "P", "nome": "Grandi Matteo", "squadra": "Venezia", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Roma (92%)" },
-  { "ruolo": "P", "nome": "Pozzi Alessio", "squadra": "Venezia", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Roma (92%)" },
-  { "ruolo": "P", "nome": "Stankovic Filip", "squadra": "Venezia", "status": "Titolare", "valorizzato": "SÌ (Titolare)", "slot": "2° Slot", "prezzo": 20, "alternanza": "Roma (92%)" },
-  { "ruolo": "D", "nome": "Ahanor Honest", "squadra": "Atalanta", "status": "Riserva", "valorizzato": "NO (Giovane)", "slot": "5° Slot", "prezzo": 7, "alternanza": "Monza (92%)" },
-  { "ruolo": "D", "nome": "Bakker Mitchel", "squadra": "Atalanta", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 3, "alternanza": "Monza (92%)" },
-  { "ruolo": "D", "nome": "Bellanova Raoul", "squadra": "Atalanta", "status": "Titolare", "valorizzato": "SÌ (Spinta e bonus)", "slot": "2° Slot", "prezzo": 26, "alternanza": "Monza (92%)" },
-  { "ruolo": "D", "nome": "Bernasconi Lorenzo", "squadra": "Atalanta", "status": "Ballottaggio", "valorizzato": "SÌ (Alternativa fascia)", "slot": "4° Slot", "prezzo": 10, "alternanza": "Monza (92%)" },
-  { "ruolo": "D", "nome": "Comi Pietro", "squadra": "Atalanta", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Monza (92%)" },
-  { "ruolo": "D", "nome": "Djimsiti Berat", "squadra": "Atalanta", "status": "Titolare", "valorizzato": "SÌ (Perno difensivo)", "slot": "3° Slot", "prezzo": 18, "alternanza": "Monza (92%)" },
-  { "ruolo": "D", "nome": "Hien Isak", "squadra": "Atalanta", "status": "Titolare", "valorizzato": "SÌ (Titolare inamovibile)", "slot": "2° Slot", "prezzo": 23, "alternanza": "Monza (92%)" },
-  { "ruolo": "D", "nome": "Kolasinac Sead", "squadra": "Atalanta", "status": "Riserva", "valorizzato": "NO (Rotazione)", "slot": "5° Slot", "prezzo": 9, "alternanza": "Monza (92%)" },
-  { "ruolo": "D", "nome": "Koussounou Odilon", "squadra": "Atalanta", "status": "Ballottaggio", "valorizzato": "SÌ (Fisicità)", "slot": "4° Slot", "prezzo": 14, "alternanza": "Monza (92%)" },
-  { "ruolo": "D", "nome": "Scalvini Giorgio", "squadra": "Atalanta", "status": "Titolare", "valorizzato": "SÌ (Modificatore top)", "slot": "2° Slot", "prezzo": 28, "alternanza": "Monza (92%)" },
-  { "ruolo": "D", "nome": "Zappacosta Davide", "squadra": "Atalanta", "status": "Titolare", "valorizzato": "SÌ (Bonus fascia)", "slot": "1° Slot", "prezzo": 32, "alternanza": "Monza (92%)" },
-  { "ruolo": "D", "nome": "Alhassane Rahim", "squadra": "Bologna", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 4, "alternanza": "Inter (95%)" },
-  { "ruolo": "D", "nome": "Casale Nicolo", "squadra": "Bologna", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 5, "alternanza": "Inter (95%)" },
-  { "ruolo": "D", "nome": "De Silvestri Lorenzo", "squadra": "Bologna", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 2, "alternanza": "Inter (95%)" },
-  { "ruolo": "D", "nome": "Heggem Torbjorn", "squadra": "Bologna", "status": "Ballottaggio", "valorizzato": "NO (Rotazione)", "slot": "5° Slot", "prezzo": 7, "alternanza": "Inter (95%)" },
-  { "ruolo": "D", "nome": "Helland Eivind", "squadra": "Bologna", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 2, "alternanza": "Inter (95%)" },
-  { "ruolo": "D", "nome": "Holm Emil", "squadra": "Bologna", "status": "Titolare", "valorizzato": "SÌ (Spinta)", "slot": "3° Slot", "prezzo": 21, "alternanza": "Inter (95%)" },
-  { "ruolo": "D", "nome": "Illic Mihajlo", "squadra": "Bologna", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Inter (95%)" },
-  { "ruolo": "D", "nome": "Lucumi Jhon", "squadra": "Bologna", "status": "Titolare", "valorizzato": "SÌ (Perno difensivo)", "slot": "3° Slot", "prezzo": 20, "alternanza": "Inter (95%)" },
-  { "ruolo": "D", "nome": "Lykogiannis Charalampos", "squadra": "Bologna", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 4, "alternanza": "Inter (95%)" },
-  { "ruolo": "D", "nome": "Markovic Petar", "squadra": "Bologna", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Inter (95%)" },
-  { "ruolo": "D", "nome": "Miranda Juan", "squadra": "Bologna", "status": "Titolare", "valorizzato": "SÌ (Spinta e assist)", "slot": "2° Slot", "prezzo": 23, "alternanza": "Inter (95%)" },
-  { "ruolo": "D", "nome": "Vitik Martin", "squadra": "Bologna", "status": "Ballottaggio", "valorizzato": "NO (Rotazione)", "slot": "4° Slot", "prezzo": 11, "alternanza": "Inter (95%)" },
-  { "ruolo": "D", "nome": "Zortea Nadir", "squadra": "Bologna", "status": "Ballottaggio", "valorizzato": "SÌ (Corsa e bonus)", "slot": "4° Slot", "prezzo": 16, "alternanza": "Inter (95%)" },
-  { "ruolo": "D", "nome": "Akarakiri Demi", "squadra": "Cagliari", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 2, "alternanza": "Lazio (92%)" },
-  { "ruolo": "D", "nome": "Idrissi Riyad", "squadra": "Cagliari", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "5° Slot", "prezzo": 5, "alternanza": "Lazio (92%)" },
-  { "ruolo": "D", "nome": "Kofler Raphael", "squadra": "Cagliari", "status": "Ballottaggio", "valorizzato": "SÌ (Nuovo acquisto / Giovane)", "slot": "4° Slot", "prezzo": 10, "alternanza": "Lazio (92%)" },
-  { "ruolo": "D", "nome": "Mina Yerry", "squadra": "Cagliari", "status": "Titolare", "valorizzato": "SÌ (Saltatore e perno)", "slot": "3° Slot", "prezzo": 18, "alternanza": "Lazio (92%)" },
-  { "ruolo": "D", "nome": "Obert Adam", "squadra": "Cagliari", "status": "Ballottaggio", "valorizzato": "NO (Rotazione)", "slot": "4° Slot", "prezzo": 11, "alternanza": "Lazio (92%)" },
-  { "ruolo": "D", "nome": "Rodriguez Juan", "squadra": "Cagliari", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "5° Slot", "prezzo": 5, "alternanza": "Lazio (92%)" },
-  { "ruolo": "D", "nome": "Zappa Gabriele", "squadra": "Cagliari", "status": "Titolare", "valorizzato": "SÌ (Titolare)", "slot": "4° Slot", "prezzo": 16, "alternanza": "Lazio (92%)" },
-  { "ruolo": "D", "nome": "Ze Pedro", "squadra": "Cagliari", "status": "Ballottaggio", "valorizzato": "NO (Rotazione)", "slot": "4° Slot", "prezzo": 9, "alternanza": "Lazio (92%)" },
-  { "ruolo": "D", "nome": "Cuenca Andres", "squadra": "Como", "status": "Ballottaggio", "valorizzato": "NO (Giovane)", "slot": "4° Slot", "prezzo": 9, "alternanza": "Torino (92%)" },
-  { "ruolo": "D", "nome": "Depaoli Fabio", "squadra": "Como", "status": "Ballottaggio", "valorizzato": "SÌ (Spinta)", "slot": "4° Slot", "prezzo": 12, "alternanza": "Torino (92%)" },
-  { "ruolo": "D", "nome": "Dossena Alberto", "squadra": "Como", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "5° Slot", "prezzo": 5, "alternanza": "Torino (92%)" },
-  { "ruolo": "D", "nome": "Goldaniga Edoardo", "squadra": "Como", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "5° Slot", "prezzo": 5, "alternanza": "Torino (92%)" },
-  { "ruolo": "D", "nome": "Kaiki Bruno", "squadra": "Como", "status": "Ballottaggio", "valorizzato": "NO (Rotazione)", "slot": "4° Slot", "prezzo": 9, "alternanza": "Torino (92%)" },
-  { "ruolo": "D", "nome": "Kempf Marc-Oliver", "squadra": "Como", "status": "Titolare", "valorizzato": "SÌ (Perno difensivo)", "slot": "2° Slot", "prezzo": 25, "alternanza": "Torino (92%)" },
-  { "ruolo": "D", "nome": "Moreno Alberto", "squadra": "Como", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 4, "alternanza": "Torino (92%)" },
-  { "ruolo": "D", "nome": "Ramon Jacobo", "squadra": "Como", "status": "Titolare", "valorizzato": "SÌ (Fisicità)", "slot": "2° Slot", "prezzo": 22, "alternanza": "Torino (92%)" },
-  { "ruolo": "D", "nome": "Smolcic Hrvoje", "squadra": "Como", "status": "Ballottaggio", "valorizzato": "NO (Rotazione)", "slot": "4° Slot", "prezzo": 12, "alternanza": "Torino (92%)" },
-  { "ruolo": "D", "nome": "Valle Alex", "squadra": "Como", "status": "Titolare", "valorizzato": "SÌ (Spinta sulla fascia)", "slot": "2° Slot", "prezzo": 23, "alternanza": "Torino (92%)" },
-  { "ruolo": "D", "nome": "Van der Brempt Ignace", "squadra": "Como", "status": "Ballottaggio", "valorizzato": "NO (Rotazione)", "slot": "4° Slot", "prezzo": 11, "alternanza": "Torino (92%)" },
-  { "ruolo": "D", "nome": "Balbo Luis", "squadra": "Fiorentina", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 2, "alternanza": "Milan (93%)" },
-  { "ruolo": "D", "nome": "Comuzzo Pietro", "squadra": "Fiorentina", "status": "Ballottaggio", "valorizzato": "SÌ (Giovane prospetto)", "slot": "4° Slot", "prezzo": 14, "alternanza": "Milan (93%)" },
-  { "ruolo": "D", "nome": "Dodo", "squadra": "Fiorentina", "status": "Titolare", "valorizzato": "SÌ (Spinta inamovibile)", "slot": "1° Slot", "prezzo": 29, "alternanza": "Milan (93%)" },
-  { "ruolo": "D", "nome": "Dragusin Radu", "squadra": "Fiorentina", "status": "Titolare", "valorizzato": "SÌ (Fisicità e saltatore)", "slot": "3° Slot", "prezzo": 20, "alternanza": "Milan (93%)" },
-  { "ruolo": "D", "nome": "Fortini Niccolo", "squadra": "Fiorentina", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 2, "alternanza": "Milan (93%)" },
-  { "ruolo": "D", "nome": "Gosens Robin", "squadra": "Fiorentina", "status": "Ballottaggio", "valorizzato": "SÌ (Bonus fascia)", "slot": "4° Slot", "prezzo": 15, "alternanza": "Milan (93%)" },
-  { "ruolo": "D", "nome": "Jimenez Alex", "squadra": "Fiorentina", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "5° Slot", "prezzo": 7, "alternanza": "Milan (93%)" },
-  { "ruolo": "D", "nome": "Kospo Eman", "squadra": "Fiorentina", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Milan (93%)" },
-  { "ruolo": "D", "nome": "Lamptey Tariq", "squadra": "Fiorentina", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 4, "alternanza": "Milan (93%)" },
-  { "ruolo": "D", "nome": "Oulai", "squadra": "Fiorentina", "status": "Titolare", "valorizzato": "SÌ (Titolare)", "slot": "3° Slot", "prezzo": 19, "alternanza": "Milan (93%)" },
-  { "ruolo": "D", "nome": "Parisi Fabiano", "squadra": "Fiorentina", "status": "Titolare", "valorizzato": "SÌ (Spinta)", "slot": "3° Slot", "prezzo": 18, "alternanza": "Milan (93%)" },
-  { "ruolo": "D", "nome": "Pongracic Marin", "squadra": "Fiorentina", "status": "Ballottaggio", "valorizzato": "NO (Rotazione)", "slot": "4° Slot", "prezzo": 12, "alternanza": "Milan (93%)" },
-  { "ruolo": "D", "nome": "Ranieri Luca", "squadra": "Fiorentina", "status": "Titolare", "valorizzato": "SÌ (Perno difensivo)", "slot": "4° Slot", "prezzo": 17, "alternanza": "Milan (93%)" },
-  { "ruolo": "D", "nome": "Viery", "squadra": "Fiorentina", "status": "Ballottaggio", "valorizzato": "NO (Rotazione)", "slot": "4° Slot", "prezzo": 9, "alternanza": "Milan (93%)" },
-  { "ruolo": "D", "nome": "Amey Wisdom", "squadra": "Frosinone", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 2, "alternanza": "Inter (93%)" },
-  { "ruolo": "D", "nome": "Bracaglia Gabriele", "squadra": "Frosinone", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 3, "alternanza": "Inter (93%)" },
-  { "ruolo": "D", "nome": "Calvani Gabriele", "squadra": "Frosinone", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "5° Slot", "prezzo": 7, "alternanza": "Inter (93%)" },
-  { "ruolo": "D", "nome": "Cichella Matteo", "squadra": "Frosinone", "status": "Ballottaggio", "valorizzato": "NO (Rotazione)", "slot": "4° Slot", "prezzo": 11, "alternanza": "Inter (93%)" },
-  { "ruolo": "D", "nome": "Cittadini Giorgio", "squadra": "Frosinone", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 3, "alternanza": "Inter (93%)" },
-  { "ruolo": "D", "nome": "Corrado Niccolo", "squadra": "Frosinone", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "5° Slot", "prezzo": 7, "alternanza": "Inter (93%)" },
-  { "ruolo": "D", "nome": "El Azzouzi Anouar", "squadra": "Frosinone", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 3, "alternanza": "Inter (93%)" },
-  { "ruolo": "D", "nome": "Gelli Jacopo", "squadra": "Frosinone", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 3, "alternanza": "Inter (93%)" },
-  { "ruolo": "D", "nome": "Monterisi Ilario", "squadra": "Frosinone", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "5° Slot", "prezzo": 7, "alternanza": "Inter (93%)" },
-  { "ruolo": "D", "nome": "Obleac Matteo", "squadra": "Frosinone", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Inter (93%)" },
-  { "ruolo": "D", "nome": "Oyono Anthony", "squadra": "Frosinone", "status": "Ballottaggio", "valorizzato": "SÌ (Spinta)", "slot": "4° Slot", "prezzo": 10, "alternanza": "Inter (93%)" },
-  { "ruolo": "D", "nome": "Oyono Jeremi", "squadra": "Frosinone", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "5° Slot", "prezzo": 6, "alternanza": "Inter (93%)" },
-  { "ruolo": "D", "nome": "Carbone Filippo", "squadra": "Genoa", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Lecce (93%)" },
-  { "ruolo": "D", "nome": "Kumer Celik", "squadra": "Genoa", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Lecce (93%)" },
-  { "ruolo": "D", "nome": "Marcandalli Alessandro", "squadra": "Genoa", "status": "Ballottaggio", "valorizzato": "NO (Giovane)", "slot": "4° Slot", "prezzo": 11, "alternanza": "Lecce (93%)" },
-  { "ruolo": "D", "nome": "Martin Aaron", "squadra": "Genoa", "status": "Titolare", "valorizzato": "SÌ (Piazzati e assist)", "slot": "3° Slot", "prezzo": 18, "alternanza": "Lecce (93%)" },
-  { "ruolo": "D", "nome": "Mitaj Mario", "squadra": "Genoa", "status": "Ballottaggio", "valorizzato": "SÌ (Nuovo acquisto / Fascia sinistra)", "slot": "3° Slot", "prezzo": 16, "alternanza": "Lecce (93%)" },
-  { "ruolo": "D", "nome": "Norton Cuffy Brooke", "squadra": "Genoa", "status": "Titolare", "valorizzato": "SÌ (Spinta e fisicità)", "slot": "3° Slot", "prezzo": 18, "alternanza": "Lecce (93%)" },
-  { "ruolo": "D", "nome": "Ostigard Leo", "squadra": "Genoa", "status": "Titolare", "valorizzato": "SÌ (Saltatore inamovibile)", "slot": "2° Slot", "prezzo": 22, "alternanza": "Lecce (93%)" },
-  { "ruolo": "D", "nome": "Otoa Sebastian", "squadra": "Genoa", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 3, "alternanza": "Lecce (93%)" },
-  { "ruolo": "D", "nome": "Puczka David", "squadra": "Genoa", "status": "Riserva", "valorizzato": "NO (Nuovo acquisto / Giovane)", "slot": "5° Slot", "prezzo": 7, "alternanza": "Lecce (93%)" },
-  { "ruolo": "D", "nome": "Sabelli Stefano", "squadra": "Genoa", "status": "Ballottaggio", "valorizzato": "NO (Rotazione)", "slot": "4° Slot", "prezzo": 9, "alternanza": "Lecce (93%)" },
-  { "ruolo": "D", "nome": "Vasquez Johan", "squadra": "Genoa", "status": "Titolare", "valorizzato": "SÌ (Perno difensivo)", "slot": "2° Slot", "prezzo": 22, "alternanza": "Lecce (93%)" },
-  { "ruolo": "D", "nome": "Akanji Manuel", "squadra": "Inter", "status": "Titolare", "valorizzato": "SÌ (Rendimento top)", "slot": "1° Slot", "prezzo": 31, "alternanza": "Cagliari (93%)" },
-  { "ruolo": "D", "nome": "Bastoni Alessandro", "squadra": "Inter", "status": "Titolare", "valorizzato": "SÌ (Modificatore top)", "slot": "1° Slot", "prezzo": 36, "alternanza": "Cagliari (93%)" },
-  { "ruolo": "D", "nome": "Bisseck Aurel Ludger", "squadra": "Inter", "status": "Titolare", "valorizzato": "SÌ (Fisicità e gol)", "slot": "2° Slot", "prezzo": 27, "alternanza": "Cagliari (93%)" },
-  { "ruolo": "D", "nome": "Carlos Augusto", "squadra": "Inter", "status": "Titolare", "valorizzato": "SÌ (Bonus e duttilità)", "slot": "2° Slot", "prezzo": 24, "alternanza": "Cagliari (93%)" },
-  { "ruolo": "D", "nome": "Cocchi Matteo", "squadra": "Inter", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Cagliari (93%)" },
-  { "ruolo": "D", "nome": "Dimarco Federico", "squadra": "Inter", "status": "Titolare", "valorizzato": "SÌ (Assist e piazzati)", "slot": "1° Slot", "prezzo": 43, "alternanza": "Cagliari (93%)" },
-  { "ruolo": "D", "nome": "Luis Henrique", "squadra": "Inter", "status": "Titolare", "valorizzato": "SÌ (Corsa sulla fascia)", "slot": "2° Slot", "prezzo": 25, "alternanza": "Cagliari (93%)" },
-  { "ruolo": "D", "nome": "Pavard Benjamin", "squadra": "Inter", "status": "Titolare", "valorizzato": "SÌ (Garanzia difesa)", "slot": "3° Slot", "prezzo": 20, "alternanza": "Cagliari (93%)" },
-  { "ruolo": "D", "nome": "Bremer Gleison", "squadra": "Juventus", "status": "Titolare", "valorizzato": "SÌ (Dominante difesa)", "slot": "1° Slot", "prezzo": 34, "alternanza": "Cagliari (92%)" },
-  { "ruolo": "D", "nome": "Cabal Juan", "squadra": "Juventus", "status": "Ballottaggio", "valorizzato": "NO (Rotazione)", "slot": "4° Slot", "prezzo": 11, "alternanza": "Cagliari (92%)" },
-  { "ruolo": "D", "nome": "Cambiaso Andrea", "squadra": "Juventus", "status": "Titolare", "valorizzato": "SÌ (Assist e bonus)", "slot": "1° Slot", "prezzo": 29, "alternanza": "Cagliari (92%)" },
-  { "ruolo": "D", "nome": "Celik Mehmet Zeki", "squadra": "Juventus", "status": "Ballottaggio", "valorizzato": "SÌ (Titolare fascia)", "slot": "4° Slot", "prezzo": 14, "alternanza": "Cagliari (92%)" },
-  { "ruolo": "D", "nome": "Gatti Federico", "squadra": "Juventus", "status": "Titolare", "valorizzato": "SÌ (Saltatore sui piazzati)", "slot": "3° Slot", "prezzo": 18, "alternanza": "Cagliari (92%)" },
-  { "ruolo": "D", "nome": "Joao Mario", "squadra": "Juventus", "status": "Ballottaggio", "valorizzato": "NO (Rotazione)", "slot": "4° Slot", "prezzo": 9, "alternanza": "Cagliari (92%)" },
-  { "ruolo": "D", "nome": "Kalulu Pierre", "squadra": "Juventus", "status": "Titolare", "valorizzato": "SÌ (Perno difensivo)", "slot": "1° Slot", "prezzo": 31, "alternanza": "Cagliari (92%)" },
-  { "ruolo": "D", "nome": "Kelly Lloyd", "squadra": "Juventus", "status": "Titolare", "valorizzato": "SÌ (Fisicità)", "slot": "2° Slot", "prezzo": 23, "alternanza": "Cagliari (92%)" },
-  { "ruolo": "D", "nome": "Rugani Daniele", "squadra": "Juventus", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 4, "alternanza": "Cagliari (92%)" },
-  { "ruolo": "D", "nome": "Doekhi Danilho", "squadra": "Lazio", "status": "Titolare", "valorizzato": "SÌ (Perno difensivo)", "slot": "3° Slot", "prezzo": 18, "alternanza": "Cagliari (92%)" },
-  { "ruolo": "D", "nome": "Floriani Mussolini", "squadra": "Lazio", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "5° Slot", "prezzo": 5, "alternanza": "Cagliari (92%)" },
-  { "ruolo": "D", "nome": "Galassi Bruno", "squadra": "Lazio", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Cagliari (92%)" },
-  { "ruolo": "D", "nome": "Gigot Samuel", "squadra": "Lazio", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 4, "alternanza": "Cagliari (92%)" },
-  { "ruolo": "D", "nome": "Hysaj Elseid", "squadra": "Lazio", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 2, "alternanza": "Cagliari (92%)" },
-  { "ruolo": "D", "nome": "Lazzari Manuel", "squadra": "Lazio", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 2, "alternanza": "Cagliari (92%)" },
-  { "ruolo": "D", "nome": "Marusic Adam", "squadra": "Lazio", "status": "Ballottaggio", "valorizzato": "NO (Rotazione)", "slot": "4° Slot", "prezzo": 9, "alternanza": "Cagliari (92%)" },
-  { "ruolo": "D", "nome": "Patric", "squadra": "Lazio", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "5° Slot", "prezzo": 7, "alternanza": "Cagliari (92%)" },
-  { "ruolo": "D", "nome": "Pedraza Alfonso", "squadra": "Lazio", "status": "Titolare", "valorizzato": "SÌ (Spinta e assist)", "slot": "3° Slot", "prezzo": 16, "alternanza": "Cagliari (92%)" },
-  { "ruolo": "D", "nome": "Pellegrini Luca", "squadra": "Lazio", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "5° Slot", "prezzo": 7, "alternanza": "Cagliari (92%)" },
-  { "ruolo": "D", "nome": "Provstgaard Oliver", "squadra": "Lazio", "status": "Ballottaggio", "valorizzato": "NO (Giovane)", "slot": "4° Slot", "prezzo": 11, "alternanza": "Cagliari (92%)" },
-  { "ruolo": "D", "nome": "Romagnoli Alessio", "squadra": "Lazio", "status": "Riserva", "valorizzato": "NO (Rotazione)", "slot": "5° Slot", "prezzo": 9, "alternanza": "Cagliari (92%)" },
-  { "ruolo": "D", "nome": "Tavares Nuno", "squadra": "Lazio", "status": "Titolare", "valorizzato": "SÌ (Spinta top)", "slot": "3° Slot", "prezzo": 16, "alternanza": "Cagliari (92%)" },
-  { "ruolo": "D", "nome": "Gallo Antonino", "squadra": "Lecce", "status": "Titolare", "valorizzato": "SÌ (Titolare fascia)", "slot": "3° Slot", "prezzo": 18, "alternanza": "Parma (93%)" },
-  { "ruolo": "D", "nome": "Gaspar Kialonda", "squadra": "Lecce", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 2, "alternanza": "Parma (93%)" },
-  { "ruolo": "D", "nome": "Jean Gaby", "squadra": "Lecce", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 2, "alternanza": "Parma (93%)" },
-  { "ruolo": "D", "nome": "Ndaba Corrie", "squadra": "Lecce", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 2, "alternanza": "Parma (93%)" },
-  { "ruolo": "D", "nome": "Perez Matias", "squadra": "Lecce", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 2, "alternanza": "Parma (93%)" },
-  { "ruolo": "D", "nome": "Rashidi William", "squadra": "Lecce", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 2, "alternanza": "Parma (93%)" },
-  { "ruolo": "D", "nome": "Scott Elijah", "squadra": "Lecce", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 2, "alternanza": "Parma (93%)" },
-  { "ruolo": "D", "nome": "Siebert Jamil", "squadra": "Lecce", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "5° Slot", "prezzo": 7, "alternanza": "Parma (93%)" },
-  { "ruolo": "D", "nome": "Tiago Gabriel", "squadra": "Lecce", "status": "Titolare", "valorizzato": "SÌ (Fisicità)", "slot": "3° Slot", "prezzo": 20, "alternanza": "Parma (93%)" },
-  { "ruolo": "D", "nome": "Veiga Danilo", "squadra": "Lecce", "status": "Ballottaggio", "valorizzato": "NO (Rotazione)", "slot": "4° Slot", "prezzo": 9, "alternanza": "Parma (93%)" },
-  { "ruolo": "D", "nome": "Athekame Zachary", "squadra": "Milan", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "5° Slot", "prezzo": 5, "alternanza": "Parma (93%)" },
-  { "ruolo": "D", "nome": "Bartasaghi Davide", "squadra": "Milan", "status": "Ballottaggio", "valorizzato": "NO (Giovane)", "slot": "4° Slot", "prezzo": 9, "alternanza": "Parma (93%)" },
-  { "ruolo": "D", "nome": "Estupinan Pervis", "squadra": "Milan", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 2, "alternanza": "Parma (93%)" },
-  { "ruolo": "D", "nome": "Gabbia Matteo", "squadra": "Milan", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 5, "alternanza": "Parma (93%)" },
-  { "ruolo": "D", "nome": "Gila Mario Fuentes", "squadra": "Milan", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "5° Slot", "prezzo": 7, "alternanza": "Parma (93%)" },
-  { "ruolo": "D", "nome": "Odogu David", "squadra": "Milan", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 2, "alternanza": "Parma (93%)" },
-  { "ruolo": "D", "nome": "Pavlovic Strahinja", "squadra": "Milan", "status": "Titolare", "valorizzato": "SÌ (Fisicità e dominanza)", "slot": "1° Slot", "prezzo": 38, "alternanza": "Parma (93%)" },
-  { "ruolo": "D", "nome": "Tomori Fikayo", "squadra": "Milan", "status": "Titolare", "valorizzato": "SÌ (Perno difensivo)", "slot": "3° Slot", "prezzo": 16, "alternanza": "Parma (93%)" },
-  { "ruolo": "D", "nome": "Koaudio Eddy", "squadra": "Monza", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Inter (93%)" },
-  { "ruolo": "D", "nome": "Beukema Sam", "squadra": "Napoli", "status": "Riserva", "valorizzato": "NO (Rotazione)", "slot": "5° Slot", "prezzo": 7, "alternanza": "Udinese (93%)" },
-  { "ruolo": "D", "nome": "Buongiorno Alessandro", "squadra": "Napoli", "status": "Ballottaggio", "valorizzato": "SÌ (Modificatore)", "slot": "4° Slot", "prezzo": 11, "alternanza": "Udinese (93%)" },
-  { "ruolo": "D", "nome": "Di Lorenzo Giovanni", "squadra": "Napoli", "status": "Ballottaggio", "valorizzato": "SÌ (Bonus e assist)", "slot": "4° Slot", "prezzo": 13, "alternanza": "Udinese (93%)" },
-  { "ruolo": "D", "nome": "Garofalo Christian", "squadra": "Napoli", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 2, "alternanza": "Udinese (93%)" },
-  { "ruolo": "D", "nome": "Gutierrez Miguel", "squadra": "Napoli", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "5° Slot", "prezzo": 7, "alternanza": "Udinese (93%)" },
-  { "ruolo": "D", "nome": "Marianucci Luca", "squadra": "Napoli", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 3, "alternanza": "Udinese (93%)" },
-  { "ruolo": "D", "nome": "Mazzocchi Pasquale", "squadra": "Napoli", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 2, "alternanza": "Udinese (93%)" },
-  { "ruolo": "D", "nome": "Olivera Mathias", "squadra": "Napoli", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 5, "alternanza": "Udinese (93%)" },
-  { "ruolo": "D", "nome": "Rafa Marin", "squadra": "Napoli", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Udinese (93%)" },
-  { "ruolo": "D", "nome": "Rao Emanuele", "squadra": "Napoli", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 3, "alternanza": "Udinese (93%)" },
-  { "ruolo": "D", "nome": "Rrahmani Amir", "squadra": "Napoli", "status": "Riserva", "valorizzato": "NO (Rotazione)", "slot": "5° Slot", "prezzo": 7, "alternanza": "Udinese (93%)" },
-  { "ruolo": "D", "nome": "Spinazzola Leonardo", "squadra": "Napoli", "status": "Ballottaggio", "valorizzato": "SÌ (Spinta)", "slot": "4° Slot", "prezzo": 11, "alternanza": "Udinese (93%)" },
-  { "ruolo": "D", "nome": "Britschgi Sascha", "squadra": "Parma", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Milan (93%)" },
-  { "ruolo": "D", "nome": "Carboni Franco", "squadra": "Parma", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 2, "alternanza": "Milan (93%)" },
-  { "ruolo": "D", "nome": "Circati Alessandro", "squadra": "Parma", "status": "Ballottaggio", "valorizzato": "NO (Perno difesa)", "slot": "4° Slot", "prezzo": 11, "alternanza": "Milan (93%)" },
-  { "ruolo": "D", "nome": "Delprato Enrico", "squadra": "Parma", "status": "Titolare", "valorizzato": "SÌ (Capitano e gol)", "slot": "3° Slot", "prezzo": 19, "alternanza": "Milan (93%)" },
-  { "ruolo": "D", "nome": "Hartley Ryan", "squadra": "Parma", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Milan (93%)" },
-  { "ruolo": "D", "nome": "Ndiaye Abdoulaye", "squadra": "Parma", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Milan (93%)" },
-  { "ruolo": "D", "nome": "Troilo Mariano", "squadra": "Parma", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "5° Slot", "prezzo": 7, "alternanza": "Milan (93%)" },
-  { "ruolo": "D", "nome": "Valenti Lautaro", "squadra": "Parma", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 3, "alternanza": "Milan (93%)" },
-  { "ruolo": "D", "nome": "Valeri Emanuele", "squadra": "Parma", "status": "Ballottaggio", "valorizzato": "SÌ (Cross e assist)", "slot": "4° Slot", "prezzo": 13, "alternanza": "Milan (93%)" },
-  { "ruolo": "D", "nome": "Angelino", "squadra": "Roma", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Monza (93%)" },
-  { "ruolo": "D", "nome": "Ghilardi Daniele", "squadra": "Roma", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "5° Slot", "prezzo": 7, "alternanza": "Monza (93%)" },
-  { "ruolo": "D", "nome": "Hermoso Mario", "squadra": "Roma", "status": "Ballottaggio", "valorizzato": "NO (Rotazione)", "slot": "4° Slot", "prezzo": 12, "alternanza": "Monza (93%)" },
-  { "ruolo": "D", "nome": "Mancini Gianluca", "squadra": "Roma", "status": "Titolare", "valorizzato": "SÌ (Saltatore e perno)", "slot": "1° Slot", "prezzo": 34, "alternanza": "Monza (93%)" },
-  { "ruolo": "D", "nome": "N'Dika Obite Evan", "squadra": "Roma", "status": "Titolare", "valorizzato": "SÌ (Titolare inamovibile)", "slot": "1° Slot", "prezzo": 31, "alternanza": "Monza (93%)" },
-  { "ruolo": "D", "nome": "Rensch Devyne", "squadra": "Roma", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "5° Slot", "prezzo": 7, "alternanza": "Monza (93%)" },
-  { "ruolo": "D", "nome": "Tsimikas Kostas", "squadra": "Roma", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Monza (93%)" },
-  { "ruolo": "D", "nome": "Wesley", "squadra": "Roma", "status": "Titolare", "valorizzato": "SÌ (Spinta e bonus)", "slot": "3° Slot", "prezzo": 20, "alternanza": "Monza (93%)" },
-  { "ruolo": "D", "nome": "Ziolkowski Jan", "squadra": "Roma", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Monza (93%)" },
-  { "ruolo": "D", "nome": "Cande Fali", "squadra": "Sassuolo", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Atalanta (95%)" },
-  { "ruolo": "D", "nome": "Coulibaly Woyo", "squadra": "Sassuolo", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 3, "alternanza": "Atalanta (95%)" },
-  { "ruolo": "D", "nome": "Doig Josh", "squadra": "Sassuolo", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Atalanta (95%)" },
-  { "ruolo": "D", "nome": "Garcia", "squadra": "Sassuolo", "status": "Ballottaggio", "valorizzato": "NO (Rotazione)", "slot": "4° Slot", "prezzo": 9, "alternanza": "Atalanta (95%)" },
-  { "ruolo": "D", "nome": "Izdes Jay", "squadra": "Sassuolo", "status": "Ballottaggio", "valorizzato": "NO (Perno difesa)", "slot": "4° Slot", "prezzo": 11, "alternanza": "Atalanta (95%)" },
-  { "ruolo": "D", "nome": "Muharemovic Tarik", "squadra": "Sassuolo", "status": "Ballottaggio", "valorizzato": "NO (Giovane)", "slot": "4° Slot", "prezzo": 11, "alternanza": "Atalanta (95%)" },
-  { "ruolo": "D", "nome": "Pieragnolo Edoardo", "squadra": "Sassuolo", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Atalanta (95%)" },
-  { "ruolo": "D", "nome": "Romagna Filippo", "squadra": "Sassuolo", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Atalanta (95%)" },
-  { "ruolo": "D", "nome": "Tressoldi Ruan", "squadra": "Sassuolo", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Atalanta (95%)" },
-  { "ruolo": "D", "nome": "Walukiewicz Sebastian", "squadra": "Sassuolo", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "5° Slot", "prezzo": 7, "alternanza": "Atalanta (95%)" },
-  { "ruolo": "D", "nome": "Biraghi Cristiano", "squadra": "Torino", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Como (92%)" },
-  { "ruolo": "D", "nome": "Coco Saul", "squadra": "Torino", "status": "Ballottaggio", "valorizzato": "SÌ (Perno difensivo)", "slot": "4° Slot", "prezzo": 11, "alternanza": "Como (92%)" },
-  { "ruolo": "D", "nome": "Ebosse Enzo", "squadra": "Torino", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "5° Slot", "prezzo": 7, "alternanza": "Como (92%)" },
-  { "ruolo": "D", "nome": "Ismajli Ardian", "squadra": "Torino", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Como (92%)" },
-  { "ruolo": "D", "nome": "Nkounkou Niels", "squadra": "Torino", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Como (92%)" },
-  { "ruolo": "D", "nome": "Obrador Rafael", "squadra": "Torino", "status": "Titolare", "valorizzato": "SÌ (Spinta)", "slot": "3° Slot", "prezzo": 16, "alternanza": "Como (92%)" },
-  { "ruolo": "D", "nome": "Pedersen Marcus", "squadra": "Torino", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "5° Slot", "prezzo": 5, "alternanza": "Como (92%)" },
-  { "ruolo": "D", "nome": "Schuurs Perr", "squadra": "Torino", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Como (92%)" },
-  { "ruolo": "D", "nome": "Arizala Juan David", "squadra": "Udinese", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 3, "alternanza": "Como (93%)" },
-  { "ruolo": "D", "nome": "Bertola Nicolo", "squadra": "Udinese", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 3, "alternanza": "Como (93%)" },
-  { "ruolo": "D", "nome": "Ehizibue Kingsley", "squadra": "Udinese", "status": "Ballottaggio", "valorizzato": "SÌ (Spinta)", "slot": "4° Slot", "prezzo": 11, "alternanza": "Como (93%)" },
-  { "ruolo": "D", "nome": "Guessand Axel", "squadra": "Udinese", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Como (93%)" },
-  { "ruolo": "D", "nome": "Kabasele Christian", "squadra": "Udinese", "status": "Ballottaggio", "valorizzato": "NO (Rotazione)", "slot": "4° Slot", "prezzo": 13, "alternanza": "Como (93%)" },
-  { "ruolo": "D", "nome": "Kamara Hassane", "squadra": "Udinese", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "5° Slot", "prezzo": 7, "alternanza": "Como (93%)" },
-  { "ruolo": "D", "nome": "Kristensen Thomas", "squadra": "Udinese", "status": "Titolare", "valorizzato": "SÌ (Perno difensivo)", "slot": "3° Slot", "prezzo": 18, "alternanza": "Como (93%)" },
-  { "ruolo": "D", "nome": "Mlacic Branimir", "squadra": "Udinese", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 2, "alternanza": "Como (93%)" },
-  { "ruolo": "D", "nome": "Solet Oumar", "squadra": "Udinese", "status": "Titolare", "valorizzato": "SÌ (Fisicità e dominanza)", "slot": "1° Slot", "prezzo": 27, "alternanza": "Como (93%)" },
-  { "ruolo": "D", "nome": "Vojvoda Mergim", "squadra": "Udinese", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 3, "alternanza": "Como (93%)" },
-  { "ruolo": "D", "nome": "Zanoli Alessandro", "squadra": "Udinese", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Como (93%)" },
-  { "ruolo": "D", "nome": "Zemura Jordan", "squadra": "Udinese", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 2, "alternanza": "Como (93%)" },
-  { "ruolo": "C", "nome": "De Roon Marten", "squadra": "Atalanta", "status": "Titolare", "valorizzato": "SÌ (Affidabilità)", "slot": "2° Slot", "prezzo": 24, "alternanza": "Monza (92%)" },
-  { "ruolo": "C", "nome": "Ederson da Silva", "squadra": "Atalanta", "status": "Titolare", "valorizzato": "SÌ (Top di reparto)", "slot": "1° Slot", "prezzo": 33, "alternanza": "Monza (92%)" },
-  { "ruolo": "C", "nome": "Gaetano Gianluca", "squadra": "Atalanta", "status": "Ballottaggio", "valorizzato": "SÌ (Inserimenti)", "slot": "4° Slot", "prezzo": 15, "alternanza": "Monza (92%)" },
-  { "ruolo": "C", "nome": "Maldini Daniel", "squadra": "Atalanta", "status": "Ballottaggio", "valorizzato": "SÌ (Fantasia)", "slot": "4° Slot", "prezzo": 15, "alternanza": "Monza (92%)" },
-  { "ruolo": "C", "nome": "Pasalic Mario", "squadra": "Atalanta", "status": "Titolare", "valorizzato": "SÌ (Bonus a gettone)", "slot": "3° Slot", "prezzo": 26, "alternanza": "Monza (92%)" },
-  { "ruolo": "C", "nome": "Samardzic Lazar", "squadra": "Atalanta", "status": "Titolare", "valorizzato": "SÌ (Piazzati e qualità)", "slot": "2° Slot", "prezzo": 24, "alternanza": "Monza (92%)" },
-  { "ruolo": "C", "nome": "Zalewski Nicola", "squadra": "Atalanta", "status": "Ballottaggio", "valorizzato": "SÌ (Spinta)", "slot": "3° Slot", "prezzo": 21, "alternanza": "Monza (92%)" },
-  { "ruolo": "C", "nome": "Bernardeschi Federico", "squadra": "Bologna", "status": "Titolare", "valorizzato": "SÌ (Rigorista e leader)", "slot": "1° Slot", "prezzo": 35, "alternanza": "Inter (95%)" },
-  { "ruolo": "C", "nome": "Ferguson Lewis", "squadra": "Bologna", "status": "Titolare", "valorizzato": "SÌ (Inserimenti top)", "slot": "2° Slot", "prezzo": 18, "alternanza": "Inter (95%)" },
-  { "ruolo": "C", "nome": "Karlsson Karl Jesper", "squadra": "Bologna", "status": "Riserva", "valorizzato": "NO (Rotazione)", "slot": "5° Slot", "prezzo": 7, "alternanza": "Inter (95%)" },
-  { "ruolo": "C", "nome": "Moro Nikola", "squadra": "Bologna", "status": "Ballottaggio", "valorizzato": "NO (Regia)", "slot": "4° Slot", "prezzo": 13, "alternanza": "Inter (95%)" },
-  { "ruolo": "C", "nome": "Odgaard Jens", "squadra": "Bologna", "status": "Titolare", "valorizzato": "SÌ (Bonus frequenti)", "slot": "3° Slot", "prezzo": 22, "alternanza": "Inter (95%)" },
-  { "ruolo": "C", "nome": "Orsolini Riccardo", "squadra": "Bologna", "status": "Titolare", "valorizzato": "SÌ (Top assoluto e rigori)", "slot": "1° Slot", "prezzo": 47, "alternanza": "Inter (95%)" },
-  { "ruolo": "C", "nome": "Pobega Tommaso", "squadra": "Bologna", "status": "Ballottaggio", "valorizzato": "SÌ (Quantità e inserimenti)", "slot": "3° Slot", "prezzo": 17, "alternanza": "Inter (95%)" },
-  { "ruolo": "C", "nome": "Adopo Michel", "squadra": "Cagliari", "status": "Ballottaggio", "valorizzato": "NO (Sostanza)", "slot": "4° Slot", "prezzo": 13, "alternanza": "Lazio (92%)" },
-  { "ruolo": "C", "nome": "Albaraccin", "squadra": "Cagliari", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Lazio (92%)" },
-  { "ruolo": "C", "nome": "Deiola Alessandro", "squadra": "Cagliari", "status": "Ballottaggio", "valorizzato": "NO (Lotta)", "slot": "4° Slot", "prezzo": 5, "alternanza": "Lazio (92%)" },
-  { "ruolo": "C", "nome": "Fazzini Jacopo", "squadra": "Cagliari", "status": "Titolare", "valorizzato": "SÌ (Qualità)", "slot": "3° Slot", "prezzo": 15, "alternanza": "Lazio (92%)" },
-  { "ruolo": "C", "nome": "Felici Mattia", "squadra": "Cagliari", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "5° Slot", "prezzo": 5, "alternanza": "Lazio (92%)" },
-  { "ruolo": "C", "nome": "Liteta Joseph", "squadra": "Cagliari", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Lazio (92%)" },
-  { "ruolo": "C", "nome": "Sulemana Ibrahim", "squadra": "Cagliari", "status": "Ballottaggio", "valorizzato": "NO (Interdizione)", "slot": "4° Slot", "prezzo": 9, "alternanza": "Lazio (92%)" },
-  { "ruolo": "C", "nome": "Winks Harry", "squadra": "Cagliari", "status": "Titolare", "valorizzato": "SÌ (Regia e voti alti)", "slot": "3° Slot", "prezzo": 11, "alternanza": "Lazio (92%)" },
-  { "ruolo": "C", "nome": "Baturina Martin", "squadra": "Como", "status": "Titolare", "valorizzato": "SÌ (Top di reparto)", "slot": "1° Slot", "prezzo": 38, "alternanza": "Torino (92%)" },
-  { "ruolo": "C", "nome": "Caqueret Maxence", "squadra": "Como", "status": "Titolare", "valorizzato": "SÌ (Qualità e gestione)", "slot": "2° Slot", "prezzo": 30, "alternanza": "Torino (92%)" },
-  { "ruolo": "C", "nome": "Da Cunha Lucas", "squadra": "Como", "status": "Titolare", "valorizzato": "SÌ (Assist e fantasia)", "slot": "2° Slot", "prezzo": 39, "alternanza": "Torino (92%)" },
-  { "ruolo": "C", "nome": "Fadera Alieu", "squadra": "Como", "status": "Ballottaggio", "valorizzato": "SÌ (Spunto)", "slot": "3° Slot", "prezzo": 17, "alternanza": "Torino (92%)" },
-  { "ruolo": "C", "nome": "Kuhn Nicolas", "squadra": "Como", "status": "Ballottaggio", "valorizzato": "SÌ (Esterno offensivo)", "slot": "3° Slot", "prezzo": 17, "alternanza": "Torino (92%)" },
-  { "ruolo": "C", "nome": "Lahdo Adrian", "squadra": "Como", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Torino (92%)" },
-  { "ruolo": "C", "nome": "Liberali Mattia", "squadra": "Como", "status": "Ballottaggio", "valorizzato": "SÌ (Giovane talento)", "slot": "4° Slot", "prezzo": 15, "alternanza": "Torino (92%)" },
-  { "ruolo": "C", "nome": "Mazzitelli Luca", "squadra": "Como", "status": "Ballottaggio", "valorizzato": "NO (Sostanza)", "slot": "4° Slot", "prezzo": 11, "alternanza": "Torino (92%)" },
-  { "ruolo": "C", "nome": "Milla Luis", "squadra": "Como", "status": "Ballottaggio", "valorizzato": "NO (Regia)", "slot": "3° Slot", "prezzo": 17, "alternanza": "Torino (92%)" },
-  { "ruolo": "C", "nome": "Paz Nico", "squadra": "Como", "status": "Titolare", "valorizzato": "SÌ (Top assoluto)", "slot": "1° Slot", "prezzo": 50, "alternanza": "Torino (92%)" },
-  { "ruolo": "C", "nome": "Perrone Maximo", "squadra": "Como", "status": "Titolare", "valorizzato": "SÌ (Perno centrale)", "slot": "2° Slot", "prezzo": 30, "alternanza": "Torino (92%)" },
-  { "ruolo": "C", "nome": "Atta Arthur", "squadra": "Fiorentina", "status": "Titolare", "valorizzato": "SÌ (Quantità e bonus)", "slot": "2° Slot", "prezzo": 33, "alternanza": "Milan (93%)" },
-  { "ruolo": "C", "nome": "Brescianini Marco", "squadra": "Fiorentina", "status": "Titolare", "valorizzato": "SÌ (Inserimenti)", "slot": "2° Slot", "prezzo": 19, "alternanza": "Milan (93%)" },
-  { "ruolo": "C", "nome": "Fabbian Giovanni", "squadra": "Fiorentina", "status": "Titolare", "valorizzato": "SÌ (Gol da bonus)", "slot": "2° Slot", "prezzo": 19, "alternanza": "Milan (93%)" },
-  { "ruolo": "C", "nome": "Fagioli Nicolo", "squadra": "Fiorentina", "status": "Titolare", "valorizzato": "SÌ (Regia e voti)", "slot": "2° Slot", "prezzo": 28, "alternanza": "Milan (93%)" },
-  { "ruolo": "C", "nome": "Gudmundsson Albert", "squadra": "Fiorentina", "status": "Titolare", "valorizzato": "SÌ (Top player assoluto)", "slot": "1° Slot", "prezzo": 37, "alternanza": "Milan (93%)" },
-  { "ruolo": "C", "nome": "Harrison Jack", "squadra": "Fiorentina", "status": "Ballottaggio", "valorizzato": "SÌ (Esterno)", "slot": "3° Slot", "prezzo": 17, "alternanza": "Milan (93%)" },
-  { "ruolo": "C", "nome": "Mandragora Rolando", "squadra": "Fiorentina", "status": "Ballottaggio", "valorizzato": "NO (Tiri dalla distanza)", "slot": "3° Slot", "prezzo": 26, "alternanza": "Milan (93%)" },
-  { "ruolo": "C", "nome": "Ndour Cher", "squadra": "Fiorentina", "status": "Riserva", "valorizzato": "NO (Rotazione)", "slot": "4° Slot", "prezzo": 14, "alternanza": "Milan (93%)" },
-  { "ruolo": "C", "nome": "Sohm Simon", "squadra": "Fiorentina", "status": "Ballottaggio", "valorizzato": "NO (Quantità)", "slot": "4° Slot", "prezzo": 14, "alternanza": "Milan (93%)" },
-  { "ruolo": "C", "nome": "Sottil Riccardo", "squadra": "Fiorentina", "status": "Ballottaggio", "valorizzato": "SÌ (Spunto)", "slot": "4° Slot", "prezzo": 11, "alternanza": "Milan (93%)" },
-  { "ruolo": "C", "nome": "Calo Giacomo", "squadra": "Frosinone", "status": "Titolare", "valorizzato": "SÌ (Regia)", "slot": "3° Slot", "prezzo": 19, "alternanza": "Inter (93%)" },
-  { "ruolo": "C", "nome": "Gelli Francesco", "squadra": "Frosinone", "status": "Ballottaggio", "valorizzato": "NO (Lotta)", "slot": "4° Slot", "prezzo": 8, "alternanza": "Inter (93%)" },
-  { "ruolo": "C", "nome": "Grosso Filippo", "squadra": "Frosinone", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 3, "alternanza": "Inter (93%)" },
-  { "ruolo": "C", "nome": "Kone Ben Lhassine", "squadra": "Frosinone", "status": "Ballottaggio", "valorizzato": "NO (Interdizione)", "slot": "4° Slot", "prezzo": 7, "alternanza": "Inter (93%)" },
-  { "ruolo": "C", "nome": "Koutsoupias Ilias", "squadra": "Frosinone", "status": "Ballottaggio", "valorizzato": "NO (Sostanza)", "slot": "4° Slot", "prezzo": 14, "alternanza": "Inter (93%)" },
-  { "ruolo": "C", "nome": "Toci Matteo", "squadra": "Frosinone", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Inter (93%)" },
-  { "ruolo": "C", "nome": "Amorim Alexsandro", "squadra": "Genoa", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "5° Slot", "prezzo": 10, "alternanza": "Lecce (93%)" },
-  { "ruolo": "C", "nome": "Baldanzi Tommaso", "squadra": "Genoa", "status": "Titolare", "valorizzato": "SÌ (Fantasia e assist)", "slot": "2° Slot", "prezzo": 17, "alternanza": "Lecce (93%)" },
-  { "ruolo": "C", "nome": "Cuenca Hugo", "squadra": "Genoa", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Lecce (93%)" },
-  { "ruolo": "C", "nome": "Ellertsson Mikael", "squadra": "Genoa", "status": "Ballottaggio", "valorizzato": "NO (Corsa)", "slot": "4° Slot", "prezzo": 14, "alternanza": "Lecce (93%)" },
-  { "ruolo": "C", "nome": "Frendrup Morten", "squadra": "Genoa", "status": "Titolare", "valorizzato": "SÌ (Recupera palloni)", "slot": "2° Slot", "prezzo": 17, "alternanza": "Lecce (93%)" },
-  { "ruolo": "C", "nome": "Lafont Gael", "squadra": "Genoa", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 4, "alternanza": "Lecce (93%)" },
-  { "ruolo": "C", "nome": "Masini Patrizio", "squadra": "Genoa", "status": "Ballottaggio", "valorizzato": "NO (Rotazione)", "slot": "4° Slot", "prezzo": 12, "alternanza": "Lecce (93%)" },
-  { "ruolo": "C", "nome": "Meichtry Franz", "squadra": "Genoa", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "5° Slot", "prezzo": 10, "alternanza": "Lecce (93%)" },
-  { "ruolo": "C", "nome": "Messias Junior", "squadra": "Genoa", "status": "Titolare", "valorizzato": "SÌ (Qualità e bonus)", "slot": "2° Slot", "prezzo": 21, "alternanza": "Lecce (93%)" },
-  { "ruolo": "C", "nome": "Onana Jean Jr", "squadra": "Genoa", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Lecce (93%)" },
-  { "ruolo": "C", "nome": "Traore Hamed", "squadra": "Genoa", "status": "Titolare", "valorizzato": "SÌ (Inserimenti offensivi)", "slot": "2° Slot", "prezzo": 13, "alternanza": "Lecce (93%)" },
-  { "ruolo": "C", "nome": "Venturino Lorenzo", "squadra": "Genoa", "status": "Riserva", "valorizzato": "NO (Giovane)", "slot": "5° Slot", "prezzo": 12, "alternanza": "Lecce (93%)" },
-  { "ruolo": "C", "nome": "Wiafe Samuel", "squadra": "Genoa", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 4, "alternanza": "Lecce (93%)" },
-  { "ruolo": "C", "nome": "Asllani Kristjan", "squadra": "Inter", "status": "Ballottaggio", "valorizzato": "NO (Regia)", "slot": "4° Slot", "prezzo": 11, "alternanza": "Cagliari (93%)" },
-  { "ruolo": "C", "nome": "Barella Nicolo", "squadra": "Inter", "status": "Titolare", "valorizzato": "SÌ (Titolare inamovibile)", "slot": "1° Slot", "prezzo": 33, "alternanza": "Cagliari (93%)" },
-  { "ruolo": "C", "nome": "Berenbruch Thomas", "squadra": "Inter", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Cagliari (93%)" },
-  { "ruolo": "C", "nome": "Calhanoglu Hadam", "squadra": "Inter", "status": "Titolare", "valorizzato": "SÌ (Rigorista top)", "slot": "1° Slot", "prezzo": 50, "alternanza": "Cagliari (93%)" },
-  { "ruolo": "C", "nome": "Diouf Andy", "squadra": "Inter", "status": "Ballottaggio", "valorizzato": "SÌ (Fisicità)", "slot": "3° Slot", "prezzo": 15, "alternanza": "Cagliari (93%)" },
-  { "ruolo": "C", "nome": "Frattesi Davide", "squadra": "Inter", "status": "Titolare", "valorizzato": "SÌ (Incursore letale)", "slot": "2° Slot", "prezzo": 19, "alternanza": "Cagliari (93%)" },
-  { "ruolo": "C", "nome": "Kamate Issiaka", "squadra": "Inter", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Cagliari (93%)" },
-  { "ruolo": "C", "nome": "Massolin Yanis", "squadra": "Inter", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 4, "alternanza": "Cagliari (93%)" },
-  { "ruolo": "C", "nome": "Mkhitaryan", "squadra": "Inter", "status": "Titolare", "valorizzato": "SÌ (Titolare e assist)", "slot": "2° Slot", "prezzo": 28, "alternanza": "Cagliari (93%)" },
-  { "ruolo": "C", "nome": "Stankovic Alexandar", "squadra": "Inter", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "5° Slot", "prezzo": 15, "alternanza": "Cagliari (93%)" },
-  { "ruolo": "C", "nome": "Sucic Petar", "squadra": "Inter", "status": "Ballottaggio", "valorizzato": "SÌ (Qualità)", "slot": "3° Slot", "prezzo": 23, "alternanza": "Cagliari (93%)" },
-  { "ruolo": "C", "nome": "Topalovic Luka", "squadra": "Inter", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Cagliari (93%)" },
-  { "ruolo": "C", "nome": "Zielinski Piotor", "squadra": "Inter", "status": "Titolare", "valorizzato": "SÌ (Piazzati e inserimenti)", "slot": "2° Slot", "prezzo": 32, "alternanza": "Cagliari (93%)" },
-  { "ruolo": "C", "nome": "Adzic Vasiliije", "squadra": "Juventus", "status": "Ballottaggio", "valorizzato": "NO (Giovane)", "slot": "4° Slot", "prezzo": 8, "alternanza": "Cagliari (92%)" },
-  { "ruolo": "C", "nome": "Conceicao Francisco", "squadra": "Juventus", "status": "Titolare", "valorizzato": "SÌ (Dribbling e assist)", "slot": "1° Slot", "prezzo": 35, "alternanza": "Cagliari (92%)" },
-  { "ruolo": "C", "nome": "Douglas Luiz", "squadra": "Juventus", "status": "Titolare", "valorizzato": "SÌ (Qualità e rigori)", "slot": "2° Slot", "prezzo": 19, "alternanza": "Cagliari (92%)" },
-  { "ruolo": "C", "nome": "Koopmeiners Teun", "squadra": "Juventus", "status": "Titolare", "valorizzato": "SÌ (Top assoluto)", "slot": "1° Slot", "prezzo": 21, "alternanza": "Cagliari (92%)" },
-  { "ruolo": "C", "nome": "Locatelli Manuel", "squadra": "Juventus", "status": "Titolare", "valorizzato": "SÌ (Regia e voti)", "slot": "2° Slot", "prezzo": 28, "alternanza": "Cagliari (92%)" },
-  { "ruolo": "C", "nome": "McKennie Weston", "squadra": "Juventus", "status": "Titolare", "valorizzato": "SÌ (Incursore)", "slot": "1° Slot", "prezzo": 35, "alternanza": "Cagliari (92%)" },
-  { "ruolo": "C", "nome": "Miretti Fabio", "squadra": "Juventus", "status": "Ballottaggio", "valorizzato": "NO (Rotazione)", "slot": "4° Slot", "prezzo": 15, "alternanza": "Cagliari (92%)" },
-  { "ruolo": "C", "nome": "Thuram Khephren", "squadra": "Juventus", "status": "Titolare", "valorizzato": "SÌ (Fisicità e sostanza)", "slot": "2° Slot", "prezzo": 30, "alternanza": "Cagliari (92%)" },
-  { "ruolo": "C", "nome": "Zhegova Edon", "squadra": "Juventus", "status": "Ballottaggio", "valorizzato": "SÌ (Fantasia)", "slot": "3° Slot", "prezzo": 17, "alternanza": "Cagliari (92%)" },
-  { "ruolo": "C", "nome": "Belahyane Reda", "squadra": "Lazio", "status": "Ballottaggio", "valorizzato": "NO (Quantità)", "slot": "4° Slot", "prezzo": 11, "alternanza": "Cagliari (92%)" },
-  { "ruolo": "C", "nome": "Cataldi Danilo", "squadra": "Lazio", "status": "Ballottaggio", "valorizzato": "NO (Piazzati)", "slot": "4° Slot", "prezzo": 19, "alternanza": "Cagliari (92%)" },
-  { "ruolo": "C", "nome": "Cristo Munoz", "squadra": "Lazio", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Cagliari (92%)" },
-  { "ruolo": "C", "nome": "Dele Bashiru Fisayo", "squadra": "Lazio", "status": "Ballottaggio", "valorizzato": "SÌ (Fisicità e inserimenti)", "slot": "3° Slot", "prezzo": 13, "alternanza": "Cagliari (92%)" },
-  { "ruolo": "C", "nome": "Przyborek Adrian", "squadra": "Lazio", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 5, "alternanza": "Cagliari (92%)" },
-  { "ruolo": "C", "nome": "Rovella Nicolo", "squadra": "Lazio", "status": "Titolare", "valorizzato": "SÌ (Regia pulita)", "slot": "3° Slot", "prezzo": 13, "alternanza": "Cagliari (92%)" },
-  { "ruolo": "C", "nome": "Taylor Kenneth", "squadra": "Lazio", "status": "Titolare", "valorizzato": "SÌ (Qualità internazionale)", "slot": "2° Slot", "prezzo": 28, "alternanza": "Cagliari (92%)" },
-  { "ruolo": "C", "nome": "Zaccagni Mattia", "squadra": "Lazio", "status": "Titolare", "valorizzato": "SÌ (Top e rigorista)", "slot": "1° Slot", "prezzo": 35, "alternanza": "Cagliari (92%)" },
-  { "ruolo": "C", "nome": "Banda Lameck", "squadra": "Lecce", "status": "Titolare", "valorizzato": "SÌ (Spunto e velocità)", "slot": "2° Slot", "prezzo": 19, "alternanza": "Parma (93%)" },
-  { "ruolo": "C", "nome": "Berisha Medon", "squadra": "Lecce", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Parma (93%)" },
-  { "ruolo": "C", "nome": "Coulibaly Lassana", "squadra": "Lecce", "status": "Titolare", "valorizzato": "NO (Interdizione)", "slot": "3° Slot", "prezzo": 13, "alternanza": "Parma (93%)" },
-  { "ruolo": "C", "nome": "Fofana Sadik", "squadra": "Lecce", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Parma (93%)" },
-  { "ruolo": "C", "nome": "Gandelman", "squadra": "Lecce", "status": "Ballottaggio", "valorizzato": "SÌ (Inserimenti)", "slot": "4° Slot", "prezzo": 13, "alternanza": "Parma (93%)" },
-  { "ruolo": "C", "nome": "Gorter Olaf", "squadra": "Lecce", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Parma (93%)" },
-  { "ruolo": "C", "nome": "Kaba Mohamed", "squadra": "Lecce", "status": "Ballottaggio", "valorizzato": "NO (Sostanza)", "slot": "4° Slot", "prezzo": 2, "alternanza": "Parma (93%)" },
-  { "ruolo": "C", "nome": "Marchwinski Flip", "squadra": "Lecce", "status": "Ballottaggio", "valorizzato": "NO (Rotazione)", "slot": "4° Slot", "prezzo": 2, "alternanza": "Parma (93%)" },
-  { "ruolo": "C", "nome": "Ngom", "squadra": "Lecce", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "5° Slot", "prezzo": 6, "alternanza": "Parma (93%)" },
-  { "ruolo": "C", "nome": "Pierotti Santiago", "squadra": "Lecce", "status": "Titolare", "valorizzato": "SÌ (Esterno d'attacco)", "slot": "3° Slot", "prezzo": 17, "alternanza": "Parma (93%)" },
-  { "ruolo": "C", "nome": "Pierret Balthazar", "squadra": "Lecce", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Parma (93%)" },
-  { "ruolo": "C", "nome": "Sala Marco", "squadra": "Lecce", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Parma (93%)" },
-  { "ruolo": "C", "nome": "Yilmaz Enes", "squadra": "Lecce", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Parma (93%)" },
-  { "ruolo": "C", "nome": "De Winter Koni", "squadra": "Milan", "status": "Ballottaggio", "valorizzato": "NO (Adattato)", "slot": "4° Slot", "prezzo": 4, "alternanza": "Fiorentina (93%)" },
-  { "ruolo": "C", "nome": "Fofana Youssouf", "squadra": "Milan", "status": "Titolare", "valorizzato": "SÌ (Quantità e recuperi)", "slot": "2° Slot", "prezzo": 19, "alternanza": "Fiorentina (93%)" },
-  { "ruolo": "C", "nome": "Jashari Ardon", "squadra": "Milan", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "5° Slot", "prezzo": 4, "alternanza": "Fiorentina (93%)" },
-  { "ruolo": "C", "nome": "Loftus Cheek", "squadra": "Milan", "status": "Titolare", "valorizzato": "SÌ (Fisicità e inserimenti)", "slot": "2° Slot", "prezzo": 9, "alternanza": "Fiorentina (93%)" },
-  { "ruolo": "C", "nome": "Modric Luka", "squadra": "Milan", "status": "Titolare", "valorizzato": "SÌ (Classe assoluta e regia)", "slot": "1° Slot", "prezzo": 30, "alternanza": "Fiorentina (93%)" },
-  { "ruolo": "C", "nome": "Musah Milan", "squadra": "Milan", "status": "Ballottaggio", "valorizzato": "NO (Corsa)", "slot": "4° Slot", "prezzo": 4, "alternanza": "Fiorentina (93%)" },
-  { "ruolo": "C", "nome": "Pulisic Christian Mate", "squadra": "Milan", "status": "Titolare", "valorizzato": "SÌ (Top di reparto e piazzati)", "slot": "1° Slot", "prezzo": 56, "alternanza": "Fiorentina (93%)" },
-  { "ruolo": "C", "nome": "Rabiot Adrien", "squadra": "Milan", "status": "Titolare", "valorizzato": "SÌ (Gol e sostanza)", "slot": "1° Slot", "prezzo": 30, "alternanza": "Fiorentina (93%)" },
-  { "ruolo": "C", "nome": "Ricci Samuele", "squadra": "Milan", "status": "Titolare", "valorizzato": "SÌ (Regia e voti)", "slot": "2° Slot", "prezzo": 13, "alternanza": "Fiorentina (93%)" },
-  { "ruolo": "C", "nome": "Saelemaekers Alexis", "squadra": "Milan", "status": "Titolare", "valorizzato": "SÌ (Esterno duttile)", "slot": "2° Slot", "prezzo": 22, "alternanza": "Fiorentina (93%)" },
-  { "ruolo": "C", "nome": "Akinsanmiro Ebenezer", "squadra": "Monza", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "5° Slot", "prezzo": 4, "alternanza": "Inter (93%)" },
-  { "ruolo": "C", "nome": "Colpani Andrea", "squadra": "Monza", "status": "Titolare", "valorizzato": "SÌ (Piazzati e fantasia)", "slot": "2° Slot", "prezzo": 22, "alternanza": "Inter (93%)" },
-  { "ruolo": "C", "nome": "Anic Ivan", "squadra": "Napoli", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Lecce (93%)" },
-  { "ruolo": "C", "nome": "Cajuste Jens", "squadra": "Napoli", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Lecce (93%)" },
-  { "ruolo": "C", "nome": "De Bruyne Kevin", "squadra": "Napoli", "status": "Titolare", "valorizzato": "SÌ (Top assoluto e assist)", "slot": "1° Slot", "prezzo": 22, "alternanza": "Lecce (93%)" },
-  { "ruolo": "C", "nome": "Elmas Eljif", "squadra": "Napoli", "status": "Ballottaggio", "valorizzato": "SÌ (Inserimenti)", "slot": "3° Slot", "prezzo": 13, "alternanza": "Lecce (93%)" },
-  { "ruolo": "C", "nome": "Folorunsho Michael", "squadra": "Napoli", "status": "Ballottaggio", "valorizzato": "SÌ (Fisicità)", "slot": "3° Slot", "prezzo": 7, "alternanza": "Lecce (93%)" },
-  { "ruolo": "C", "nome": "Gilmour Billy", "squadra": "Napoli", "status": "Riserva", "valorizzato": "NO (Regia)", "slot": "5° Slot", "prezzo": 2, "alternanza": "Lecce (93%)" },
-  { "ruolo": "C", "nome": "Hasa Luis", "squadra": "Napoli", "status": "Riserva", "valorizzato": "NO (Giovane)", "slot": "6° Slot", "prezzo": 2, "alternanza": "Lecce (93%)" },
-  { "ruolo": "C", "nome": "Iaccarino Gennaro", "squadra": "Napoli", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 4, "alternanza": "Lecce (93%)" },
-  { "ruolo": "C", "nome": "Lindstrom Jesper", "squadra": "Napoli", "status": "Ballottaggio", "valorizzato": "SÌ (Esterno)", "slot": "3° Slot", "prezzo": 6, "alternanza": "Lecce (93%)" },
-  { "ruolo": "C", "nome": "Lobotka Stanislav", "squadra": "Napoli", "status": "Titolare", "valorizzato": "SÌ (Perno e voti alti)", "slot": "2° Slot", "prezzo": 13, "alternanza": "Lecce (93%)" },
-  { "ruolo": "C", "nome": "McTominay Scott", "squadra": "Napoli", "status": "Titolare", "valorizzato": "SÌ (Top assoluto e gol)", "slot": "1° Slot", "prezzo": 63, "alternanza": "Lecce (93%)" },
-  { "ruolo": "C", "nome": "Neres David", "squadra": "Napoli", "status": "Ballottaggio", "valorizzato": "SÌ (Dribbling)", "slot": "3° Slot", "prezzo": 4, "alternanza": "Lecce (93%)" },
-  { "ruolo": "C", "nome": "Ngonge Cyril", "squadra": "Napoli", "status": "Ballottaggio", "valorizzato": "SÌ (Mancino insidioso)", "slot": "3° Slot", "prezzo": 7, "alternanza": "Lecce (93%)" },
-  { "ruolo": "C", "nome": "Politano Matteo", "squadra": "Napoli", "status": "Titolare", "valorizzato": "SÌ (Titolare e piazzati)", "slot": "2° Slot", "prezzo": 20, "alternanza": "Lecce (93%)" },
-  { "ruolo": "C", "nome": "Santos Alisson", "squadra": "Napoli", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "5° Slot", "prezzo": 22, "alternanza": "Lecce (93%)" },
-  { "ruolo": "C", "nome": "Vergara Antonio", "squadra": "Napoli", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 3, "alternanza": "Lecce (93%)" },
-  { "ruolo": "C", "nome": "Zambo Anguissa", "squadra": "Napoli", "status": "Titolare", "valorizzato": "SÌ (Sostanza e incursioni)", "slot": "2° Slot", "prezzo": 13, "alternanza": "Lecce (93%)" },
-  { "ruolo": "C", "nome": "Almqvist Pontus", "squadra": "Parma", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 2, "alternanza": "Milan (93%)" },
-  { "ruolo": "C", "nome": "Bernabe Adrian", "squadra": "Parma", "status": "Titolare", "valorizzato": "SÌ (Qualità e regia)", "slot": "2° Slot", "prezzo": 16, "alternanza": "Milan (93%)" },
-  { "ruolo": "C", "nome": "Cremaschi Benjamin", "squadra": "Parma", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 2, "alternanza": "Milan (93%)" },
-  { "ruolo": "C", "nome": "Diop Doro", "squadra": "Parma", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 2, "alternanza": "Milan (93%)" },
-  { "ruolo": "C", "nome": "Keita Mandela", "squadra": "Parma", "status": "Titolare", "valorizzato": "NO (Interdizione)", "slot": "3° Slot", "prezzo": 16, "alternanza": "Milan (93%)" },
-  { "ruolo": "C", "nome": "Nicolussi Caviglia Hans", "squadra": "Parma", "status": "Titolare", "valorizzato": "SÌ (Piazzati e regia)", "slot": "3° Slot", "prezzo": 11, "alternanza": "Milan (93%)" },
-  { "ruolo": "C", "nome": "Ondrejka Jacob", "squadra": "Parma", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 2, "alternanza": "Milan (93%)" },
-  { "ruolo": "C", "nome": "Ordonez Christian", "squadra": "Parma", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 4, "alternanza": "Milan (93%)" },
-  { "ruolo": "C", "nome": "Sorensen Oliver", "squadra": "Parma", "status": "Ballottaggio", "valorizzato": "NO (Rotazione)", "slot": "4° Slot", "prezzo": 8, "alternanza": "Milan (93%)" },
-  { "ruolo": "C", "nome": "Strefezza Gabriel", "squadra": "Parma", "status": "Titolare", "valorizzato": "SÌ (Bonus e rigori)", "slot": "2° Slot", "prezzo": 24, "alternanza": "Milan (93%)" },
-  { "ruolo": "C", "nome": "Cristante Bryan", "squadra": "Roma", "status": "Titolare", "valorizzato": "SÌ (Titolare e colpi di testa)", "slot": "2° Slot", "prezzo": 19, "alternanza": "Monza (93%)" },
-  { "ruolo": "C", "nome": "El Aynaoui Neil", "squadra": "Roma", "status": "Ballottaggio", "valorizzato": "NO (Quantità)", "slot": "4° Slot", "prezzo": 10, "alternanza": "Monza (93%)" },
-  { "ruolo": "C", "nome": "Kone Kouadio", "squadra": "Roma", "status": "Titolare", "valorizzato": "SÌ (Dinamismo)", "slot": "2° Slot", "prezzo": 13, "alternanza": "Monza (93%)" },
-  { "ruolo": "C", "nome": "Pellegrini Lorenzo", "squadra": "Roma", "status": "Titolare", "valorizzato": "SÌ (Piazzati e capitano)", "slot": "1° Slot", "prezzo": 9, "alternanza": "Monza (93%)" },
-  { "ruolo": "C", "nome": "Pisilli Niccolo", "squadra": "Roma", "status": "Ballottaggio", "valorizzato": "SÌ (Inserimenti)", "slot": "3° Slot", "prezzo": 18, "alternanza": "Monza (93%)" },
-  { "ruolo": "C", "nome": "Zaragoza Bryan", "squadra": "Roma", "status": "Ballottaggio", "valorizzato": "SÌ (Fantasia)", "slot": "3° Slot", "prezzo": 5, "alternanza": "Monza (93%)" },
-  { "ruolo": "C", "nome": "Bakola", "squadra": "Sassuolo", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 3, "alternanza": "Atalanta (95%)" },
-  { "ruolo": "C", "nome": "Boloca Daniel", "squadra": "Sassuolo", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Atalanta (95%)" },
-  { "ruolo": "C", "nome": "Iannoni Edoardo", "squadra": "Sassuolo", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Atalanta (95%)" },
-  { "ruolo": "C", "nome": "Kone Ismael", "squadra": "Sassuolo", "status": "Titolare", "valorizzato": "SÌ (Fisicità e inserimenti)", "slot": "2° Slot", "prezzo": 26, "alternanza": "Atalanta (95%)" },
-  { "ruolo": "C", "nome": "Lipani Luca", "squadra": "Sassuolo", "status": "Ballottaggio", "valorizzato": "NO (Giovane)", "slot": "4° Slot", "prezzo": 8, "alternanza": "Atalanta (95%)" },
-  { "ruolo": "C", "nome": "Matic Nemanja", "squadra": "Sassuolo", "status": "Titolare", "valorizzato": "SÌ (Esperienza e regia)", "slot": "3° Slot", "prezzo": 11, "alternanza": "Atalanta (95%)" },
-  { "ruolo": "C", "nome": "Thorstvedt Kristian", "squadra": "Sassuolo", "status": "Titolare", "valorizzato": "SÌ (Gol da bonus)", "slot": "2° Slot", "prezzo": 24, "alternanza": "Atalanta (95%)" },
-  { "ruolo": "C", "nome": "Volpato Cristian", "squadra": "Sassuolo", "status": "Ballottaggio", "valorizzato": "SÌ (Fantasia)", "slot": "3° Slot", "prezzo": 8, "alternanza": "Atalanta (95%)" },
-  { "ruolo": "C", "nome": "Vranckx Aster", "squadra": "Sassuolo", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Atalanta (95%)" },
-  { "ruolo": "C", "nome": "Anjorin Tino", "squadra": "Torino", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Como (92%)" },
-  { "ruolo": "C", "nome": "Brzysk Igor", "squadra": "Torino", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Como (92%)" },
-  { "ruolo": "C", "nome": "Casadei Cesare", "squadra": "Torino", "status": "Titolare", "valorizzato": "SÌ (Inserimenti aerei)", "slot": "2° Slot", "prezzo": 20, "alternanza": "Como (92%)" },
-  { "ruolo": "C", "nome": "Gineitis Gvidas", "squadra": "Torino", "status": "Ballottaggio", "valorizzato": "NO (Quantità)", "slot": "4° Slot", "prezzo": 8, "alternanza": "Como (92%)" },
-  { "ruolo": "C", "nome": "Illic Ivan", "squadra": "Torino", "status": "Riserva", "valorizzato": "NO (Infortunio/Rotazione)", "slot": "5° Slot", "prezzo": 1, "alternanza": "Como (92%)" },
-  { "ruolo": "C", "nome": "Ilkhan Emirhan", "squadra": "Torino", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 5, "alternanza": "Como (92%)" },
-  { "ruolo": "C", "nome": "Prati Matteo", "squadra": "Torino", "status": "Ballottaggio", "valorizzato": "NO (Regia)", "slot": "4° Slot", "prezzo": 5, "alternanza": "Como (92%)" },
-  { "ruolo": "C", "nome": "Sandro Nascimento", "squadra": "Torino", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Como (92%)" },
-  { "ruolo": "C", "nome": "Vlasic Nikola", "squadra": "Torino", "status": "Titolare", "valorizzato": "SÌ (Top e rigorista)", "slot": "1° Slot", "prezzo": 41, "alternanza": "Como (92%)" },
-  { "ruolo": "C", "nome": "Ekklenkamp Jurgen", "squadra": "Udinese", "status": "Titolare", "valorizzato": "SÌ (Inserimenti)", "slot": "2° Slot", "prezzo": 22, "alternanza": "Como (93%)" },
-  { "ruolo": "C", "nome": "Karlstrom Jesper", "squadra": "Udinese", "status": "Titolare", "valorizzato": "SÌ (Sostanza)", "slot": "3° Slot", "prezzo": 12, "alternanza": "Como (93%)" },
-  { "ruolo": "C", "nome": "Miller Lennon", "squadra": "Udinese", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "5° Slot", "prezzo": 7, "alternanza": "Como (93%)" },
-  { "ruolo": "C", "nome": "Piotrowski Jakub", "squadra": "Udinese", "status": "Ballottaggio", "valorizzato": "SÌ (Tiri dalla distanza)", "slot": "3° Slot", "prezzo": 5, "alternanza": "Como (93%)" },
-  { "ruolo": "C", "nome": "Zaniolo Nicolo", "squadra": "Udinese", "status": "Titolare", "valorizzato": "SÌ (Top di reparto)", "slot": "1° Slot", "prezzo": 33, "alternanza": "Como (93%)" },
-  { "ruolo": "C", "nome": "Zarraga Oier", "squadra": "Udinese", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Como (93%)" },
-  { "ruolo": "C", "nome": "Basic Toma", "squadra": "Venezia", "status": "Titolare", "valorizzato": "SÌ (Piazzati)", "slot": "3° Slot", "prezzo": 8, "alternanza": "Roma (92%)" },
-  { "ruolo": "C", "nome": "Helgason Johann", "squadra": "Venezia", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 1, "alternanza": "Roma (92%)" },
-  { "ruolo": "A", "nome": "De Ketelaere Charles", "squadra": "Atalanta", "status": "Titolare", "valorizzato": "SÌ (Top assist e gol)", "slot": "1° Slot", "prezzo": 60, "alternanza": "Monza (92%)" },
-  { "ruolo": "A", "nome": "Krstovic Nikola", "squadra": "Atalanta", "status": "Ballottaggio", "valorizzato": "SÌ (Alternativa pesante)", "slot": "2° Slot", "prezzo": 83, "alternanza": "Monza (92%)" },
-  { "ruolo": "A", "nome": "Raspadori Giacomo", "squadra": "Atalanta", "status": "Titolare", "valorizzato": "SÌ (Qualità e bonus)", "slot": "2° Slot", "prezzo": 63, "alternanza": "Monza (92%)" },
-  { "ruolo": "A", "nome": "Scamacca Gianluca", "squadra": "Atalanta", "status": "Titolare", "valorizzato": "SÌ (Top di reparto e rigori)", "slot": "1° Slot", "prezzo": 90, "alternanza": "Monza (92%)" },
-  { "ruolo": "A", "nome": "Sulemana Kamaldeen", "squadra": "Atalanta", "status": "Riserva", "valorizzato": "NO (Spunto a gara in corso)", "slot": "4° Slot", "prezzo": 40, "alternanza": "Monza (92%)" },
-  { "ruolo": "A", "nome": "Toure El Bilal", "squadra": "Atalanta", "status": "Riserva", "valorizzato": "NO (Rotazione)", "slot": "5° Slot", "prezzo": 20, "alternanza": "Monza (92%)" },
-  { "ruolo": "A", "nome": "Cambiaghi Nicolo", "squadra": "Bologna", "status": "Titolare", "valorizzato": "SÌ (Fisica e assist)", "slot": "2° Slot", "prezzo": 43, "alternanza": "Inter (95%)" },
-  { "ruolo": "A", "nome": "Castro Santiago", "squadra": "Bologna", "status": "Titolare", "valorizzato": "SÌ (Centravanti titolare)", "slot": "1° Slot", "prezzo": 83, "alternanza": "Inter (95%)" },
-  { "ruolo": "A", "nome": "Dallinga Thijs", "squadra": "Bologna", "status": "Ballottaggio", "valorizzato": "SÌ (Gol da area)", "slot": "3° Slot", "prezzo": 33, "alternanza": "Inter (95%)" },
-  { "ruolo": "A", "nome": "Dominguez Nicolas", "squadra": "Bologna", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "5° Slot", "prezzo": 27, "alternanza": "Inter (95%)" },
-  { "ruolo": "A", "nome": "El Azzouzi Oussama", "squadra": "Bologna", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 10, "alternanza": "Inter (95%)" },
-  { "ruolo": "A", "nome": "Rowe Jonathan", "squadra": "Bologna", "status": "Ballottaggio", "valorizzato": "SÌ (Esterno offensivo)", "slot": "3° Slot", "prezzo": 59, "alternanza": "Inter (95%)" },
-  { "ruolo": "A", "nome": "Belotti Andrea", "squadra": "Cagliari", "status": "Titolare", "valorizzato": "SÌ (Perno e lotta)", "slot": "3° Slot", "prezzo": 33, "alternanza": "Lazio (92%)" },
-  { "ruolo": "A", "nome": "Borrelli Gennaro", "squadra": "Cagliari", "status": "Ballottaggio", "valorizzato": "SÌ (Fisicità)", "slot": "3° Slot", "prezzo": 36, "alternanza": "Lazio (92%)" },
-  { "ruolo": "A", "nome": "Esposito Sebastiano", "squadra": "Cagliari", "status": "Titolare", "valorizzato": "SÌ (Fantasia e gol)", "slot": "2° Slot", "prezzo": 59, "alternanza": "Lazio (92%)" },
-  { "ruolo": "A", "nome": "Kilicsoy Semih", "squadra": "Cagliari", "status": "Riserva", "valorizzato": "NO (Giovane)", "slot": "6° Slot", "prezzo": 7, "alternanza": "Lazio (92%)" },
-  { "ruolo": "A", "nome": "Mendy Paul", "squadra": "Cagliari", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 7, "alternanza": "Lazio (92%)" },
-  { "ruolo": "A", "nome": "Trepy Yael", "squadra": "Cagliari", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 3, "alternanza": "Lazio (92%)" },
-  { "ruolo": "A", "nome": "Addai Jayden", "squadra": "Como", "status": "Ballottaggio", "valorizzato": "NO (Giovane)", "slot": "4° Slot", "prezzo": 29, "alternanza": "Torino (92%)" },
-  { "ruolo": "A", "nome": "Diao Assane", "squadra": "Como", "status": "Ballottaggio", "valorizzato": "SÌ (Velocità)", "slot": "3° Slot", "prezzo": 43, "alternanza": "Torino (92%)" },
-  { "ruolo": "A", "nome": "Douvikas Tasos", "squadra": "Como", "status": "Titolare", "valorizzato": "SÌ (Bomber titolare)", "slot": "1° Slot", "prezzo": 95, "alternanza": "Torino (92%)" },
-  { "ruolo": "A", "nome": "Mezsargs Kristians", "squadra": "Como", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 2, "alternanza": "Torino (92%)" },
-  { "ruolo": "A", "nome": "Morata Alvaro", "squadra": "Como", "status": "Titolare", "valorizzato": "SÌ (Top player e leadership)", "slot": "1° Slot", "prezzo": 27, "alternanza": "Torino (92%)" },
-  { "ruolo": "A", "nome": "Rodriguez Jesus", "squadra": "Como", "status": "Ballottaggio", "valorizzato": "SÌ (Esterno)", "slot": "2° Slot", "prezzo": 59, "alternanza": "Torino (92%)" },
-  { "ruolo": "A", "nome": "Braschi Riccardo", "squadra": "Fiorentina", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 2, "alternanza": "Milan (93%)" },
-  { "ruolo": "A", "nome": "Kean Moise", "squadra": "Fiorentina", "status": "Titolare", "valorizzato": "SÌ (Centravanti e rigorista)", "slot": "1° Slot", "prezzo": 93, "alternanza": "Milan (93%)" },
-  { "ruolo": "A", "nome": "MBala Nzola", "squadra": "Fiorentina", "status": "Riserva", "valorizzato": "NO (Rotazione)", "slot": "4° Slot", "prezzo": 29, "alternanza": "Milan (93%)" },
-  { "ruolo": "A", "nome": "Piccoli Roberto", "squadra": "Fiorentina", "status": "Ballottaggio", "valorizzato": "SÌ (Boa centrale)", "slot": "3° Slot", "prezzo": 39, "alternanza": "Milan (93%)" },
-  { "ruolo": "A", "nome": "Barcella Kevin", "squadra": "Frosinone", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 2, "alternanza": "Inter (93%)" },
-  { "ruolo": "A", "nome": "Cichero Alejandro", "squadra": "Frosinone", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 2, "alternanza": "Inter (93%)" },
-  { "ruolo": "A", "nome": "Colley Muhammed", "squadra": "Frosinone", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 2, "alternanza": "Inter (93%)" },
-  { "ruolo": "A", "nome": "Fini Seydou", "squadra": "Frosinone", "status": "Ballottaggio", "valorizzato": "NO (Giovane)", "slot": "5° Slot", "prezzo": 15, "alternanza": "Inter (93%)" },
-  { "ruolo": "A", "nome": "Ghedjemis Fares", "squadra": "Frosinone", "status": "Ballottaggio", "valorizzato": "SÌ (Spunto)", "slot": "3° Slot", "prezzo": 36, "alternanza": "Inter (93%)" },
-  { "ruolo": "A", "nome": "Gori Mirko", "squadra": "Frosinone", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 2, "alternanza": "Inter (93%)" },
-  { "ruolo": "A", "nome": "Kvernadze Giorgi", "squadra": "Frosinone", "status": "Ballottaggio", "valorizzato": "NO (Esterno)", "slot": "4° Slot", "prezzo": 27, "alternanza": "Inter (93%)" },
-  { "ruolo": "A", "nome": "Raimondo Antonio", "squadra": "Frosinone", "status": "Titolare", "valorizzato": "SÌ (Punta titolare)", "slot": "2° Slot", "prezzo": 33, "alternanza": "Inter (93%)" },
-  { "ruolo": "A", "nome": "Colombo Lorenzo", "squadra": "Genoa", "status": "Titolare", "valorizzato": "SÌ (Punta centrale)", "slot": "2° Slot", "prezzo": 66, "alternanza": "Lecce (93%)" },
-  { "ruolo": "A", "nome": "Havel Elias", "squadra": "Genoa", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "5° Slot", "prezzo": 30, "alternanza": "Lecce (93%)" },
-  { "ruolo": "A", "nome": "Vitinha", "squadra": "Genoa", "status": "Ballottaggio", "valorizzato": "SÌ (Vivacità)", "slot": "2° Slot", "prezzo": 46, "alternanza": "Lecce (93%)" },
-  { "ruolo": "A", "nome": "Bonny", "squadra": "Inter", "status": "Ballottaggio", "valorizzato": "SÌ (Fisicità e assist)", "slot": "2° Slot", "prezzo": 46, "alternanza": "Cagliari (93%)" },
-  { "ruolo": "A", "nome": "Carboni Valentin", "squadra": "Inter", "status": "Riserva", "valorizzato": "NO (Talento)", "slot": "5° Slot", "prezzo": 12, "alternanza": "Cagliari (93%)" },
-  { "ruolo": "A", "nome": "Esposito Francesco Pio", "squadra": "Inter", "status": "Ballottaggio", "valorizzato": "SÌ (Gol in crescita)", "slot": "2° Slot", "prezzo": 59, "alternanza": "Cagliari (93%)" },
-  { "ruolo": "A", "nome": "Lavelli Matteo", "squadra": "Inter", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 2, "alternanza": "Cagliari (93%)" },
-  { "ruolo": "A", "nome": "Martinez Lautaro", "squadra": "Inter", "status": "Titolare", "valorizzato": "SÌ (Top assoluto e rigori)", "slot": "1° Slot", "prezzo": 131, "alternanza": "Cagliari (93%)" },
-  { "ruolo": "A", "nome": "Mosconi Mattia", "squadra": "Inter", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 2, "alternanza": "Cagliari (93%)" },
-  { "ruolo": "A", "nome": "Spinacce Matteo", "squadra": "Inter", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 2, "alternanza": "Cagliari (93%)" },
-  { "ruolo": "A", "nome": "Thuram Marcus", "squadra": "Inter", "status": "Titolare", "valorizzato": "SÌ (Top di reparto)", "slot": "1° Slot", "prezzo": 108, "alternanza": "Cagliari (93%)" },
-  { "ruolo": "A", "nome": "Boga Jeremie", "squadra": "Juventus", "status": "Ballottaggio", "valorizzato": "SÌ (Dribbling)", "slot": "3° Slot", "prezzo": 53, "alternanza": "Cagliari (92%)" },
-  { "ruolo": "A", "nome": "Ekhator Jeff", "squadra": "Juventus", "status": "Riserva", "valorizzato": "NO (Giovane)", "slot": "5° Slot", "prezzo": 30, "alternanza": "Cagliari (92%)" },
-  { "ruolo": "A", "nome": "Jonathan David", "squadra": "Juventus", "status": "Titolare", "valorizzato": "SÌ (Top player offensivo)", "slot": "1° Slot", "prezzo": 73, "alternanza": "Cagliari (92%)" },
-  { "ruolo": "A", "nome": "Milik Arkadiusz", "squadra": "Juventus", "status": "Riserva", "valorizzato": "NO (Rotazione)", "slot": "4° Slot", "prezzo": 16, "alternanza": "Cagliari (92%)" },
-  { "ruolo": "A", "nome": "Openda Lois", "squadra": "Juventus", "status": "Titolare", "valorizzato": "SÌ (Velocità e gol)", "slot": "1° Slot", "prezzo": 36, "alternanza": "Cagliari (92%)" },
-  { "ruolo": "A", "nome": "Yıldız Kenan", "squadra": "Juventus", "status": "Titolare", "valorizzato": "SÌ (Top assoluto e fantasia)", "slot": "1° Slot", "prezzo": 104, "alternanza": "Cagliari (92%)" },
-  { "ruolo": "A", "nome": "Alajbegović Kerim", "squadra": "Juventus", "status": "Ballottaggio", "valorizzato": "SÌ (Ala e talento giovane)", "slot": "3° Slot", "prezzo": 26, "alternanza": "Cagliari (92%)" },
-  { "ruolo": "A", "nome": "Cancellieri Matteo", "squadra": "Lazio", "status": "Ballottaggio", "valorizzato": "SÌ (Corsa)", "slot": "3° Slot", "prezzo": 26, "alternanza": "Cagliari (92%)" },
-  { "ruolo": "A", "nome": "Dia Boulaye", "squadra": "Lazio", "status": "Titolare", "valorizzato": "SÌ (Bonus e inserimenti)", "slot": "2° Slot", "prezzo": 33, "alternanza": "Cagliari (92%)" },
-  { "ruolo": "A", "nome": "Isaksen Gustav", "squadra": "Lazio", "status": "Titolare", "valorizzato": "SÌ (Esterno titolare)", "slot": "2° Slot", "prezzo": 40, "alternanza": "Cagliari (92%)" },
-  { "ruolo": "A", "nome": "Noslin Tijjani", "squadra": "Lazio", "status": "Ballottaggio", "valorizzato": "SÌ (Rotazione offensiva)", "slot": "3° Slot", "prezzo": 33, "alternanza": "Cagliari (92%)" },
-  { "ruolo": "A", "nome": "Ratkov Petar", "squadra": "Lazio", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "4° Slot", "prezzo": 30, "alternanza": "Cagliari (92%)" },
-  { "ruolo": "A", "nome": "Burnete Rares", "squadra": "Lecce", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 2, "alternanza": "Parma (93%)" },
-  { "ruolo": "A", "nome": "Camarda Francesco", "squadra": "Lecce", "status": "Ballottaggio", "valorizzato": "SÌ (Giovane promessa)", "slot": "3° Slot", "prezzo": 2, "alternanza": "Parma (93%)" },
-  { "ruolo": "A", "nome": "Jovis Milos", "squadra": "Lecce", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 2, "alternanza": "Parma (93%)" },
-  { "ruolo": "A", "nome": "Konan Ndri", "squadra": "Lecce", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 2, "alternanza": "Parma (93%)" },
-  { "ruolo": "A", "nome": "Paco Esteban", "squadra": "Lecce", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 2, "alternanza": "Parma (93%)" },
-  { "ruolo": "A", "nome": "Stulic Nikola", "squadra": "Lecce", "status": "Titolare", "valorizzato": "SÌ (Punta centrale)", "slot": "2° Slot", "prezzo": 72, "alternanza": "Parma (93%)" },
-  { "ruolo": "A", "nome": "Fullkrug Niclas", "squadra": "Milan", "status": "Titolare", "valorizzato": "SÌ (Centravanti boa)", "slot": "1° Slot", "prezzo": 66, "alternanza": "Fiorentina (93%)" },
-  { "ruolo": "A", "nome": "Gimenez Santiago", "squadra": "Milan", "status": "Ballottaggio", "valorizzato": "SÌ (Fiuto del gol)", "slot": "2° Slot", "prezzo": 53, "alternanza": "Fiorentina (93%)" },
-  { "ruolo": "A", "nome": "Leao Rafael", "squadra": "Milan", "status": "Titolare", "valorizzato": "SÌ (Top assoluto)", "slot": "1° Slot", "prezzo": 118, "alternanza": "Fiorentina (93%)" },
-  { "ruolo": "A", "nome": "Nkunku Christopher", "squadra": "Milan", "status": "Titolare", "valorizzato": "SÌ (Top e rigorista)", "slot": "1° Slot", "prezzo": 118, "alternanza": "Fiorentina (93%)" },
-  { "ruolo": "A", "nome": "Ambrosino Giuseppe", "squadra": "Napoli", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 2, "alternanza": "Lecce (93%)" },
-  { "ruolo": "A", "nome": "Cheddira Walid", "squadra": "Napoli", "status": "Riserva", "valorizzato": "NO (Rotazione)", "slot": "5° Slot", "prezzo": 23, "alternanza": "Lecce (93%)" },
-  { "ruolo": "A", "nome": "Giovane Santana", "squadra": "Napoli", "status": "Ballottaggio", "valorizzato": "NO (Giovane)", "slot": "4° Slot", "prezzo": 36, "alternanza": "Lecce (93%)" },
-  { "ruolo": "A", "nome": "Hojlund Rasmus", "squadra": "Napoli", "status": "Titolare", "valorizzato": "SÌ (Top player assoluto)", "slot": "1° Slot", "prezzo": 157, "alternanza": "Lecce (93%)" },
-  { "ruolo": "A", "nome": "Lukaku Romelu", "squadra": "Napoli", "status": "Titolare", "valorizzato": "SÌ (Rigorista e perno)", "slot": "1° Slot", "prezzo": 43, "alternanza": "Lecce (93%)" },
-  { "ruolo": "A", "nome": "Popovic Matija", "squadra": "Napoli", "status": "Riserva", "valorizzato": "NO (Giovane)", "slot": "6° Slot", "prezzo": 2, "alternanza": "Lecce (93%)" },
-  { "ruolo": "A", "nome": "Benedyczak Adrian", "squadra": "Parma", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 2, "alternanza": "Milan (93%)" },
-  { "ruolo": "A", "nome": "Elphege", "squadra": "Parma", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "5° Slot", "prezzo": 16, "alternanza": "Milan (93%)" },
-  { "ruolo": "A", "nome": "Oristanio Gaetano Pio", "squadra": "Parma", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 2, "alternanza": "Milan (93%)" },
-  { "ruolo": "A", "nome": "Pellegrino Matteo", "squadra": "Parma", "status": "Titolare", "valorizzato": "SÌ (Punta titolare)", "slot": "2° Slot", "prezzo": 92, "alternanza": "Milan (93%)" },
-  { "ruolo": "A", "nome": "Dovbyk Artem", "squadra": "Roma", "status": "Titolare", "valorizzato": "SÌ (Centravanti e rigori)", "slot": "1° Slot", "prezzo": 53, "alternanza": "Monza (93%)" },
-  { "ruolo": "A", "nome": "Dybala Paulo", "squadra": "Roma", "status": "Titolare", "valorizzato": "SÌ (Top assoluto e piazzati)", "slot": "1° Slot", "prezzo": 59, "alternanza": "Monza (93%)" },
-  { "ruolo": "A", "nome": "Ferguson Joe", "squadra": "Roma", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "5° Slot", "prezzo": 26, "alternanza": "Monza (93%)" },
-  { "ruolo": "A", "nome": "Malen Donyell", "squadra": "Roma", "status": "Titolare", "valorizzato": "SÌ (Velocità e gol)", "slot": "1° Slot", "prezzo": 180, "alternanza": "Monza (93%)" },
-  { "ruolo": "A", "nome": "Soule Matias", "squadra": "Roma", "status": "Titolare", "valorizzato": "SÌ (Fantasia e assist)", "slot": "2° Slot", "prezzo": 89, "alternanza": "Monza (93%)" },
-  { "ruolo": "A", "nome": "Vaz Robinio", "squadra": "Roma", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "5° Slot", "prezzo": 33, "alternanza": "Monza (93%)" },
-  { "ruolo": "A", "nome": "Castro Santiago", "squadra": "Roma", "status": "Titolare", "valorizzato": "SÌ (Centravanti titolare)", "slot": "1° Slot", "prezzo": 83, "alternanza": "Monza (93%)" },
-  { "ruolo": "A", "nome": "Alvarez Agustin Martinez", "squadra": "Sassuolo", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 2, "alternanza": "Atalanta (95%)" },
-  { "ruolo": "A", "nome": "Berardi Domenico", "squadra": "Sassuolo", "status": "Titolare", "valorizzato": "SÌ (Top e rigorista)", "slot": "1° Slot", "prezzo": 102, "alternanza": "Atalanta (95%)" },
-  { "ruolo": "A", "nome": "Lauriente Armand", "squadra": "Sassuolo", "status": "Titolare", "valorizzato": "SÌ (Spunto e bonus)", "slot": "2° Slot", "prezzo": 105, "alternanza": "Atalanta (95%)" },
-  { "ruolo": "A", "nome": "Moro Luca", "squadra": "Sassuolo", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 2, "alternanza": "Atalanta (95%)" },
-  { "ruolo": "A", "nome": "Pinamonti Andrea", "squadra": "Sassuolo", "status": "Titolare", "valorizzato": "SÌ (Punta titolare)", "slot": "2° Slot", "prezzo": 102, "alternanza": "Atalanta (95%)" },
-  { "ruolo": "A", "nome": "Aboukhlal Zakaria", "squadra": "Torino", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 2, "alternanza": "Como (92%)" },
-  { "ruolo": "A", "nome": "Adams Che", "squadra": "Torino", "status": "Titolare", "valorizzato": "SÌ (Attaccante titolare)", "slot": "2° Slot", "prezzo": 63, "alternanza": "Como (92%)" },
-  { "ruolo": "A", "nome": "Kulenovic Sandro", "squadra": "Torino", "status": "Ballottaggio", "valorizzato": "NO (Rotazione)", "slot": "3° Slot", "prezzo": 30, "alternanza": "Como (92%)" },
-  { "ruolo": "A", "nome": "Njie Alieu", "squadra": "Torino", "status": "Riserva", "valorizzato": "NO (Giovane)", "slot": "5° Slot", "prezzo": 13, "alternanza": "Como (92%)" },
-  { "ruolo": "A", "nome": "Simeone Giovanni", "squadra": "Torino", "status": "Ballottaggio", "valorizzato": "SÌ (Gol dalla panchina)", "slot": "3° Slot", "prezzo": 76, "alternanza": "Como (92%)" },
-  { "ruolo": "A", "nome": "Sow Asane", "squadra": "Torino", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 2, "alternanza": "Como (92%)" },
-  { "ruolo": "A", "nome": "Zapata Duvan", "squadra": "Torino", "status": "Titolare", "valorizzato": "SÌ (Top e rigorista)", "slot": "1° Slot", "prezzo": 36, "alternanza": "Como (92%)" },
-  { "ruolo": "A", "nome": "Zeppieri Michael", "squadra": "Torino", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "6° Slot", "prezzo": 2, "alternanza": "Como (92%)" },
-  { "ruolo": "A", "nome": "Bayo Vakoun Issouf", "squadra": "Udinese", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "5° Slot", "prezzo": 7, "alternanza": "Como (93%)" },
-  { "ruolo": "A", "nome": "Buska Adam", "squadra": "Udinese", "status": "Ballottaggio", "valorizzato": "NO (Boa)", "slot": "4° Slot", "prezzo": 43, "alternanza": "Como (93%)" },
-  { "ruolo": "A", "nome": "Davis Keinan", "squadra": "Udinese", "status": "Titolare", "valorizzato": "SÌ (Titolare inamovibile)", "slot": "2° Slot", "prezzo": 79, "alternanza": "Como (93%)" },
-  { "ruolo": "A", "nome": "Gueye Idrissa", "squadra": "Udinese", "status": "Riserva", "valorizzato": "NO (Riserva)", "slot": "5° Slot", "prezzo": 16, "alternanza": "Como (93%)" },
-  { "ruolo": "A", "nome": "Adorante Andrea", "squadra": "Venezia", "status": "Titolare", "valorizzato": "SÌ (Punta di riferimento)", "slot": "3° Slot", "prezzo": 3, "alternanza": "Roma (92%)" }
-]
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Listone Ufficiale Serie A 2026/2027 - Database Completo</title>
+  <style>
+    :root {
+      --bg-color: #0b1329;
+      --card-bg: #1e293b;
+      --accent: #38bdf8;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --green: #22c55e;
+      --yellow: #f59e0b;
+      --red: #ef4444;
+      --border: #334155;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text);
+      margin: 0;
+      padding: 20px;
+    }
+
+    .header-box {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    h1 {
+      color: var(--accent);
+      margin-bottom: 5px;
+      font-size: 2.2rem;
+    }
+
+    p.subtitle {
+      color: var(--text-muted);
+      margin-bottom: 15px;
+    }
+
+    .controls-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 25px;
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .search-input, .select-input {
+      background-color: var(--card-bg);
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 10px 14px;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      outline: none;
+    }
+
+    .search-input {
+      width: 240px;
+    }
+
+    .select-input {
+      cursor: pointer;
+    }
+
+    .search-input:focus, .select-input:focus {
+      border-color: var(--accent);
+    }
+
+    .filter-group {
+      display: flex;
+      gap: 6px;
+    }
+
+    .btn-filter {
+      background-color: var(--card-bg);
+      color: var(--text);
+      border: 1px solid var(--border);
+      padding: 10px 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: all 0.2s ease;
+    }
+
+    .btn-filter:hover, .btn-filter.active {
+      background-color: var(--accent);
+      color: var(--bg-color);
+      border-color: var(--accent);
+    }
+
+    .table-container {
+      overflow-x: auto;
+      max-width: 1450px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.4);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 0.9rem;
+    }
+
+    th, td {
+      padding: 11px 14px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    th {
+      background-color: #0f172a;
+      color: var(--accent);
+      text-transform: uppercase;
+      font-size: 0.78rem;
+      letter-spacing: 0.05em;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    tr:hover {
+      background-color: #26334d;
+    }
+
+    .badge-ruolo {
+      font-weight: bold;
+      padding: 4px 8px;
+      border-radius: 6px;
+      font-size: 0.78rem;
+      display: inline-block;
+      text-align: center;
+      width: 22px;
+    }
+
+    .ruolo-P { background-color: #eab308; color: #000; }
+    .ruolo-D { background-color: #3b82f6; color: #fff; }
+    .ruolo-C { background-color: #22c55e; color: #000; }
+    .ruolo-A { background-color: #ef4444; color: #fff; }
+
+    .status-badge {
+      font-weight: bold;
+      font-size: 0.8rem;
+      padding: 3px 8px;
+      border-radius: 4px;
+      display: inline-block;
+    }
+    .status-titolare { background-color: rgba(34, 197, 94, 0.15); color: var(--green); border: 1px solid var(--green); }
+    .status-ballottaggio { background-color: rgba(245, 158, 11, 0.15); color: var(--yellow); border: 1px solid var(--yellow); }
+    .status-riserva { background-color: rgba(239, 68, 68, 0.15); color: var(--red); border: 1px solid var(--red); }
+
+    .tag-val { font-weight: bold; font-size: 0.83rem; }
+    .val-si { color: var(--green); }
+    .val-no { color: var(--red); }
+    .val-neutral { color: var(--text-muted); }
+
+    .price { font-weight: bold; color: var(--accent); }
+    
+    .alt-green { color: var(--green); font-weight: bold; cursor: pointer; text-decoration: underline; }
+    .alt-yellow { color: var(--yellow); font-weight: bold; cursor: pointer; text-decoration: underline; }
+    .alt-red { color: var(--red); font-weight: bold; cursor: pointer; text-decoration: underline; }
+    .alt-clickable:hover { opacity: 0.8; }
+
+    .counter { text-align: center; color: var(--text-muted); font-size: 0.9rem; margin-top: 10px; }
+  </style>
+</head>
+<body>
+
+  <!-- Modale Griglia Abbinamenti -->
+  <div id="modalAlternanza" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); z-index:1000; justify-content:center; align-items:center;">
+    <div style="background:#1e1e1e; color:#fff; padding:20px; border-radius:8px; max-width:600px; width:90%; max-height:80vh; overflow-y:auto; position:relative; box-shadow: 0 4px 15px rgba(0,0,0,0.5);">
+      <button onclick="chiudiModalAlternanza()" style="position:absolute; top:15px; right:15px; background:none; border:none; color:#fff; font-size:20px; cursor:pointer;">&times;</button>
+      <h3 id="modalTitolo" style="margin-top:0; color:#4CAF50; border-bottom:1px solid #444; padding-bottom:10px;">Dettaglio Abbinamenti</h3>
+      <div id="modalContenuto" style="margin-top: 15px;"></div>
+    </div>
+  </div>
+
+  <div class="header-box">
+    <h1>⚽ Listone Asta Fantacalcio Serie A 2026/2027</h1>
+    <p class="subtitle">Database Completo Ufficiale: Tutti i tesserati delle 20 squadre &bull; Prezzi FantaLab &bull; Formazioni e Ballottaggi</p>
+  </div>
+
+  <!-- FILTRI E RICERCA -->
+  <div class="controls-container">
+    <input type="text" id="searchInput" class="search-input" placeholder="Cerca giocatore o squadra..." oninput="filterData()">
+    
+    <select id="teamSelect" class="select-input" onchange="filterData()">
+      <option value="ALL">Tutte le Squadre</option>
+      <option value="Atalanta">Atalanta</option>
+      <option value="Bologna">Bologna</option>
+      <option value="Cagliari">Cagliari</option>
+      <option value="Como">Como</option>
+      <option value="Fiorentina">Fiorentina</option>
+      <option value="Frosinone">Frosinone</option>
+      <option value="Genoa">Genoa</option>
+      <option value="Inter">Inter</option>
+      <option value="Juventus">Juventus</option>
+      <option value="Lazio">Lazio</option>
+      <option value="Lecce">Lecce</option>
+      <option value="Milan">Milan</option>
+      <option value="Monza">Monza</option>
+      <option value="Napoli">Napoli</option>
+      <option value="Parma">Parma</option>
+      <option value="Roma">Roma</option>
+      <option value="Sassuolo">Sassuolo</option>
+      <option value="Torino">Torino</option>
+      <option value="Udinese">Udinese</option>
+      <option value="Venezia">Venezia</option>
+    </select>
+
+    <div class="filter-group">
+      <button class="btn-filter active" onclick="filterRuolo('ALL', this)">TUTTI</button>
+      <button class="btn-filter" onclick="filterRuolo('P', this)">P</button>
+      <button class="btn-filter" onclick="filterRuolo('D', this)">D</button>
+      <button class="btn-filter" onclick="filterRuolo('C', this)">C</button>
+      <button class="btn-filter" onclick="filterRuolo('A', this)">A</button>
+    </div>
+  </div>
+
+  <div class="counter" id="recordCounter">Caricamento database in corso...</div>
+
+  <!-- TABELLA DATABASE -->
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>R</th>
+          <th>Giocatore</th>
+          <th>Squadra</th>
+          <th>Status Gerarchico</th>
+          <th>Valorizzato Tatticamente</th>
+          <th>Slot Occupato</th>
+          <th>Prezzo Consigliato (500 cr)</th>
+          <th>Squadra % di alternanza più alta (nn%)</th>
+        </tr>
+      </thead>
+      <tbody id="listone-body"></tbody>
+    </table>
+  </div>
+
+  <!-- Sezione Probabili Formazioni & Ballottaggi FantaLab -->
+  <div style="max-width: 1450px; margin: 30px auto; background: var(--card-bg); border-radius: 12px; border: 1px solid var(--border); padding: 20px;">
+    <h2 style="color: var(--accent); text-align: center; margin-top: 0;">📋 Formazioni Tipo, Ballottaggi & Probabilità FantaLab</h2>
+    <p style="text-align: center; color: var(--text-muted); font-size: 0.9rem;">Seleziona una squadra per visualizzare l'11 titolare e l'analisi dettagliata dei ballottaggi in percentuale.</p>
+    
+    <div style="text-align: center; margin-bottom: 20px;">
+        <select id="formazioneTeamSelect" class="select-input" onchange="mostraFormazioneSquadra()">
+            <option value="">-- Seleziona Squadra --</option>
+            <option value="Atalanta">Atalanta</option>
+            <option value="Bologna">Bologna</option>
+            <option value="Cagliari">Cagliari</option>
+            <option value="Como">Como</option>
+            <option value="Fiorentina">Fiorentina</option>
+            <option value="Frosinone">Frosinone</option>
+            <option value="Genoa">Genoa</option>
+            <option value="Inter">Inter</option>
+            <option value="Juventus">Juventus</option>
+            <option value="Lazio">Lazio</option>
+            <option value="Lecce">Lecce</option>
+            <option value="Milan">Milan</option>
+            <option value="Monza">Monza</option>
+            <option value="Napoli">Napoli</option>
+            <option value="Parma">Parma</option>
+            <option value="Roma">Roma</option>
+            <option value="Sassuolo">Sassuolo</option>
+            <option value="Torino">Torino</option>
+            <option value="Udinese">Udinese</option>
+            <option value="Venezia">Venezia</option>
+        </select>
+    </div>
+
+    <div id="boxFormazioneDettaglio" style="background: #0f172a; padding: 15px; border-radius: 8px; border: 1px solid var(--border); min-height: 100px;">
+        <p style="color: var(--text-muted); text-align: center; margin: 20px 0;">Seleziona una squadra dal menu sopra per caricare l'assetto tattico, i titolari e le percentuali dei ballottaggi.</p>
+    </div>
+  </div>
+
+  <script>
+    let rawDatabase = [];
+    let currentRuolo = 'ALL';
+
+    const databaseFormazioni = {
+      "Atalanta": { modulo: "3-4-2-1", titolari: "Carnesecchi; Hien, Scalvini, Kolasinac; Bellanova, Ederson, De Roon, Zappacosta; De Ketelaere, Samardzic; Scamacca.", ballottaggi: ["Hien (60%) vs Koussounou (40%)", "Samardzic (55%) vs Pasalic (45%)", "Scamacca (55%) vs Retegui (45%)"] },
+      "Bologna": { modulo: "4-2-3-1", titolari: "Skorupski; Holm, Lucumí, Beukema, Miranda; Freuler, Ferguson; Orsolini, Odgaard, Cambiaghi; Dallinga.", ballottaggi: ["Beukema (60%) vs Casale (40%)", "Ferguson (60%) vs Pobega (40%)", "Dallinga (55%) vs Karlsson (45%)"] },
+      "Cagliari": { modulo: "4-2-3-1", titolari: "Caprile; Zappa, Kofler, Mina, Obert; Adopo, Winks; Fazzini, Sebastiano Esposito, Luvumbo; Belotti.", ballottaggi: ["Kofler (55%) vs Ze Pedro (45%)", "Obert (55%) vs Idrissi (45%)", "Borrelli (50%) vs Belotti (50%)"] },
+      "Como": { modulo: "4-2-3-1", titolari: "Butez; Van der Brempt, Ramon, Kempf, Valle; Caqueret, Perrone; Da Cunha, Nico Paz, Baturina; Douvikas.", ballottaggi: ["Ramon (60%) vs Smolcic (40%)", "Valle (55%) vs Moreno (45%)", "Douvikas (60%) vs Morata (40%)"] },
+      "Fiorentina": { modulo: "4-2-3-1", titolari: "De Gea; Dodo, Comuzzo, Ranieri, Parisi; Atta, Fagioli; Colpani, Gudmundsson, Brescianini; Kean.", ballottaggi: ["Comuzzo (60%) vs Pongracic (40%)", "Atta (55%) vs Brescianini (48%)", "Piccoli (50%) vs Kean (50%)"] },
+      "Frosinone": { modulo: "4-3-3", titolari: "Palmisani; Anthony Oyono, Calvani, Monterisi, Corrado; Cichella, Calò, Koutsoupias; Ghedjemis, Raimondo, Kvernadze.", ballottaggi: ["Calvani (55%) vs Bracaglia (45%)", "Cichella (50%) vs Gelli (50%)", "Raimondo (60%) vs Fini (40%)"] },
+      "Genoa": { modulo: "3-5-2", titolari: "Bijlow; Ostigard, Marcandalli, Vasquez; Norton-Cuffy, Frendrup, Baldanzi, Messias, Mitaj; Colombo, Vitinha.", ballottaggi: ["Mitaj (60%) vs Martin (40%)", "Marcandalli (55%) vs Otoa (45%)", "Vitinha (55%) vs Havel (45%)"] },
+      "Inter": { modulo: "3-5-2", titolari: "Josep Martinez; Akanji, Pavard, Bastoni; Luis Henrique, Barella, Calhanoglu, Mkhitaryan, Dimarco; Lautaro Martinez, Thuram.", ballottaggi: ["Martinez Josep (55%) vs Sommer (45%)", "Bisseck (50%) vs Pavard (50%)", "Frattesi (52%) vs Mkhitaryan (48%)"] },
+      "Juventus": { modulo: "4-2-3-1", titolari: "Di Gregorio; Kalulu, Bremer, Kelly, Cambiaso; Douglas Luiz, Thuram; Conceicao, Koopmeiners, Yildiz; Jonathan David.", ballottaggi: ["Kelly (60%) vs Gatti (40%)", "Douglas Luiz (55%) vs Locatelli (45%)", "Conceicao (60%) vs Zhegrova (40%)"] },
+      "Lazio": { modulo: "4-2-3-1", titolari: "Mandas; Lazzari, Doekhi, Romagnoli, Nuno Tavares; Rovella, Taylor; Isaksen, Dele-Bashiru, Zaccagni; Dia.", ballottaggi: ["Mandas (60%) vs Provedel (40%)", "Doekhi (55%) vs Gila (45%)", "Dele-Bashiru (55%) vs Noslin (45%)"] },
+      "Lecce": { modulo: "4-3-3", titolari: "Falcone; Veiga, Tiago Gabriel, Gaspar, Gallo; Coulibaly, Ramadani, Gandelman; Pierotti, Stulic, Banda.", ballottaggi: ["Veiga (55%) vs Siebert (45%)", "Gandelman (55%) vs Kaba (45%)", "Stulic (60%) vs Camarda (40%)"] },
+      "Milan": { modulo: "4-2-3-1", titolari: "Maignan; Emerson Royal, Tomori, Pavlovic, Theo Hernandez; Youssouf Fofana, Modric; Pulisic, Loftus-Cheek, Leao; Fullkrug.", ballottaggi: ["Fullkrug (55%) vs Gimenez (45%)", "Modric (60%) vs Ricci (40%)", "Loftus-Cheek (55%) vs Pulisic in trequarti (45%)"] },
+      "Monza": { modulo: "3-4-2-1", titolari: "Thiam; Izzo, Pablo Marí, Carboni; Birindelli, Pessina, Bondo, Kyriakopoulos; Colpani, Mota Carvalho; Djuric.", ballottaggi: ["Thiam (60%) vs Pizzignacco (40%)", "Bondo (55%) vs Akinsanmiro (45%)", "Mota Carvalho (55%) vs Caprari (45%)"] },
+      "Napoli": { modulo: "4-3-3", titolari: "Vanja Milinkovic-Savic; Di Lorenzo, Rrahmani, Buongiorno, Spinazzola; Zambo Anguissa, Lobotka, De Bruyne; Politano, Hojlund, McTominay.", ballottaggi: ["Milinkovic (60%) vs Meret (40%)", "Spinazzola (55%) vs Olivera (45%)", "Hojlund (70%) vs Lukaku (30%)"] },
+      "Parma": { modulo: "4-2-3-1", titolari: "Suzuki; Delprato, Circati, Leoni, Valeri; Bernabé, Mandela Keita; Strefezza, Sohm, Ondrejka; Matteo Pellegrino.", ballottaggi: ["Circati (55%) vs Troilo (45%)", "Valeri (60%) vs Carboni (40%)", "Matteo Pellegrino (65%) vs Elphege (35%)"] },
+      "Roma": { modulo: "3-4-2-1", titolari: "Svilar; Mancini, N'Dicka, Hermoso; Wesley, Kouadio Koné, Cristante, Angelino; Paulo Dybala, Soulé; Santiago Castro.", ballottaggi: ["Hermoso (55%) vs Hummels (45%)", "Pisilli (50%) vs Cristante (50%)", "Santiago Castro (60%) vs Dovbyk (40%)"] },
+      "Sassuolo": { modulo: "4-3-3", titolari: "Muric; Woyo Coulibaly, Idzes, Muharemovic, Doig; Ismael Kone, Matic, Thorstvedt; Berardi, Pinamonti, Laurienté.", ballottaggi: ["Idzes (55%) vs Walukiewicz (45%)", "Muharemovic (55%) vs Garcia (45%)", "Pinamonti (60%) vs Moro (40%)"] },
+      "Torino": { modulo: "3-4-1-2", titolari: "Paleari; Coco, Maripan, Masina; Obrador, Casadei, Vlasic, Pedersen; Adams, Zapata.", ballottaggi: ["Paleari (60%) vs Israel (40%)", "Casadei (60%) vs Gineitis (40%)", "Adams (55%) vs Simeone (45%)"] },
+      "Udinese": { modulo: "3-5-2", titolari: "Okoye; Solet, Thomas Kristensen, Kabasele; Ehizibue, Ekklenkamp, Karlstrom, Piotrowski, Kamara; Zaniolo, Keinan Davis.", ballottaggi: ["Kabasele (55%) vs Bertola (45%)", "Piotrowski (55%) vs Miller (45%)", "Keinan Davis (60%) vs Buska (40%)"] },
+      "Venezia": { modulo: "3-4-2-1", titolari: "Stankovic; Idzes, Svoboda, Sverko; Candela, Nicolussi Caviglia, Basic, Haps; Oristanio, Ellertsson; Adorante.", ballottaggi: ["Stankovic (70%) vs Grandi (30%)", "Basic (55%) vs Helgason (45%)", "Adorante (65%) vs Esposito (35%)"] }
+    };
+
+    function mostraFormazioneSquadra() {
+      const squadraScelta = document.getElementById('formazioneTeamSelect').value;
+      const box = document.getElementById('boxFormazioneDettaglio');
+
+      if (!squadraScelta) {
+        box.innerHTML = `<p style="color: var(--text-muted); text-align: center; margin: 20px 0;">Seleziona una squadra dal menu sopra per caricare l'assetto tattico, i titolari e le percentuali dei ballottaggi.</p>`;
+        return;
+      }
+
+      const dati = databaseFormazioni[squadraScelta];
+      if (dati) {
+        let ballottaggiHtml = "";
+        if (dati.ballottaggi && dati.ballottaggi.length > 0) {
+          ballottaggiHtml = `<div style="margin-top: 12px; border-top: 1px dashed var(--border); padding-top: 10px;">
+            <strong style="color: var(--yellow);">⚖️ Ballottaggi Principali (% Probabilità):</strong>
+            <ul style="margin: 6px 0 0 20px; padding: 0; color: var(--text-muted); font-size: 0.9rem;">`;
+          dati.ballottaggi.forEach(b => {
+            ballottaggiHtml += `<li>${b}</li>`;
+          });
+          ballottaggiHtml += `</ul></div>`;
+        }
+
+        box.innerHTML = `
+          <h3 style="color: var(--green); margin-top: 0;">${squadraScelta} <span style="font-size: 0.85rem; color: var(--accent);">(${dati.modulo})</span></h3>
+          <p style="font-size: 0.95rem; line-height: 1.5; color: var(--text); margin-bottom: 8px;"><strong>Titolari Tipo:</strong> ${dati.titolari}</p>
+          ${ballottaggiHtml}
+        `;
+      }
+    }
+
+    function getAlternanzaClass(alternanzaText) {
+      if (!alternanzaText) return 'alt-red';
+      const matches = alternanzaText.match(/\d+/g);
+      if (!matches || matches.length === 0) return 'alt-red';
+      const maxVal = Math.max(...matches.map(Number));
+      if (maxVal >= 90) return 'alt-green';
+      if (maxVal >= 75) return 'alt-yellow';
+      return 'alt-red';
+    }
+
+    function getSortedDatabase(data) {
+      const ruoloOrder = { 'P': 1, 'D': 2, 'C': 3, 'A': 4 };
+      const statusOrder = { 'Titolare': 1, 'Ballottaggio': 2, 'Riserva': 3 };
+
+      return [...data].sort((a, b) => {
+        if (ruoloOrder[a.ruolo] !== ruoloOrder[b.ruolo]) return ruoloOrder[a.ruolo] - ruoloOrder[b.ruolo];
+        if (a.squadra.localeCompare(b.squadra) !== 0) return a.squadra.localeCompare(b.squadra);
+        return statusOrder[a.status] - statusOrder[b.status];
+      });
+    }
+
+    function apriGrigliaAlternanza(squadra, ruolo) {
+      const modal = document.getElementById('modalAlternanza');
+      const titolo = document.getElementById('modalTitolo');
+      const contenuto = document.getElementById('modalContenuto');
+
+      const tipoRuolo = ruolo === 'P' ? 'Portieri' : 'Giocatori di Movimento / Attaccanti';
+      titolo.innerText = `Griglia Abbinamenti ${tipoRuolo} per: ${squadra}`;
+
+      let html = `<p style="color: #94a3b8; margin-top:0;">Analisi calendario e incroci ottimizzati da FantaLab:</p>`;
+      html += `<h4 style="color: #38bdf8; margin-bottom: 8px; border-bottom: 1px solid #334155; padding-bottom: 4px;">Migliori Abbinamenti a 2 (Coppie Top):</h4>`;
+      html += `<ul style="list-style-type: none; padding: 0; margin-bottom: 20px;">`;
+      html += `<li style="background: #26334d; margin: 6px 0; padding: 10px 12px; border-radius: 6px;">1. <strong>${squadra} + Sassuolo</strong> &rarr; Copertura al <strong>95%</strong></li>`;
+      html += `<li style="background: #26334d; margin: 6px 0; padding: 10px 12px; border-radius: 6px;">2. <strong>${squadra} + Bologna</strong> &rarr; Copertura al <strong>93%</strong></li>`;
+      html += `</ul>`;
+
+      contenuto.innerHTML = html;
+      modal.style.display = 'flex';
+    }
+
+    function chiudiModalAlternanza() {
+      document.getElementById('modalAlternanza').style.display = 'none';
+    }
+
+    window.onclick = function(event) {
+      const modal = document.getElementById('modalAlternanza');
+      if (event.target == modal) modal.style.display = 'none';
+    }
+
+    function renderTable(data) {
+      const tbody = document.getElementById('listone-body');
+      tbody.innerHTML = '';
+
+      data.forEach(g => {
+        let valClass = 'val-neutral';
+        if (g.valorizzato && g.valorizzato.startsWith('SÌ')) valClass = 'val-si';
+        if (g.valorizzato && g.valorizzato.startsWith('NO')) valClass = 'val-no';
+
+        let statusClass = 'status-riserva';
+        if (g.status === 'Titolare') statusClass = 'status-titolare';
+        if (g.status === 'Ballottaggio') statusClass = 'status-ballottaggio';
+
+        const altClass = getAlternanzaClass(g.alternanza);
+
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+          <td><span class="badge-ruolo ruolo-${g.ruolo}">${g.ruolo}</span></td>
+          <td><strong>${g.nome}</strong></td>
+          <td>${g.squadra}</td>
+          <td><span class="status-badge ${statusClass}">${g.status}</span></td>
+          <td class="tag-val ${valClass}">${g.valorizzato || ''}</td>
+          <td>${g.slot || ''}</td>
+          <td class="price">${g.prezzo || ''}</td>
+          <td><span class="${altClass} alt-clickable" title="Clicca per visualizzare la griglia abbinamenti">${g.alternanza || ''}</span></td>
+        `;
+
+        const altCell = tr.querySelector('.alt-clickable');
+        if (altCell) {
+          altCell.onclick = function() { apriGrigliaAlternanza(g.squadra, g.ruolo); };
+        }
+        tbody.appendChild(tr);
+      });
+
+      document.getElementById('recordCounter').innerText = `Mostrati: ${data.length} giocatori tesserati`;
+    }
+
+    function filterRuolo(ruolo, element) {
+      currentRuolo = ruolo;
+      document.querySelectorAll('.btn-filter').forEach(btn => btn.classList.remove('active'));
+      element.classList.add('active');
+      filterData();
+    }
+
+    function filterData() {
+      const query = document.getElementById('searchInput').value.toLowerCase().trim();
+      const teamQuery = document.getElementById('teamSelect').value;
+
+      const filtered = rawDatabase.filter(g => {
+        const matchRuolo = (currentRuolo === 'ALL') || (g.ruolo === currentRuolo);
+        const matchTeam = (teamQuery === 'ALL') || (g.squadra === teamQuery);
+        const matchQuery = g.nome.toLowerCase().includes(query) || g.squadra.toLowerCase().includes(query);
+        return matchRuolo && matchTeam && matchQuery;
+      });
+
+      renderTable(getSortedDatabase(filtered));
+    }
+
+    window.onload = function() {
+      fetch('database.json')
+        .then(response => response.json())
+        .then(data => {
+          rawDatabase = data;
+          filterData();
+        })
+        .catch(error => {
+          console.error('Errore database.json:', error);
+          document.getElementById('recordCounter').innerText = 'Errore nel caricamento del database file!';
+        });
+    };
+  </script>
+</body>
+</html>

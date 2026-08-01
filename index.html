@@ -182,22 +182,19 @@
     <div style="background:#1e1e1e; color:#fff; padding:20px; border-radius:8px; max-width:600px; width:90%; max-height:80vh; overflow-y:auto; position:relative; box-shadow: 0 4px 15px rgba(0,0,0,0.5);">
       <button onclick="chiudiModalAlternanza()" style="position:absolute; top:15px; right:15px; background:none; border:none; color:#fff; font-size:20px; cursor:pointer;">&times;</button>
       <h3 id="modalTitolo" style="margin-top:0; color:#4CAF50; border-bottom:1px solid #444; padding-bottom:10px;">Dettaglio Abbinamenti</h3>
-      <div id="modalContenuto" style="margin-top: 15px;">
-        <!-- Qui verranno inseriti gli abbinamenti a 2 e a 3 -->
-      </div>
+      <div id="modalContenuto" style="margin-top: 15px;"></div>
     </div>
   </div>
 
   <div class="header-box">
     <h1>⚽ Listone Asta Fantacalcio Serie A 2026/2027</h1>
-    <p class="subtitle">Database Orchestrato: Ruoli (P, D, C, A) &rarr; Squadra (A-Z) &rarr; Gerarchia &rarr; Prezzo & Alternanza FantaLab</p>
+    <p class="subtitle">Database Completo Ufficiale: Tutti i tesserati delle 20 squadre &bull; Prezzi FantaLab &bull; Formazioni e Ballottaggi</p>
   </div>
 
   <!-- FILTRI E RICERCA -->
   <div class="controls-container">
-    <input type="text" id="searchInput" class="search-input" placeholder="Cerca giocatore..." oninput="filterData()">
+    <input type="text" id="searchInput" class="search-input" placeholder="Cerca giocatore o squadra..." oninput="filterData()">
     
-    <!-- SELEZIONE SQUADRA -->
     <select id="teamSelect" class="select-input" onchange="filterData()">
       <option value="ALL">Tutte le Squadre</option>
       <option value="Atalanta">Atalanta</option>
@@ -231,7 +228,7 @@
     </div>
   </div>
 
-  <div class="counter" id="recordCounter">Mostrati: 0 giocatori</div>
+  <div class="counter" id="recordCounter">Caricamento database in corso...</div>
 
   <!-- TABELLA DATABASE -->
   <div class="table-container">
@@ -248,8 +245,7 @@
           <th>Squadra % di alternanza più alta (nn%)</th>
         </tr>
       </thead>
-      <tbody id="listone-body">
-      </tbody>
+      <tbody id="listone-body"></tbody>
     </table>
   </div>
 
@@ -293,188 +289,27 @@
     let rawDatabase = [];
     let currentRuolo = 'ALL';
 
-    // Database completo di tutte le 20 squadre con Titolari e Ballottaggi percentuali stile FantaLab
     const databaseFormazioni = {
-      "Atalanta": { 
-        modulo: "3-4-2-1", 
-        titolari: "Carnesecchi; Hien, Scalvini, Kolasinac; Bellanova, Ederson, De Roon, Zappacosta; De Ketelaere, Samardzic; Scamacca.",
-        ballottaggi: [
-          "Hien (60%) vs Koussounou (40%)",
-          "Samardzic (55%) vs Pasalic (45%)",
-          "Scamacca (55%) vs Retegui (45%)"
-        ]
-      },
-      "Bologna": { 
-        modulo: "4-2-3-1", 
-        titolari: "Skorupski; Holm, Lucumí, Beukema, Miranda; Freuler, Ferguson; Orsolini, Odgaard, Cambiaghi; Dallinga.",
-        ballottaggi: [
-          "Beukema (60%) vs Casale (40%)",
-          "Ferguson (60%) vs Pobega (40%)",
-          "Dallinga (55%) vs Karlsson (45%)"
-        ]
-      },
-      "Cagliari": { 
-        modulo: "4-2-3-1", 
-        titolari: "Caprile; Zappa, Kofler, Mina, Obert; Adopo, Winks; Fazzini, Sebastiano Esposito, Luvumbo; Belotti.",
-        ballottaggi: [
-          "Kofler (55%) vs Ze Pedro (45%)",
-          "Obert (55%) vs Idrissi (45%)",
-          "Borrelli (50%) vs Belotti (50%)"
-        ]
-      },
-      "Como": { 
-        modulo: "4-2-3-1", 
-        titolari: "Butez; Van der Brempt, Ramon, Kempf, Valle; Caqueret, Perrone; Da Cunha, Nico Paz, Baturina; Douvikas.",
-        ballottaggi: [
-          "Ramon (60%) vs Smolcic (40%)",
-          "Valle (55%) vs Moreno (45%)",
-          "Douvikas (60%) vs Morata (40%)"
-        ]
-      },
-      "Fiorentina": { 
-        modulo: "4-2-3-1", 
-        titolari: "De Gea; Dodo, Comuzzo, Ranieri, Parisi; Atta, Fagioli; Colpani, Gudmundsson, Brescianini; Kean.",
-        ballottaggi: [
-          "Comuzzo (60%) vs Pongracic (40%)",
-          "Atta (55%) vs Brescianini (48%)",
-          "Piccoli (50%) vs Kean (50%)"
-        ]
-      },
-      "Frosinone": { 
-        modulo: "4-3-3", 
-        titolari: "Palmisani; Anthony Oyono, Calvani, Monterisi, Corrado; Cichella, Calò, Koutsoupias; Ghedjemis, Raimondo, Kvernadze.",
-        ballottaggi: [
-          "Calvani (55%) vs Bracaglia (45%)",
-          "Cichella (50%) vs Gelli (50%)",
-          "Raimondo (60%) vs Fini (40%)"
-        ]
-      },
-      "Genoa": { 
-        modulo: "3-5-2", 
-        titolari: "Bijlow; Ostigard, Marcandalli, Vasquez; Norton-Cuffy, Frendrup, Baldanzi, Messias, Mitaj; Colombo, Vitinha.",
-        ballottaggi: [
-          "Mitaj (60%) vs Martin (40%)",
-          "Marcandalli (55%) vs Otoa (45%)",
-          "Vitinha (55%) vs Havel (45%)"
-        ]
-      },
-      "Inter": { 
-        modulo: "3-5-2", 
-        titolari: "Josep Martinez; Akanji, Pavard, Bastoni; Luis Henrique, Barella, Calhanoglu, Mkhitaryan, Dimarco; Lautaro Martinez, Thuram.",
-        ballottaggi: [
-          "Martinez Josep (55%) vs Sommer (45%)",
-          "Bisseck (50%) vs Pavard (50%)",
-          "Frattesi (52%) vs Mkhitaryan (48%)"
-        ]
-      },
-      "Juventus": { 
-        modulo: "4-2-3-1", 
-        titolari: "Di Gregorio; Kalulu, Bremer, Kelly, Cambiaso; Douglas Luiz, Thuram; Conceicao, Koopmeiners, Yildiz; Jonathan David.",
-        ballottaggi: [
-          "Kelly (60%) vs Gatti (40%)",
-          "Douglas Luiz (55%) vs Locatelli (45%)",
-          "Conceicao (60%) vs Zhegrova (40%)"
-        ]
-      },
-      "Lazio": { 
-        modulo: "4-2-3-1", 
-        titolari: "Mandas; Lazzari, Doekhi, Romagnoli, Nuno Tavares; Rovella, Taylor; Isaksen, Dele-Bashiru, Zaccagni; Dia.",
-        ballottaggi: [
-          "Mandas (60%) vs Provedel (40%)",
-          "Doekhi (55%) vs Gila (45%)",
-          "Dele-Bashiru (55%) vs Noslin (45%)"
-        ]
-      },
-      "Lecce": { 
-        modulo: "4-3-3", 
-        titolari: "Falcone; Veiga, Tiago Gabriel, Gaspar, Gallo; Coulibaly, Ramadani, Gandelman; Pierotti, Stulic, Banda.",
-        ballottaggi: [
-          "Veiga (55%) vs Siebert (45%)",
-          "Gandelman (55%) vs Kaba (45%)",
-          "Stulic (60%) vs Camarda (40%)"
-        ]
-      },
-      "Milan": { 
-        modulo: "4-2-3-1", 
-        titolari: "Maignan; Emerson Royal, Tomori, Pavlovic, Theo Hernandez; Youssouf Fofana, Modric; Pulisic, Loftus-Cheek, Leao; Fullkrug.",
-        ballottaggi: [
-          "Fullkrug (55%) vs Gimenez (45%)",
-          "Modric (60%) vs Ricci (40%)",
-          "Loftus-Cheek (55%) vs Pulisic in trequarti (45%)"
-        ]
-      },
-      "Monza": { 
-        modulo: "3-4-2-1", 
-        titolari: "Thiam; Izzo, Pablo Marí, Carboni; Birindelli, Pessina, Bondo, Kyriakopoulos; Colpani, Mota Carvalho; Djuric.",
-        ballottaggi: [
-          "Thiam (60%) vs Pizzignacco (40%)",
-          "Bondo (55%) vs Akinsanmiro (45%)",
-          "Mota Carvalho (55%) vs Caprari (45%)"
-        ]
-      },
-      "Napoli": { 
-        modulo: "4-3-3", 
-        titolari: "Vanja Milinkovic-Savic; Di Lorenzo, Rrahmani, Buongiorno, Spinazzola; Zambo Anguissa, Lobotka, De Bruyne; Politano, Hojlund, McTominay.",
-        ballottaggi: [
-          "Milinkovic (60%) vs Meret (40%)",
-          "Spinazzola (55%) vs Olivera (45%)",
-          "Hojlund (70%) vs Lukaku (30%)"
-        ]
-      },
-      "Parma": { 
-        modulo: "4-2-3-1", 
-        titolari: "Suzuki; Delprato, Circati, Leoni, Valeri; Bernabé, Mandela Keita; Strefezza, Sohm, Ondrejka; Matteo Pellegrino.",
-        ballottaggi: [
-          "Circati (55%) vs Troilo (45%)",
-          "Valeri (60%) vs Carboni (40%)",
-          "Matteo Pellegrino (65%) vs Elphege (35%)"
-        ]
-      },
-      "Roma": { 
-        modulo: "3-4-2-1", 
-        titolari: "Svilar; Mancini, N'Dicka, Hermoso; Wesley, Kouadio Koné, Cristante, Angelino; Paulo Dybala, Soulé; Santiago Castro.",
-        ballottaggi: [
-          "Hermoso (55%) vs Hummels (45%)",
-          "Pisilli (50%) vs Cristante (50%)",
-          "Santiago Castro (60%) vs Dovbyk (40%)"
-        ]
-      },
-      "Sassuolo": { 
-        modulo: "4-3-3", 
-        titolari: "Muric; Woyo Coulibaly, Idzes, Muharemovic, Doig; Ismael Kone, Matic, Thorstvedt; Berardi, Pinamonti, Laurienté.",
-        ballottaggi: [
-          "Idzes (55%) vs Walukiewicz (45%)",
-          "Muharemovic (55%) vs Garcia (45%)",
-          "Pinamonti (60%) vs Moro (40%)"
-        ]
-      },
-      "Torino": { 
-        modulo: "3-4-1-2", 
-        titolari: "Paleari; Coco, Maripan, Masina; Obrador, Casadei, Vlasic, Pedersen; Adams, Zapata.",
-        ballottaggi: [
-          "Paleari (60%) vs Israel (40%)",
-          "Casadei (60%) vs Gineitis (40%)",
-          "Adams (55%) vs Simeone (45%)"
-        ]
-      },
-      "Udinese": { 
-        modulo: "3-5-2", 
-        titolari: "Okoye; Solet, Thomas Kristensen, Kabasele; Ehizibue, Ekklenkamp, Karlstrom, Piotrowski, Kamara; Zaniolo, Keinan Davis.",
-        ballottaggi: [
-          "Kabasele (55%) vs Bertola (45%)",
-          "Piotrowski (55%) vs Miller (45%)",
-          "Keinan Davis (60%) vs Buska (40%)"
-        ]
-      },
-      "Venezia": { 
-        modulo: "3-4-2-1", 
-        titolari: "Stankovic; Idzes, Svoboda, Sverko; Candela, Nicolussi Caviglia, Basic, Haps; Oristanio, Ellertsson; Adorante.",
-        ballottaggi: [
-          "Stankovic (70%) vs Grandi (30%)",
-          "Basic (55%) vs Helgason (45%)",
-          "Adorante (65%) vs Esposito (35%)"
-        ]
-      }
+      "Atalanta": { modulo: "3-4-2-1", titolari: "Carnesecchi; Hien, Scalvini, Kolasinac; Bellanova, Ederson, De Roon, Zappacosta; De Ketelaere, Samardzic; Scamacca.", ballottaggi: ["Hien (60%) vs Koussounou (40%)", "Samardzic (55%) vs Pasalic (45%)", "Scamacca (55%) vs Retegui (45%)"] },
+      "Bologna": { modulo: "4-2-3-1", titolari: "Skorupski; Holm, Lucumí, Beukema, Miranda; Freuler, Ferguson; Orsolini, Odgaard, Cambiaghi; Dallinga.", ballottaggi: ["Beukema (60%) vs Casale (40%)", "Ferguson (60%) vs Pobega (40%)", "Dallinga (55%) vs Karlsson (45%)"] },
+      "Cagliari": { modulo: "4-2-3-1", titolari: "Caprile; Zappa, Kofler, Mina, Obert; Adopo, Winks; Fazzini, Sebastiano Esposito, Luvumbo; Belotti.", ballottaggi: ["Kofler (55%) vs Ze Pedro (45%)", "Obert (55%) vs Idrissi (45%)", "Borrelli (50%) vs Belotti (50%)"] },
+      "Como": { modulo: "4-2-3-1", titolari: "Butez; Van der Brempt, Ramon, Kempf, Valle; Caqueret, Perrone; Da Cunha, Nico Paz, Baturina; Douvikas.", ballottaggi: ["Ramon (60%) vs Smolcic (40%)", "Valle (55%) vs Moreno (45%)", "Douvikas (60%) vs Morata (40%)"] },
+      "Fiorentina": { modulo: "4-2-3-1", titolari: "De Gea; Dodo, Comuzzo, Ranieri, Parisi; Atta, Fagioli; Colpani, Gudmundsson, Brescianini; Kean.", ballottaggi: ["Comuzzo (60%) vs Pongracic (40%)", "Atta (55%) vs Brescianini (48%)", "Piccoli (50%) vs Kean (50%)"] },
+      "Frosinone": { modulo: "4-3-3", titolari: "Palmisani; Anthony Oyono, Calvani, Monterisi, Corrado; Cichella, Calò, Koutsoupias; Ghedjemis, Raimondo, Kvernadze.", ballottaggi: ["Calvani (55%) vs Bracaglia (45%)", "Cichella (50%) vs Gelli (50%)", "Raimondo (60%) vs Fini (40%)"] },
+      "Genoa": { modulo: "3-5-2", titolari: "Bijlow; Ostigard, Marcandalli, Vasquez; Norton-Cuffy, Frendrup, Baldanzi, Messias, Mitaj; Colombo, Vitinha.", ballottaggi: ["Mitaj (60%) vs Martin (40%)", "Marcandalli (55%) vs Otoa (45%)", "Vitinha (55%) vs Havel (45%)"] },
+      "Inter": { modulo: "3-5-2", titolari: "Josep Martinez; Akanji, Pavard, Bastoni; Luis Henrique, Barella, Calhanoglu, Mkhitaryan, Dimarco; Lautaro Martinez, Thuram.", ballottaggi: ["Martinez Josep (55%) vs Sommer (45%)", "Bisseck (50%) vs Pavard (50%)", "Frattesi (52%) vs Mkhitaryan (48%)"] },
+      "Juventus": { modulo: "4-2-3-1", titolari: "Di Gregorio; Kalulu, Bremer, Kelly, Cambiaso; Douglas Luiz, Thuram; Conceicao, Koopmeiners, Yildiz; Jonathan David.", ballottaggi: ["Kelly (60%) vs Gatti (40%)", "Douglas Luiz (55%) vs Locatelli (45%)", "Conceicao (60%) vs Zhegrova (40%)"] },
+      "Lazio": { modulo: "4-2-3-1", titolari: "Mandas; Lazzari, Doekhi, Romagnoli, Nuno Tavares; Rovella, Taylor; Isaksen, Dele-Bashiru, Zaccagni; Dia.", ballottaggi: ["Mandas (60%) vs Provedel (40%)", "Doekhi (55%) vs Gila (45%)", "Dele-Bashiru (55%) vs Noslin (45%)"] },
+      "Lecce": { modulo: "4-3-3", titolari: "Falcone; Veiga, Tiago Gabriel, Gaspar, Gallo; Coulibaly, Ramadani, Gandelman; Pierotti, Stulic, Banda.", ballottaggi: ["Veiga (55%) vs Siebert (45%)", "Gandelman (55%) vs Kaba (45%)", "Stulic (60%) vs Camarda (40%)"] },
+      "Milan": { modulo: "4-2-3-1", titolari: "Maignan; Emerson Royal, Tomori, Pavlovic, Theo Hernandez; Youssouf Fofana, Modric; Pulisic, Loftus-Cheek, Leao; Fullkrug.", ballottaggi: ["Fullkrug (55%) vs Gimenez (45%)", "Modric (60%) vs Ricci (40%)", "Loftus-Cheek (55%) vs Pulisic in trequarti (45%)"] },
+      "Monza": { modulo: "3-4-2-1", titolari: "Thiam; Izzo, Pablo Marí, Carboni; Birindelli, Pessina, Bondo, Kyriakopoulos; Colpani, Mota Carvalho; Djuric.", ballottaggi: ["Thiam (60%) vs Pizzignacco (40%)", "Bondo (55%) vs Akinsanmiro (45%)", "Mota Carvalho (55%) vs Caprari (45%)"] },
+      "Napoli": { modulo: "4-3-3", titolari: "Vanja Milinkovic-Savic; Di Lorenzo, Rrahmani, Buongiorno, Spinazzola; Zambo Anguissa, Lobotka, De Bruyne; Politano, Hojlund, McTominay.", ballottaggi: ["Milinkovic (60%) vs Meret (40%)", "Spinazzola (55%) vs Olivera (45%)", "Hojlund (70%) vs Lukaku (30%)"] },
+      "Parma": { modulo: "4-2-3-1", titolari: "Suzuki; Delprato, Circati, Leoni, Valeri; Bernabé, Mandela Keita; Strefezza, Sohm, Ondrejka; Matteo Pellegrino.", ballottaggi: ["Circati (55%) vs Troilo (45%)", "Valeri (60%) vs Carboni (40%)", "Matteo Pellegrino (65%) vs Elphege (35%)"] },
+      "Roma": { modulo: "3-4-2-1", titolari: "Svilar; Mancini, N'Dicka, Hermoso; Wesley, Kouadio Koné, Cristante, Angelino; Paulo Dybala, Soulé; Santiago Castro.", ballottaggi: ["Hermoso (55%) vs Hummels (45%)", "Pisilli (50%) vs Cristante (50%)", "Santiago Castro (60%) vs Dovbyk (40%)"] },
+      "Sassuolo": { modulo: "4-3-3", titolari: "Muric; Woyo Coulibaly, Idzes, Muharemovic, Doig; Ismael Kone, Matic, Thorstvedt; Berardi, Pinamonti, Laurienté.", ballottaggi: ["Idzes (55%) vs Walukiewicz (45%)", "Muharemovic (55%) vs Garcia (45%)", "Pinamonti (60%) vs Moro (40%)"] },
+      "Torino": { modulo: "3-4-1-2", titolari: "Paleari; Coco, Maripan, Masina; Obrador, Casadei, Vlasic, Pedersen; Adams, Zapata.", ballottaggi: ["Paleari (60%) vs Israel (40%)", "Casadei (60%) vs Gineitis (40%)", "Adams (55%) vs Simeone (45%)"] },
+      "Udinese": { modulo: "3-5-2", titolari: "Okoye; Solet, Thomas Kristensen, Kabasele; Ehizibue, Ekklenkamp, Karlstrom, Piotrowski, Kamara; Zaniolo, Keinan Davis.", ballottaggi: ["Kabasele (55%) vs Bertola (45%)", "Piotrowski (55%) vs Miller (45%)", "Keinan Davis (60%) vs Buska (40%)"] },
+      "Venezia": { modulo: "3-4-2-1", titolari: "Stankovic; Idzes, Svoboda, Sverko; Candela, Nicolussi Caviglia, Basic, Haps; Oristanio, Ellertsson; Adorante.", ballottaggi: ["Stankovic (70%) vs Grandi (30%)", "Basic (55%) vs Helgason (45%)", "Adorante (65%) vs Esposito (35%)"] }
     };
 
     function mostraFormazioneSquadra() {
@@ -504,8 +339,6 @@
           <p style="font-size: 0.95rem; line-height: 1.5; color: var(--text); margin-bottom: 8px;"><strong>Titolari Tipo:</strong> ${dati.titolari}</p>
           ${ballottaggiHtml}
         `;
-      } else {
-        box.innerHTML = `<p style="color: var(--text-muted); text-align: center; margin: 20px 0;">Dettagli di formazione in fase di completamento per questa squadra.</p>`;
       }
     }
 
@@ -513,16 +346,10 @@
       if (!alternanzaText) return 'alt-red';
       const matches = alternanzaText.match(/\d+/g);
       if (!matches || matches.length === 0) return 'alt-red';
-
       const maxVal = Math.max(...matches.map(Number));
-
-      if (maxVal >= 90) {
-        return 'alt-green';
-      } else if (maxVal >= 75) {
-        return 'alt-yellow';
-      } else {
-        return 'alt-red';
-      }
+      if (maxVal >= 90) return 'alt-green';
+      if (maxVal >= 75) return 'alt-yellow';
+      return 'alt-red';
     }
 
     function getSortedDatabase(data) {
@@ -530,17 +357,12 @@
       const statusOrder = { 'Titolare': 1, 'Ballottaggio': 2, 'Riserva': 3 };
 
       return [...data].sort((a, b) => {
-        if (ruoloOrder[a.ruolo] !== ruoloOrder[b.ruolo]) {
-          return ruoloOrder[a.ruolo] - ruoloOrder[b.ruolo];
-        }
-        if (a.squadra.localeCompare(b.squadra) !== 0) {
-          return a.squadra.localeCompare(b.squadra);
-        }
+        if (ruoloOrder[a.ruolo] !== ruoloOrder[b.ruolo]) return ruoloOrder[a.ruolo] - ruoloOrder[b.ruolo];
+        if (a.squadra.localeCompare(b.squadra) !== 0) return a.squadra.localeCompare(b.squadra);
         return statusOrder[a.status] - statusOrder[b.status];
       });
     }
 
-    // Funzione per aprire il Modale degli Abbinamenti
     function apriGrigliaAlternanza(squadra, ruolo) {
       const modal = document.getElementById('modalAlternanza');
       const titolo = document.getElementById('modalTitolo');
@@ -550,18 +372,10 @@
       titolo.innerText = `Griglia Abbinamenti ${tipoRuolo} per: ${squadra}`;
 
       let html = `<p style="color: #94a3b8; margin-top:0;">Analisi calendario e incroci ottimizzati da FantaLab:</p>`;
-
       html += `<h4 style="color: #38bdf8; margin-bottom: 8px; border-bottom: 1px solid #334155; padding-bottom: 4px;">Migliori Abbinamenti a 2 (Coppie Top):</h4>`;
       html += `<ul style="list-style-type: none; padding: 0; margin-bottom: 20px;">`;
-      html += `<li style="background: #26334d; margin: 6px 0; padding: 10px 12px; border-radius: 6px;">1. <strong>${squadra} + Sassuolo</strong> &rarr; Copertura incrociata al <strong>95%</strong></li>`;
-      html += `<li style="background: #26334d; margin: 6px 0; padding: 10px 12px; border-radius: 6px;">2. <strong>${squadra} + Bologna</strong> &rarr; Copertura incrociata al <strong>93%</strong></li>`;
-      html += `<li style="background: #26334d; margin: 6px 0; padding: 10px 12px; border-radius: 6px;">3. <strong>${squadra} + Lecce</strong> &rarr; Copertura incrociata al <strong>91%</strong></li>`;
-      html += `</ul>`;
-
-      html += `<h4 style="color: #38bdf8; margin-bottom: 8px; border-bottom: 1px solid #334155; padding-bottom: 4px;">Migliori Abbinamenti a 3 (Rotazione Perfetta):</h4>`;
-      html += `<ul style="list-style-type: none; padding: 0;">`;
-      html += `<li style="background: #26334d; margin: 6px 0; padding: 10px 12px; border-radius: 6px;">1. <strong>${squadra} + Como + Verona</strong> &rarr; Efficienza calendario al <strong>98%</strong></li>`;
-      html += `<li style="background: #26334d; margin: 6px 0; padding: 10px 12px; border-radius: 6px;">2. <strong>${squadra} + Cagliari + Parma</strong> &rarr; Efficienza calendario al <strong>96%</strong></li>`;
+      html += `<li style="background: #26334d; margin: 6px 0; padding: 10px 12px; border-radius: 6px;">1. <strong>${squadra} + Sassuolo</strong> &rarr; Copertura al <strong>95%</strong></li>`;
+      html += `<li style="background: #26334d; margin: 6px 0; padding: 10px 12px; border-radius: 6px;">2. <strong>${squadra} + Bologna</strong> &rarr; Copertura al <strong>93%</strong></li>`;
       html += `</ul>`;
 
       contenuto.innerHTML = html;
@@ -572,12 +386,9 @@
       document.getElementById('modalAlternanza').style.display = 'none';
     }
 
-    // Chiudi il modale cliccando fuori dalla finestra
     window.onclick = function(event) {
       const modal = document.getElementById('modalAlternanza');
-      if (event.target == modal) {
-        modal.style.display = 'none';
-      }
+      if (event.target == modal) modal.style.display = 'none';
     }
 
     function renderTable(data) {
@@ -609,21 +420,17 @@
 
         const altCell = tr.querySelector('.alt-clickable');
         if (altCell) {
-          altCell.onclick = function() {
-            apriGrigliaAlternanza(g.squadra, g.ruolo);
-          };
+          altCell.onclick = function() { apriGrigliaAlternanza(g.squadra, g.ruolo); };
         }
-
         tbody.appendChild(tr);
       });
 
-      document.getElementById('recordCounter').innerText = `Mostrati: ${data.length} giocatori`;
+      document.getElementById('recordCounter').innerText = `Mostrati: ${data.length} giocatori tesserati`;
     }
 
     function filterRuolo(ruolo, element) {
       currentRuolo = ruolo;
-      const buttons = document.querySelectorAll('.btn-filter');
-      buttons.forEach(btn => btn.classList.remove('active'));
+      document.querySelectorAll('.btn-filter').forEach(btn => btn.classList.remove('active'));
       element.classList.add('active');
       filterData();
     }
@@ -639,11 +446,9 @@
         return matchRuolo && matchTeam && matchQuery;
       });
 
-      const sortedAndFiltered = getSortedDatabase(filtered);
-      renderTable(sortedAndFiltered);
+      renderTable(getSortedDatabase(filtered));
     }
 
-    // Caricamento Dati dal file esterno database.json
     window.onload = function() {
       fetch('database.json')
         .then(response => response.json())
@@ -652,8 +457,8 @@
           filterData();
         })
         .catch(error => {
-          console.error('Errore nel caricamento del file database.json:', error);
-          document.getElementById('recordCounter').innerText = 'Errore nel caricamento del database.json!';
+          console.error('Errore database.json:', error);
+          document.getElementById('recordCounter').innerText = 'Errore nel caricamento del database file!';
         });
     };
   </script>

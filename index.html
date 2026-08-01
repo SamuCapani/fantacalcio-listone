@@ -266,6 +266,7 @@
             <option value="Cagliari">Cagliari</option>
             <option value="Como">Como</option>
             <option value="Fiorentina">Fiorentina</option>
+            <option value="Frosinone">Frosinone</option>
             <option value="Genoa">Genoa</option>
             <option value="Inter">Inter</option>
             <option value="Juventus">Juventus</option>
@@ -292,7 +293,7 @@
     let rawDatabase = [];
     let currentRuolo = 'ALL';
 
-    // Database aggiornato con Titolari e Ballottaggi percentuali stile FantaLab
+    // Database completo di tutte le 20 squadre con Titolari e Ballottaggi percentuali stile FantaLab
     const databaseFormazioni = {
       "Atalanta": { 
         modulo: "3-4-2-1", 
@@ -301,6 +302,60 @@
           "Hien (60%) vs Koussounou (40%)",
           "Samardzic (55%) vs Pasalic (45%)",
           "Scamacca (55%) vs Retegui (45%)"
+        ]
+      },
+      "Bologna": { 
+        modulo: "4-2-3-1", 
+        titolari: "Skorupski; Holm, Lucumí, Beukema, Miranda; Freuler, Ferguson; Orsolini, Odgaard, Cambiaghi; Dallinga.",
+        ballottaggi: [
+          "Beukema (60%) vs Casale (40%)",
+          "Ferguson (60%) vs Pobega (40%)",
+          "Dallinga (55%) vs Karlsson (45%)"
+        ]
+      },
+      "Cagliari": { 
+        modulo: "4-2-3-1", 
+        titolari: "Caprile; Zappa, Kofler, Mina, Obert; Adopo, Winks; Fazzini, Sebastiano Esposito, Luvumbo; Belotti.",
+        ballottaggi: [
+          "Kofler (55%) vs Ze Pedro (45%)",
+          "Obert (55%) vs Idrissi (45%)",
+          "Borrelli (50%) vs Belotti (50%)"
+        ]
+      },
+      "Como": { 
+        modulo: "4-2-3-1", 
+        titolari: "Butez; Van der Brempt, Ramon, Kempf, Valle; Caqueret, Perrone; Da Cunha, Nico Paz, Baturina; Douvikas.",
+        ballottaggi: [
+          "Ramon (60%) vs Smolcic (40%)",
+          "Valle (55%) vs Moreno (45%)",
+          "Douvikas (60%) vs Morata (40%)"
+        ]
+      },
+      "Fiorentina": { 
+        modulo: "4-2-3-1", 
+        titolari: "De Gea; Dodo, Comuzzo, Ranieri, Parisi; Atta, Fagioli; Colpani, Gudmundsson, Brescianini; Kean.",
+        ballottaggi: [
+          "Comuzzo (60%) vs Pongracic (40%)",
+          "Atta (55%) vs Brescianini (48%)",
+          "Piccoli (50%) vs Kean (50%)"
+        ]
+      },
+      "Frosinone": { 
+        modulo: "4-3-3", 
+        titolari: "Palmisani; Anthony Oyono, Calvani, Monterisi, Corrado; Cichella, Calò, Koutsoupias; Ghedjemis, Raimondo, Kvernadze.",
+        ballottaggi: [
+          "Calvani (55%) vs Bracaglia (45%)",
+          "Cichella (50%) vs Gelli (50%)",
+          "Raimondo (60%) vs Fini (40%)"
+        ]
+      },
+      "Genoa": { 
+        modulo: "3-5-2", 
+        titolari: "Bijlow; Ostigard, Marcandalli, Vasquez; Norton-Cuffy, Frendrup, Baldanzi, Messias, Mitaj; Colombo, Vitinha.",
+        ballottaggi: [
+          "Mitaj (60%) vs Martin (40%)",
+          "Marcandalli (55%) vs Otoa (45%)",
+          "Vitinha (55%) vs Havel (45%)"
         ]
       },
       "Inter": { 
@@ -321,6 +376,24 @@
           "Conceicao (60%) vs Zhegrova (40%)"
         ]
       },
+      "Lazio": { 
+        modulo: "4-2-3-1", 
+        titolari: "Mandas; Lazzari, Doekhi, Romagnoli, Nuno Tavares; Rovella, Taylor; Isaksen, Dele-Bashiru, Zaccagni; Dia.",
+        ballottaggi: [
+          "Mandas (60%) vs Provedel (40%)",
+          "Doekhi (55%) vs Gila (45%)",
+          "Dele-Bashiru (55%) vs Noslin (45%)"
+        ]
+      },
+      "Lecce": { 
+        modulo: "4-3-3", 
+        titolari: "Falcone; Veiga, Tiago Gabriel, Gaspar, Gallo; Coulibaly, Ramadani, Gandelman; Pierotti, Stulic, Banda.",
+        ballottaggi: [
+          "Veiga (55%) vs Siebert (45%)",
+          "Gandelman (55%) vs Kaba (45%)",
+          "Stulic (60%) vs Camarda (40%)"
+        ]
+      },
       "Milan": { 
         modulo: "4-2-3-1", 
         titolari: "Maignan; Emerson Royal, Tomori, Pavlovic, Theo Hernandez; Youssouf Fofana, Modric; Pulisic, Loftus-Cheek, Leao; Fullkrug.",
@@ -328,6 +401,15 @@
           "Fullkrug (55%) vs Gimenez (45%)",
           "Modric (60%) vs Ricci (40%)",
           "Loftus-Cheek (55%) vs Pulisic in trequarti (45%)"
+        ]
+      },
+      "Monza": { 
+        modulo: "3-4-2-1", 
+        titolari: "Thiam; Izzo, Pablo Marí, Carboni; Birindelli, Pessina, Bondo, Kyriakopoulos; Colpani, Mota Carvalho; Djuric.",
+        ballottaggi: [
+          "Thiam (60%) vs Pizzignacco (40%)",
+          "Bondo (55%) vs Akinsanmiro (45%)",
+          "Mota Carvalho (55%) vs Caprari (45%)"
         ]
       },
       "Napoli": { 
@@ -339,49 +421,58 @@
           "Hojlund (70%) vs Lukaku (30%)"
         ]
       },
+      "Parma": { 
+        modulo: "4-2-3-1", 
+        titolari: "Suzuki; Delprato, Circati, Leoni, Valeri; Bernabé, Mandela Keita; Strefezza, Sohm, Ondrejka; Matteo Pellegrino.",
+        ballottaggi: [
+          "Circati (55%) vs Troilo (45%)",
+          "Valeri (60%) vs Carboni (40%)",
+          "Matteo Pellegrino (65%) vs Elphege (35%)"
+        ]
+      },
       "Roma": { 
         modulo: "3-4-2-1", 
-        titolari: "Svilar; Mancini, N'Dicka, Hermoso; Wesley, Kouadio Koné, Cristante, Angelino; Paulo Dybala, Soulé; Dovbyk.",
+        titolari: "Svilar; Mancini, N'Dicka, Hermoso; Wesley, Kouadio Koné, Cristante, Angelino; Paulo Dybala, Soulé; Santiago Castro.",
         ballottaggi: [
           "Hermoso (55%) vs Hummels (45%)",
           "Pisilli (50%) vs Cristante (50%)",
-          "Soulé (60%) vs Zaragoza (40%)"
+          "Santiago Castro (60%) vs Dovbyk (40%)"
         ]
       },
-      "Lazio": { 
-        modulo: "4-2-3-1", 
-        titolari: "Mandas; Lazzari, Doekhi, Romagnoli, Nuno Tavares; Rovella, Taylor; Isaksen, Dele-Bashiru, Zaccagni; Dia.",
+      "Sassuolo": { 
+        modulo: "4-3-3", 
+        titolari: "Muric; Woyo Coulibaly, Idzes, Muharemovic, Doig; Ismael Kone, Matic, Thorstvedt; Berardi, Pinamonti, Laurienté.",
         ballottaggi: [
-          "Mandas (60%) vs Provedel (40%)",
-          "Doekhi (55%) vs Gila (45%)",
-          "Dele-Bashiru (55%) vs Noslin (45%)"
+          "Idzes (55%) vs Walukiewicz (45%)",
+          "Muharemovic (55%) vs Garcia (45%)",
+          "Pinamonti (60%) vs Moro (40%)"
         ]
       },
-      "Fiorentina": { 
-        modulo: "4-2-3-1", 
-        titolari: "De Gea; Dodo, Comuzzo, Ranieri, Parisi; Atta, Fagioli; Colpani, Gudmundsson, Brescianini; Kean.",
+      "Torino": { 
+        modulo: "3-4-1-2", 
+        titolari: "Paleari; Coco, Maripan, Masina; Obrador, Casadei, Vlasic, Pedersen; Adams, Zapata.",
         ballottaggi: [
-          "Comuzzo (60%) vs Pongracic (40%)",
-          "Atta (55%) vs Brescianini (48%)",
-          "Piccoli (50%) vs Kean (50%)"
+          "Paleari (60%) vs Israel (40%)",
+          "Casadei (60%) vs Gineitis (40%)",
+          "Adams (55%) vs Simeone (45%)"
         ]
       },
-      "Genoa": { 
+      "Udinese": { 
         modulo: "3-5-2", 
-        titolari: "Bijlow; Ostigard, Marcandalli, Vasquez; Norton-Cuffy, Frendrup, Baldanzi, Messias, Mitaj; Colombo, Vitinha.",
+        titolari: "Okoye; Solet, Thomas Kristensen, Kabasele; Ehizibue, Ekklenkamp, Karlstrom, Piotrowski, Kamara; Zaniolo, Keinan Davis.",
         ballottaggi: [
-          "Mitaj (60%) vs Martin (40%)",
-          "Marcandalli (55%) vs Otoa (45%)",
-          "Vitinha (55%) vs Havel (45%)"
+          "Kabasele (55%) vs Bertola (45%)",
+          "Piotrowski (55%) vs Miller (45%)",
+          "Keinan Davis (60%) vs Buska (40%)"
         ]
       },
-      "Cagliari": { 
-        modulo: "4-2-3-1", 
-        titolari: "Caprile; Zappa, Kofler, Mina, Obert; Adopo, Winks; Fazzini, Sebastiano Esposito, Luvumbo; Belotti.",
+      "Venezia": { 
+        modulo: "3-4-2-1", 
+        titolari: "Stankovic; Idzes, Svoboda, Sverko; Candela, Nicolussi Caviglia, Basic, Haps; Oristanio, Ellertsson; Adorante.",
         ballottaggi: [
-          "Kofler (55%) vs Ze Pedro (45%)",
-          "Obert (55%) vs Idrissi (45%)",
-          "Borrelli (50%) vs Belotti (50%)"
+          "Stankovic (70%) vs Grandi (30%)",
+          "Basic (55%) vs Helgason (45%)",
+          "Adorante (65%) vs Esposito (35%)"
         ]
       }
     };

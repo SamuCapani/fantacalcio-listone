@@ -1,1 +1,42 @@
-[]
+[
+  {
+    "ruolo": "P",
+    "nome": "Carnesecchi Marco",
+    "squadra": "Atalanta",
+    "status": "Titolare",
+    "valorizzato": "SÌ (Porta solida)",
+    "slot": "1° Slot",
+    "prezzo": 20,
+    "alternanza": "Sassuolo (95%)"
+  },
+  {
+    "ruolo": "D",
+    "nome": "Bellanova Raoul",
+    "squadra": "Atalanta",
+    "status": "Titolare",
+    "valorizzato": "SÌ (Spinta e bonus)",
+    "slot": "2° Slot",
+    "prezzo": 14,
+    "alternanza": "Monza (92%)"
+  },
+  {
+    "ruolo": "C",
+    "nome": "Ederson da Silva",
+    "squadra": "Atalanta",
+    "status": "Titolare",
+    "valorizzato": "SÌ (Top di reparto)",
+    "slot": "1° Slot",
+    "prezzo": 22,
+    "alternanza": "Monza (92%)"
+  },
+  {
+    "ruolo": "A",
+    "nome": "Scamacca Gianluca",
+    "squadra": "Atalanta",
+    "status": "Titolare",
+    "valorizzato": "SÌ (Top di reparto e rigori)",
+    "slot": "1° Slot",
+    "prezzo": 36,
+    "alternanza": "Monza (92%)"
+  }
+]

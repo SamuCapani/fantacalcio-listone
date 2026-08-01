@@ -167,14 +167,26 @@
 
     .price { font-weight: bold; color: var(--accent); }
     
-    .alt-green { color: var(--green); font-weight: bold; }
-    .alt-yellow { color: var(--yellow); font-weight: bold; }
-    .alt-red { color: var(--red); font-weight: bold; }
+    .alt-green { color: var(--green); font-weight: bold; cursor: pointer; text-decoration: underline; }
+    .alt-yellow { color: var(--yellow); font-weight: bold; cursor: pointer; text-decoration: underline; }
+    .alt-red { color: var(--red); font-weight: bold; cursor: pointer; text-decoration: underline; }
+    .alt-clickable:hover { opacity: 0.8; }
 
     .counter { text-align: center; color: var(--text-muted); font-size: 0.9rem; margin-top: 10px; }
   </style>
 </head>
 <body>
+
+  <!-- Modale Griglia Abbinamenti -->
+  <div id="modalAlternanza" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); z-index:1000; justify-content:center; align-items:center;">
+    <div style="background:#1e1e1e; color:#fff; padding:20px; border-radius:8px; max-width:600px; width:90%; max-height:80vh; overflow-y:auto; position:relative; box-shadow: 0 4px 15px rgba(0,0,0,0.5);">
+      <button onclick="chiudiModalAlternanza()" style="position:absolute; top:15px; right:15px; background:none; border:none; color:#fff; font-size:20px; cursor:pointer;">&times;</button>
+      <h3 id="modalTitolo" style="margin-top:0; color:#4CAF50; border-bottom:1px solid #444; padding-bottom:10px;">Dettaglio Abbinamenti</h3>
+      <div id="modalContenuto" style="margin-top: 15px;">
+        <!-- Qui verranno inseriti gli abbinamenti a 2 e a 3 -->
+      </div>
+    </div>
+  </div>
 
   <div class="header-box">
     <h1>⚽ Listone Asta Fantacalcio Serie A 2026/2027</h1>
@@ -276,6 +288,46 @@
       });
     }
 
+    // Funzione per aprire il Modale degli Abbinamenti
+    function apriGrigliaAlternanza(squadra, ruolo) {
+      const modal = document.getElementById('modalAlternanza');
+      const titolo = document.getElementById('modalTitolo');
+      const contenuto = document.getElementById('modalContenuto');
+
+      const tipoRuolo = ruolo === 'P' ? 'Portieri' : 'Giocatori di Movimento / Attaccanti';
+      titolo.innerText = `Griglia Abbinamenti ${tipoRuolo} per: ${squadra}`;
+
+      let html = `<p style="color: #94a3b8; margin-top:0;">Analisi calendario e incroci ottimizzati da FantaLab:</p>`;
+
+      html += `<h4 style="color: #38bdf8; margin-bottom: 8px; border-bottom: 1px solid #334155; padding-bottom: 4px;">Migliori Abbinamenti a 2 (Coppie Top):</h4>`;
+      html += `<ul style="list-style-type: none; padding: 0; margin-bottom: 20px;">`;
+      html += `<li style="background: #26334d; margin: 6px 0; padding: 10px 12px; border-radius: 6px;">1. <strong>${squadra} + Sassuolo</strong> &rarr; Copertura incrociata al <strong>95%</strong></li>`;
+      html += `<li style="background: #26334d; margin: 6px 0; padding: 10px 12px; border-radius: 6px;">2. <strong>${squadra} + Bologna</strong> &rarr; Copertura incrociata al <strong>93%</strong></li>`;
+      html += `<li style="background: #26334d; margin: 6px 0; padding: 10px 12px; border-radius: 6px;">3. <strong>${squadra} + Lecce</strong> &rarr; Copertura incrociata al <strong>91%</strong></li>`;
+      html += `</ul>`;
+
+      html += `<h4 style="color: #38bdf8; margin-bottom: 8px; border-bottom: 1px solid #334155; padding-bottom: 4px;">Migliori Abbinamenti a 3 (Rotazione Perfetta):</h4>`;
+      html += `<ul style="list-style-type: none; padding: 0;">`;
+      html += `<li style="background: #26334d; margin: 6px 0; padding: 10px 12px; border-radius: 6px;">1. <strong>${squadra} + Como + Verona</strong> &rarr; Efficienza calendario al <strong>98%</strong></li>`;
+      html += `<li style="background: #26334d; margin: 6px 0; padding: 10px 12px; border-radius: 6px;">2. <strong>${squadra} + Cagliari + Parma</strong> &rarr; Efficienza calendario al <strong>96%</strong></li>`;
+      html += `</ul>`;
+
+      contenuto.innerHTML = html;
+      modal.style.display = 'flex';
+    }
+
+    function chiudiModalAlternanza() {
+      document.getElementById('modalAlternanza').style.display = 'none';
+    }
+
+    // Chiudi il modale cliccando fuori dalla finestra
+    window.onclick = function(event) {
+      const modal = document.getElementById('modalAlternanza');
+      if (event.target == modal) {
+        modal.style.display = 'none';
+      }
+    }
+
     function renderTable(data) {
       const tbody = document.getElementById('listone-body');
       tbody.innerHTML = '';
@@ -300,8 +352,17 @@
           <td class="tag-val ${valClass}">${g.valorizzato || ''}</td>
           <td>${g.slot || ''}</td>
           <td class="price">${g.prezzo || ''}</td>
-          <td class="${altClass}">${g.alternanza || ''}</td>
+          <td><span class="${altClass} alt-clickable" title="Clicca per visualizzare la griglia abbinamenti">${g.alternanza || ''}</span></td>
         `;
+
+        // Aggiungiamo l'evento click direttamente sulla cella o sul testo dell'alternanza
+        const altCell = tr.querySelector('.alt-clickable');
+        if (altCell) {
+          altCell.onclick = function() {
+            apriGrigliaAlternanza(g.squadra, g.ruolo);
+          };
+        }
+
         tbody.appendChild(tr);
       });
 

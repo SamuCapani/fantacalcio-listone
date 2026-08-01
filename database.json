@@ -1,1 +1,18 @@
-
+[
+  {
+    "nome": "LAUTARO MARTINEZ",
+    "squadra": "INTER",
+    "ruolo": "A",
+    "slot": 1,
+    "prezzo": 45,
+    "alternanza": "Nessuna"
+  },
+  {
+    "nome": "KVARA",
+    "squadra": "NAPOLI",
+    "ruolo": "A",
+    "slot": 1,
+    "prezzo": 38,
+    "alternanza": "Nessuna"
+  }
+]

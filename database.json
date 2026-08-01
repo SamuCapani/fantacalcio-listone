@@ -1,18 +1,442 @@
 [
   {
-    "nome": "LAUTARO MARTINEZ",
-    "squadra": "INTER",
-    "ruolo": "A",
-    "slot": 1,
-    "prezzo": 45,
-    "alternanza": "Nessuna"
+    "ruolo": "P",
+    "nome": "CARNESECCHI",
+    "squadra": "Atalanta",
+    "status": "Titolare",
+    "valorizzato": "SÌ (Porta solida)",
+    "slot": "2° Slot",
+    "prezzo": 24,
+    "alternanza": "Inter (92%)"
   },
   {
-    "nome": "KVARA",
-    "squadra": "NAPOLI",
+    "ruolo": "D",
+    "nome": "BELLANOVA",
+    "squadra": "Atalanta",
+    "status": "Titolare",
+    "valorizzato": "SÌ (Bonus + Spinta)",
+    "slot": "2° Slot",
+    "prezzo": 16,
+    "alternanza": "Inter (92%)"
+  },
+  {
+    "ruolo": "C",
+    "nome": "PASALIC",
+    "squadra": "Atalanta",
+    "status": "Ballottaggio",
+    "valorizzato": "SÌ (Inserimenti top)",
+    "slot": "3° Slot",
+    "prezzo": 14,
+    "alternanza": "Inter (92%)"
+  },
+  {
     "ruolo": "A",
-    "slot": 1,
+    "nome": "LOOKMAN",
+    "squadra": "Atalanta",
+    "status": "Titolare",
+    "valorizzato": "SÌ (Rigorista e leader)",
+    "slot": "1° Slot",
+    "prezzo": 42,
+    "alternanza": "Inter (92%)"
+  },
+  {
+    "ruolo": "A",
+    "nome": "RETEGUI",
+    "squadra": "Atalanta",
+    "status": "Titolare",
+    "valorizzato": "SÌ (Perno d'attacco)",
+    "slot": "1° Slot",
+    "prezzo": 36,
+    "alternanza": "Inter (92%)"
+  },
+  {
+    "ruolo": "C",
+    "nome": "ORFOLINI",
+    "squadra": "Bologna",
+    "status": "Titolare",
+    "valorizzato": "SÌ (Rigorista)",
+    "slot": "2° Slot",
+    "prezzo": 22,
+    "alternanza": "Fiorentina (78%)"
+  },
+  {
+    "ruolo": "D",
+    "nome": "DORMU",
+    "squadra": "Bologna",
+    "status": "Ballottaggio",
+    "valorizzato": "NO (Rotazioni coppe)",
+    "slot": "4° Slot",
+    "prezzo": 6,
+    "alternanza": "Fiorentina (78%)"
+  },
+  {
+    "ruolo": "A",
+    "nome": "GUDMUNDSSON",
+    "squadra": "Fiorentina",
+    "status": "Titolare",
+    "valorizzato": "SÌ (Piazzati e rigori)",
+    "slot": "2° Slot",
+    "prezzo": 28,
+    "alternanza": "Bologna (78%)"
+  },
+  {
+    "ruolo": "A",
+    "nome": "KEAN",
+    "squadra": "Fiorentina",
+    "status": "Titolare",
+    "valorizzato": "SÌ (Centravanti titolare)",
+    "slot": "2° Slot",
+    "prezzo": 26,
+    "alternanza": "Bologna (78%)"
+  },
+  {
+    "ruolo": "P",
+    "nome": "PROVEDEL",
+    "squadra": "Genoa",
+    "status": "Titolare",
+    "valorizzato": "SÌ (Porta blindata)",
+    "slot": "3° Slot",
+    "prezzo": 18,
+    "alternanza": "Sampdoria (60%)"
+  },
+  {
+    "ruolo": "A",
+    "nome": "PINAMONTI",
+    "squadra": "Genoa",
+    "status": "Titolare",
+    "valorizzato": "SÌ (Rigorista)",
+    "slot": "3° Slot",
+    "prezzo": 20,
+    "alternanza": "Sampdoria (60%)"
+  },
+  {
+    "ruolo": "A",
+    "nome": "VITINHA",
+    "squadra": "Genoa",
+    "status": "Ballottaggio",
+    "valorizzato": "NO (Alternanza attacco)",
+    "slot": "4° Slot",
+    "prezzo": 10,
+    "alternanza": "Sampdoria (60%)"
+  },
+  {
+    "ruolo": "P",
+    "nome": "MARTINEZ JOSEP",
+    "squadra": "Inter",
+    "status": "Titolare",
+    "valorizzato": "SÌ (Porta difesa top)",
+    "slot": "1° Slot",
+    "prezzo": 34,
+    "alternanza": "Milan (95%)"
+  },
+  {
+    "ruolo": "D",
+    "nome": "DIMARCO",
+    "squadra": "Inter",
+    "status": "Titolare",
+    "valorizzato": "SÌ (Assist e piazzati)",
+    "slot": "1° Slot",
+    "prezzo": 26,
+    "alternanza": "Atalanta (92%)"
+  },
+  {
+    "ruolo": "D",
+    "nome": "BASTONI",
+    "squadra": "Inter",
+    "status": "Titolare",
+    "valorizzato": "SÌ (Modificatore top)",
+    "slot": "1° Slot",
+    "prezzo": 21,
+    "alternanza": "Atalanta (92%)"
+  },
+  {
+    "ruolo": "C",
+    "nome": "CALHANOGLU",
+    "squadra": "Inter",
+    "status": "Titolare",
+    "valorizzato": "SÌ (Rigorista infallibile)",
+    "slot": "1° Slot",
+    "prezzo": 32,
+    "alternanza": "Atalanta (92%)"
+  },
+  {
+    "ruolo": "C",
+    "nome": "BARELLA",
+    "squadra": "Inter",
+    "status": "Titolare",
+    "valorizzato": "NO (Titolare ma pochi bonus)",
+    "slot": "2° Slot",
+    "prezzo": 16,
+    "alternanza": "Atalanta (92%)"
+  },
+  {
+    "ruolo": "A",
+    "nome": "LAUTARO MARTINEZ",
+    "squadra": "Inter",
+    "status": "Titolare",
+    "valorizzato": "SÌ (Top assoluto e rigori)",
+    "slot": "1° Slot",
+    "prezzo": 55,
+    "alternanza": "Atalanta (92%)"
+  },
+  {
+    "ruolo": "A",
+    "nome": "THURAM",
+    "squadra": "Inter",
+    "status": "Titolare",
+    "valorizzato": "SÌ (Titolare inamovibile)",
+    "slot": "1° Slot",
     "prezzo": 38,
-    "alternanza": "Nessuna"
+    "alternanza": "Atalanta (92%)"
+  },
+  {
+    "ruolo": "P",
+    "nome": "DI GREGORIO",
+    "squadra": "Juventus",
+    "status": "Titolare",
+    "valorizzato": "SÌ (Rendimento costanti)",
+    "slot": "1° Slot",
+    "prezzo": 32,
+    "alternanza": "Torino (90%)"
+  },
+  {
+    "ruolo": "D",
+    "nome": "BREMER",
+    "squadra": "Juventus",
+    "status": "Titolare",
+    "valorizzato": "SÌ (Saltatore e perno)",
+    "slot": "1° Slot",
+    "prezzo": 20,
+    "alternanza": "Torino (90%)"
+  },
+  {
+    "ruolo": "C",
+    "nome": "KOOPMEINERS",
+    "squadra": "Juventus",
+    "status": "Titolare",
+    "valorizzato": "SÌ (Inserimenti e piazzati)",
+    "slot": "1° Slot",
+    "prezzo": 28,
+    "alternanza": "Torino (90%)"
+  },
+  {
+    "ruolo": "A",
+    "nome": "VLAHOVIC",
+    "squadra": "Juventus",
+    "status": "Titolare",
+    "valorizzato": "SÌ (Rigorista)",
+    "slot": "1° Slot",
+    "prezzo": 46,
+    "alternanza": "Torino (90%)"
+  },
+  {
+    "ruolo": "A",
+    "nome": "YILDIZ",
+    "squadra": "Juventus",
+    "status": "Titolare",
+    "valorizzato": "SÌ (Fantasia e gol)",
+    "slot": "2° Slot",
+    "prezzo": 25,
+    "alternanza": "Torino (90%)"
+  },
+  {
+    "ruolo": "A",
+    "nome": "ZACCAGNI",
+    "squadra": "Lazio",
+    "status": "Titolare",
+    "valorizzato": "SÌ (Rigorista e capitano)",
+    "slot": "2° Slot",
+    "prezzo": 27,
+    "alternanza": "Roma (88%)"
+  },
+  {
+    "ruolo": "A",
+    "nome": "CASTELLANOS",
+    "squadra": "Lazio",
+    "status": "Titolare",
+    "valorizzato": "SÌ (Punta titolare)",
+    "slot": "2° Slot",
+    "prezzo": 26,
+    "alternanza": "Roma (88%)"
+  },
+  {
+    "ruolo": "P",
+    "nome": "MAIGNAN",
+    "squadra": "Milan",
+    "status": "Titolare",
+    "valorizzato": "SÌ (Pararigori)",
+    "slot": "1° Slot",
+    "prezzo": 33,
+    "alternanza": "Inter (95%)"
+  },
+  {
+    "ruolo": "D",
+    "nome": "PAVLOVIC",
+    "squadra": "Milan",
+    "status": "Titolare",
+    "valorizzato": "SÌ (Fisicità)",
+    "slot": "2° Slot",
+    "prezzo": 14,
+    "alternanza": "Inter (95%)"
+  },
+  {
+    "ruolo": "C",
+    "nome": "PULISIC",
+    "squadra": "Milan",
+    "status": "Titolare",
+    "valorizzato": "SÌ (Piazzati e gol)",
+    "slot": "1° Slot",
+    "prezzo": 32,
+    "alternanza": "Inter (95%)"
+  },
+  {
+    "ruolo": "A",
+    "nome": "LEAO",
+    "squadra": "Milan",
+    "status": "Titolare",
+    "valorizzato": "SÌ (Inamovibile)",
+    "slot": "1° Slot",
+    "prezzo": 40,
+    "alternanza": "Inter (95%)"
+  },
+  {
+    "ruolo": "P",
+    "nome": "MERET",
+    "squadra": "Napoli",
+    "status": "Titolare",
+    "valorizzato": "SÌ (Difesa solida)",
+    "slot": "1° Slot",
+    "prezzo": 30,
+    "alternanza": "Roma (85%)"
+  },
+  {
+    "ruolo": "D",
+    "nome": "DI LORENZO",
+    "squadra": "Napoli",
+    "status": "Titolare",
+    "valorizzato": "SÌ (Bonus costante)",
+    "slot": "1° Slot",
+    "prezzo": 18,
+    "alternanza": "Roma (85%)"
+  },
+  {
+    "ruolo": "D",
+    "nome": "BUONGIORNO",
+    "squadra": "Napoli",
+    "status": "Titolare",
+    "valorizzato": "SÌ (Modificatore)",
+    "slot": "1° Slot",
+    "prezzo": 19,
+    "alternanza": "Roma (85%)"
+  },
+  {
+    "ruolo": "C",
+    "nome": "MCTOMINAY",
+    "squadra": "Napoli",
+    "status": "Titolare",
+    "valorizzato": "SÌ (Inserimenti da gol)",
+    "slot": "1° Slot",
+    "prezzo": 30,
+    "alternanza": "Roma (85%)"
+  },
+  {
+    "ruolo": "A",
+    "nome": "LUKAKU",
+    "squadra": "Napoli",
+    "status": "Titolare",
+    "valorizzato": "SÌ (Rigorista e perno)",
+    "slot": "1° Slot",
+    "prezzo": 45,
+    "alternanza": "Roma (85%)"
+  },
+  {
+    "ruolo": "A",
+    "nome": "KVARATSKHELIA",
+    "squadra": "Napoli",
+    "status": "Titolare",
+    "valorizzato": "SÌ (Top slot)",
+    "slot": "1° Slot",
+    "prezzo": 40,
+    "alternanza": "Roma (85%)"
+  },
+  {
+    "ruolo": "A",
+    "nome": "MAN",
+    "squadra": "Parma",
+    "status": "Titolare",
+    "valorizzato": "SÌ (Rigori e spinta)",
+    "slot": "2° Slot",
+    "prezzo": 22,
+    "alternanza": "Sassuolo (75%)"
+  },
+  {
+    "ruolo": "P",
+    "nome": "SVILAR",
+    "squadra": "Roma",
+    "status": "Titolare",
+    "valorizzato": "SÌ (Rendimento alto)",
+    "slot": "1° Slot",
+    "prezzo": 26,
+    "alternanza": "Lazio (88%)"
+  },
+  {
+    "ruolo": "D",
+    "nome": "MANCINI",
+    "squadra": "Roma",
+    "status": "Titolare",
+    "valorizzato": "SÌ (Saltatore)",
+    "slot": "2° Slot",
+    "prezzo": 13,
+    "alternanza": "Lazio (88%)"
+  },
+  {
+    "ruolo": "A",
+    "nome": "DOVBYK",
+    "squadra": "Roma",
+    "status": "Titolare",
+    "valorizzato": "SÌ (Punta centrale e rigori)",
+    "slot": "1° Slot",
+    "prezzo": 38,
+    "alternanza": "Lazio (88%)"
+  },
+  {
+    "ruolo": "A",
+    "nome": "DYBALA",
+    "squadra": "Roma",
+    "status": "Ballottaggio",
+    "valorizzato": "SÌ (Classe pura, minutaggio gestito)",
+    "slot": "2° Slot",
+    "prezzo": 28,
+    "alternanza": "Lazio (88%)"
+  },
+  {
+    "ruolo": "A",
+    "nome": "ZAPATA D.",
+    "squadra": "Torino",
+    "status": "Titolare",
+    "valorizzato": "SÌ (Rigorista e perno)",
+    "slot": "2° Slot",
+    "prezzo": 28,
+    "alternanza": "Juventus (90%)"
+  },
+  {
+    "ruolo": "A",
+    "nome": "LUCCA",
+    "squadra": "Udinese",
+    "status": "Titolare",
+    "valorizzato": "SÌ (Fisicità e gol)",
+    "slot": "3° Slot",
+    "prezzo": 18,
+    "alternanza": "Venezia (80%)"
+  },
+  {
+    "ruolo": "A",
+    "nome": "POHJANPALO",
+    "squadra": "Venezia",
+    "status": "Titolare",
+    "valorizzato": "SÌ (Rigorista)",
+    "slot": "3° Slot",
+    "prezzo": 20,
+    "alternanza": "Udinese (80%)"
   }
 ]

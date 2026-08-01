@@ -1,0 +1,29 @@
+name: Aggiornamento Automatico Listone
+
+on:
+  schedule:
+    - cron: '0 2 * * *' # Gira ogni notte alle 02:00
+  workflow_dispatch: # Ti permette di farlo girare anche a mano con un click
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check-out del codice
+        uses: actions/checkout@v3
+
+      - name: Configura Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Esegui lo script di aggiornamento
+        run: python updater.py
+
+      - name: Salva le modifiche nel repository
+        run: |
+          git config --global user.name "Listone Bot"
+          git config --global user.email "bot@fantacalcio.local"
+          git add database.json
+          git commit -m "Aggiornamento automatico rosa e calciomercato" || exit 0
+          git push

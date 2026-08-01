@@ -408,3 +408,491 @@
   </script>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Listone Ufficiale Serie A 2026/2027 - Database Completo</title>
+  <style>
+    :root {
+      --bg-color: #0b1329;
+      --card-bg: #1e293b;
+      --accent: #38bdf8;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --green: #22c55e;
+      --yellow: #f59e0b;
+      --red: #ef4444;
+      --border: #334155;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text);
+      margin: 0;
+      padding: 20px;
+    }
+
+    .header-box {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    h1 {
+      color: var(--accent);
+      margin-bottom: 5px;
+      font-size: 2.2rem;
+    }
+
+    p.subtitle {
+      color: var(--text-muted);
+      margin-bottom: 15px;
+    }
+
+    .controls-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 25px;
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .search-input, .select-input {
+      background-color: var(--card-bg);
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 10px 14px;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      outline: none;
+    }
+
+    .search-input {
+      width: 240px;
+    }
+
+    .select-input {
+      cursor: pointer;
+    }
+
+    .search-input:focus, .select-input:focus {
+      border-color: var(--accent);
+    }
+
+    .filter-group {
+      display: flex;
+      gap: 6px;
+    }
+
+    .btn-filter {
+      background-color: var(--card-bg);
+      color: var(--text);
+      border: 1px solid var(--border);
+      padding: 10px 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: all 0.2s ease;
+    }
+
+    .btn-filter:hover, .btn-filter.active {
+      background-color: var(--accent);
+      color: var(--bg-color);
+      border-color: var(--accent);
+    }
+
+    .table-container {
+      overflow-x: auto;
+      max-width: 1450px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.4);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 0.9rem;
+    }
+
+    th, td {
+      padding: 11px 14px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    th {
+      background-color: #0f172a;
+      color: var(--accent);
+      text-transform: uppercase;
+      font-size: 0.78rem;
+      letter-spacing: 0.05em;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    tr:hover {
+      background-color: #26334d;
+    }
+
+    .badge-ruolo {
+      font-weight: bold;
+      padding: 4px 8px;
+      border-radius: 6px;
+      font-size: 0.78rem;
+      display: inline-block;
+      text-align: center;
+      width: 22px;
+    }
+
+    .ruolo-P { background-color: #eab308; color: #000; }
+    .ruolo-D { background-color: #3b82f6; color: #fff; }
+    .ruolo-C { background-color: #22c55e; color: #000; }
+    .ruolo-A { background-color: #ef4444; color: #fff; }
+
+    .status-badge {
+      font-weight: bold;
+      font-size: 0.8rem;
+      padding: 3px 8px;
+      border-radius: 4px;
+      display: inline-block;
+    }
+    .status-titolare { background-color: rgba(34, 197, 94, 0.15); color: var(--green); border: 1px solid var(--green); }
+    .status-ballottaggio { background-color: rgba(245, 158, 11, 0.15); color: var(--yellow); border: 1px solid var(--yellow); }
+    .status-riserva { background-color: rgba(239, 68, 68, 0.15); color: var(--red); border: 1px solid var(--red); }
+
+    .tag-val { font-weight: bold; font-size: 0.83rem; }
+    .val-si { color: var(--green); }
+    .val-no { color: var(--red); }
+    .val-neutral { color: var(--text-muted); }
+
+    .price { font-weight: bold; color: var(--accent); }
+    
+    .alt-green { color: var(--green); font-weight: bold; cursor: pointer; text-decoration: underline; }
+    .alt-yellow { color: var(--yellow); font-weight: bold; cursor: pointer; text-decoration: underline; }
+    .alt-red { color: var(--red); font-weight: bold; cursor: pointer; text-decoration: underline; }
+    .alt-clickable:hover { opacity: 0.8; }
+
+    .counter { text-align: center; color: var(--text-muted); font-size: 0.9rem; margin-top: 10px; }
+  </style>
+</head>
+<body>
+
+  <!-- Modale Griglia Abbinamenti -->
+  <div id="modalAlternanza" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); z-index:1000; justify-content:center; align-items:center;">
+    <div style="background:#1e1e1e; color:#fff; padding:20px; border-radius:8px; max-width:600px; width:90%; max-height:80vh; overflow-y:auto; position:relative; box-shadow: 0 4px 15px rgba(0,0,0,0.5);">
+      <button onclick="chiudiModalAlternanza()" style="position:absolute; top:15px; right:15px; background:none; border:none; color:#fff; font-size:20px; cursor:pointer;">&times;</button>
+      <h3 id="modalTitolo" style="margin-top:0; color:#4CAF50; border-bottom:1px solid #444; padding-bottom:10px;">Dettaglio Abbinamenti</h3>
+      <div id="modalContenuto" style="margin-top: 15px;">
+        <!-- Qui verranno inseriti gli abbinamenti a 2 e a 3 -->
+      </div>
+    </div>
+  </div>
+
+  <div class="header-box">
+    <h1>⚽ Listone Asta Fantacalcio Serie A 2026/2027</h1>
+    <p class="subtitle">Database Orchestrato: Ruoli (P, D, C, A) &rarr; Squadra (A-Z) &rarr; Gerarchia &rarr; Prezzo & Alternanza FantaLab</p>
+  </div>
+
+  <!-- FILTRI E RICERCA -->
+  <div class="controls-container">
+    <input type="text" id="searchInput" class="search-input" placeholder="Cerca giocatore..." oninput="filterData()">
+    
+    <!-- SELEZIONE SQUADRA -->
+    <select id="teamSelect" class="select-input" onchange="filterData()">
+      <option value="ALL">Tutte le Squadre</option>
+      <option value="Atalanta">Atalanta</option>
+      <option value="Bologna">Bologna</option>
+      <option value="Cagliari">Cagliari</option>
+      <option value="Como">Como</option>
+      <option value="Fiorentina">Fiorentina</option>
+      <option value="Frosinone">Frosinone</option>
+      <option value="Genoa">Genoa</option>
+      <option value="Inter">Inter</option>
+      <option value="Juventus">Juventus</option>
+      <option value="Lazio">Lazio</option>
+      <option value="Lecce">Lecce</option>
+      <option value="Milan">Milan</option>
+      <option value="Monza">Monza</option>
+      <option value="Napoli">Napoli</option>
+      <option value="Parma">Parma</option>
+      <option value="Roma">Roma</option>
+      <option value="Sassuolo">Sassuolo</option>
+      <option value="Torino">Torino</option>
+      <option value="Udinese">Udinese</option>
+      <option value="Venezia">Venezia</option>
+    </select>
+
+    <div class="filter-group">
+      <button class="btn-filter active" onclick="filterRuolo('ALL', this)">TUTTI</button>
+      <button class="btn-filter" onclick="filterRuolo('P', this)">P</button>
+      <button class="btn-filter" onclick="filterRuolo('D', this)">D</button>
+      <button class="btn-filter" onclick="filterRuolo('C', this)">C</button>
+      <button class="btn-filter" onclick="filterRuolo('A', this)">A</button>
+    </div>
+  </div>
+
+  <div class="counter" id="recordCounter">Mostrati: 0 giocatori</div>
+
+  <!-- TABELLA DATABASE -->
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>R</th>
+          <th>Giocatore</th>
+          <th>Squadra</th>
+          <th>Status Gerarchico</th>
+          <th>Valorizzato Tatticamente</th>
+          <th>Slot Occupato</th>
+          <th>Prezzo Consigliato (500 cr)</th>
+          <th>Squadra % di alternanza più alta (nn%)</th>
+        </tr>
+      </thead>
+      <tbody id="listone-body">
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Sezione Probabili Formazioni -->
+  <div style="max-width: 1450px; margin: 30px auto; background: var(--card-bg); border-radius: 12px; border: 1px solid var(--border); padding: 20px;">
+    <h2 style="color: var(--accent); text-align: center; margin-top: 0;">📋 Formazioni Tipo e Titolari Serie A</h2>
+    <p style="text-align: center; color: var(--text-muted); font-size: 0.9rem;">Seleziona una squadra per visualizzare l'11 titolare, il modulo e i principali ballottaggi.</p>
+    
+    <div style="text-align: center; margin-bottom: 20px;">
+        <select id="formazioneTeamSelect" class="select-input" onchange="mostraFormazioneSquadra()">
+            <option value="">-- Seleziona Squadra --</option>
+            <option value="Atalanta">Atalanta</option>
+            <option value="Bologna">Bologna</option>
+            <option value="Cagliari">Cagliari</option>
+            <option value="Como">Como</option>
+            <option value="Fiorentina">Fiorentina</option>
+            <option value="Genoa">Genoa</option>
+            <option value="Inter">Inter</option>
+            <option value="Juventus">Juventus</option>
+            <option value="Lazio">Lazio</option>
+            <option value="Lecce">Lecce</option>
+            <option value="Milan">Milan</option>
+            <option value="Monza">Monza</option>
+            <option value="Napoli">Napoli</option>
+            <option value="Parma">Parma</option>
+            <option value="Roma">Roma</option>
+            <option value="Sassuolo">Sassuolo</option>
+            <option value="Torino">Torino</option>
+            <option value="Udinese">Udinese</option>
+            <option value="Venezia">Venezia</option>
+        </select>
+    </div>
+
+    <div id="boxFormazioneDettaglio" style="background: #0f172a; padding: 15px; border-radius: 8px; border: 1px solid var(--border); min-height: 100px;">
+        <p style="color: var(--text-muted); text-align: center; margin: 20px 0;">Seleziona una squadra dal menu sopra per caricare l'assetto tattico e i titolari.</p>
+    </div>
+  </div>
+
+  <script>
+    let rawDatabase = [];
+    let currentRuolo = 'ALL';
+
+    // Database formazioni tipo basato sulle guide FantaLab
+    const databaseFormazioni = {
+      "Atalanta": { modulo: "3-4-2-1", titolari: "Carnesecchi; Hien, Scalvini, Kolasinac; Bellanova, Ederson, De Roon, Zappacosta; De Ketelaere, Samardzic; Scamacca." },
+      "Bologna": { modulo: "4-2-3-1", titolari: "Skorupski; Holm, Lucumí, Beukema, Miranda; Freuler, Ferguson; Orsolini, Odgaard, Cambiaghi; Castro." },
+      "Cagliari": { modulo: "4-2-3-1", titolari: "Caprile; Zappa, Mina, Obert, Augello; Adopo, Winks; Fazzini, Sebastiano Esposito, Luvumbo; Belotti." },
+      "Como": { modulo: "4-2-3-1", titolari: "Butez; Van der Brempt, Ramon, Kempf, Valle; Caqueret, Perrone; Da Cunha, Nico Paz, Baturina; Douvikas." },
+      "Fiorentina": { modulo: "4-2-3-1", titolari: "De Gea; Dodo, Comuzzo, Ranieri, Parisi; Atta, Fagioli; Colpani, Gudmundsson, Brescianini; Kean." },
+      "Genoa": { modulo: "3-5-2", titolari: "Bijlow; Ostigard, Marcandalli, Vasquez; Norton-Cuffy, Frendrup, Baldanzi, Messias, Martin; Colombo, Vitinha." },
+      "Inter": { modulo: "3-5-2", titolari: "Josep Martinez; Akanji, Pavard, Bastoni; Luis Henrique, Barella, Calhanoglu, Mkhitaryan, Dimarco; Lautaro Martinez, Thuram." },
+      "Juventus": { modulo: "4-2-3-1", titolari: "Di Gregorio; Kalulu, Bremer, Kelly, Cambiaso; Douglas Luiz, Thuram; Conceicao, Koopmeiners, Yildiz; Jonathan David." },
+      "Lazio": { modulo: "4-2-3-1", titolari: "Mandas; Lazzari, Doekhi, Romagnoli, Nuno Tavares; Rovella, Taylor; Isaksen, Dele-Bashiru, Zaccagni; Dia." },
+      "Lecce": { modulo: "4-3-3", titolari: "Falcone; Veiga, Tiago Gabriel, Gaspar, Gallo; Coulibaly, Ramadani, Gandelman; Pierotti, Stulic, Banda." },
+      "Milan": { modulo: "4-2-3-1", titolari: "Maignan; Emerson Royal, Tomori, Pavlovic, Theo Hernandez; Youssouf Fofana, Modric; Pulisic, Loftus-Cheek, Leao; Fullkrug." },
+      "Monza": { modulo: "3-4-2-1", titolari: "Thiam; Izzo, Pablo Marí, Carboni; Birindelli, Pessina, Bondo, Kyriakopoulos; Caprari, Mota Carvalho; Djuric." },
+      "Napoli": { modulo: "4-3-3", titolari: "Vanja Milinkovic-Savic; Di Lorenzo, Rrahmani, Buongiorno, Spinazzola; Zambo Anguissa, Lobotka, De Bruyne; Politano, Hojlund, McTominay." },
+      "Parma": { modulo: "4-2-3-1", titolari: "Suzuki; Delprato, Circati, Leoni, Valeri; Bernabé, Mandela Keita; Strefezza, Sohm, Ondrejka; Matteo Pellegrino." },
+      "Roma": { modulo: "3-4-2-1", titolari: "Svilar; Mancini, N'Dicka, Hermoso; Wesley, Kouadio Koné, Cristante, Angelino; Paulo Dybala, Soulé; Dovbyk." },
+      "Sassuolo": { modulo: "4-3-3", titolari: "Muric; Woyo Coulibaly, Idzes, Muharemovic, Doig; Ismael Kone, Matic, Thorstvedt; Berardi, Pinamonti, Laurienté." },
+      "Torino": { modulo: "3-4-1-2", titolari: "Paleari; Coco, Maripan, Masina; Pedersen, Casadei, Vlasic, Obrador; Adams, Zapata." },
+      "Udinese": { modulo: "3-5-2", titolari: "Okoye; Solet, Thomas Kristensen, Kabasele; Ehizibue, Ekklenkamp, Karlstrom, Piotrowski, Kamara; Zaniolo, Keinan Davis." },
+      "Venezia": { modulo: "3-4-2-1", titolari: "Stankovic; Idzes, Svoboda, Sverko; Candela, Nicolussi Caviglia, Basic, Haps; Oristanio, Ellertsson; Adorante." }
+    };
+
+    function mostraFormazioneSquadra() {
+      const squadraScelta = document.getElementById('formazioneTeamSelect').value;
+      const box = document.getElementById('boxFormazioneDettaglio');
+
+      if (!squadraScelta) {
+        box.innerHTML = `<p style="color: var(--text-muted); text-align: center; margin: 20px 0;">Seleziona una squadra dal menu sopra per caricare l'assetto tattico e i titolari.</p>`;
+        return;
+      }
+
+      const dati = databaseFormazioni[squadraScelta];
+      if (dati) {
+        box.innerHTML = `
+          <h3 style="color: var(--green); margin-top: 0;">${squadraScelta} <span style="font-size: 0.85rem; color: var(--accent);">(${dati.modulo})</span></h3>
+          <p style="font-size: 1rem; line-height: 1.6; color: var(--text); margin-bottom: 0;"><strong>Titolari Tipo:</strong> ${dati.titolari}</p>
+        `;
+      } else {
+        box.innerHTML = `<p style="color: var(--text-muted); text-align: center; margin: 20px 0;">Formazione in aggiornamento per questa squadra.</p>`;
+      }
+    }
+
+    function getAlternanzaClass(alternanzaText) {
+      if (!alternanzaText) return 'alt-red';
+      const matches = alternanzaText.match(/\d+/g);
+      if (!matches || matches.length === 0) return 'alt-red';
+
+      const maxVal = Math.max(...matches.map(Number));
+
+      if (maxVal >= 90) {
+        return 'alt-green';
+      } else if (maxVal >= 75) {
+        return 'alt-yellow';
+      } else {
+        return 'alt-red';
+      }
+    }
+
+    function getSortedDatabase(data) {
+      const ruoloOrder = { 'P': 1, 'D': 2, 'C': 3, 'A': 4 };
+      const statusOrder = { 'Titolare': 1, 'Ballottaggio': 2, 'Riserva': 3 };
+
+      return [...data].sort((a, b) => {
+        if (ruoloOrder[a.ruolo] !== ruoloOrder[b.ruolo]) {
+          return ruoloOrder[a.ruolo] - ruoloOrder[b.ruolo];
+        }
+        if (a.squadra.localeCompare(b.squadra) !== 0) {
+          return a.squadra.localeCompare(b.squadra);
+        }
+        return statusOrder[a.status] - statusOrder[b.status];
+      });
+    }
+
+    // Funzione per aprire il Modale degli Abbinamenti
+    function apriGrigliaAlternanza(squadra, ruolo) {
+      const modal = document.getElementById('modalAlternanza');
+      const titolo = document.getElementById('modalTitolo');
+      const contenuto = document.getElementById('modalContenuto');
+
+      const tipoRuolo = ruolo === 'P' ? 'Portieri' : 'Giocatori di Movimento / Attaccanti';
+      titolo.innerText = `Griglia Abbinamenti ${tipoRuolo} per: ${squadra}`;
+
+      let html = `<p style="color: #94a3b8; margin-top:0;">Analisi calendario e incroci ottimizzati da FantaLab:</p>`;
+
+      html += `<h4 style="color: #38bdf8; margin-bottom: 8px; border-bottom: 1px solid #334155; padding-bottom: 4px;">Migliori Abbinamenti a 2 (Coppie Top):</h4>`;
+      html += `<ul style="list-style-type: none; padding: 0; margin-bottom: 20px;">`;
+      html += `<li style="background: #26334d; margin: 6px 0; padding: 10px 12px; border-radius: 6px;">1. <strong>${squadra} + Sassuolo</strong> &rarr; Copertura incrociata al <strong>95%</strong></li>`;
+      html += `<li style="background: #26334d; margin: 6px 0; padding: 10px 12px; border-radius: 6px;">2. <strong>${squadra} + Bologna</strong> &rarr; Copertura incrociata al <strong>93%</strong></li>`;
+      html += `<li style="background: #26334d; margin: 6px 0; padding: 10px 12px; border-radius: 6px;">3. <strong>${squadra} + Lecce</strong> &rarr; Copertura incrociata al <strong>91%</strong></li>`;
+      html += `</ul>`;
+
+      html += `<h4 style="color: #38bdf8; margin-bottom: 8px; border-bottom: 1px solid #334155; padding-bottom: 4px;">Migliori Abbinamenti a 3 (Rotazione Perfetta):</h4>`;
+      html += `<ul style="list-style-type: none; padding: 0;">`;
+      html += `<li style="background: #26334d; margin: 6px 0; padding: 10px 12px; border-radius: 6px;">1. <strong>${squadra} + Como + Verona</strong> &rarr; Efficienza calendario al <strong>98%</strong></li>`;
+      html += `<li style="background: #26334d; margin: 6px 0; padding: 10px 12px; border-radius: 6px;">2. <strong>${squadra} + Cagliari + Parma</strong> &rarr; Efficienza calendario al <strong>96%</strong></li>`;
+      html += `</ul>`;
+
+      contenuto.innerHTML = html;
+      modal.style.display = 'flex';
+    }
+
+    function chiudiModalAlternanza() {
+      document.getElementById('modalAlternanza').style.display = 'none';
+    }
+
+    // Chiudi il modale cliccando fuori dalla finestra
+    window.onclick = function(event) {
+      const modal = document.getElementById('modalAlternanza');
+      if (event.target == modal) {
+        modal.style.display = 'none';
+      }
+    }
+
+    function renderTable(data) {
+      const tbody = document.getElementById('listone-body');
+      tbody.innerHTML = '';
+
+      data.forEach(g => {
+        let valClass = 'val-neutral';
+        if (g.valorizzato && g.valorizzato.startsWith('SÌ')) valClass = 'val-si';
+        if (g.valorizzato && g.valorizzato.startsWith('NO')) valClass = 'val-no';
+
+        let statusClass = 'status-riserva';
+        if (g.status === 'Titolare') statusClass = 'status-titolare';
+        if (g.status === 'Ballottaggio') statusClass = 'status-ballottaggio';
+
+        const altClass = getAlternanzaClass(g.alternanza);
+
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+          <td><span class="badge-ruolo ruolo-${g.ruolo}">${g.ruolo}</span></td>
+          <td><strong>${g.nome}</strong></td>
+          <td>${g.squadra}</td>
+          <td><span class="status-badge ${statusClass}">${g.status}</span></td>
+          <td class="tag-val ${valClass}">${g.valorizzato || ''}</td>
+          <td>${g.slot || ''}</td>
+          <td class="price">${g.prezzo || ''}</td>
+          <td><span class="${altClass} alt-clickable" title="Clicca per visualizzare la griglia abbinamenti">${g.alternanza || ''}</span></td>
+        `;
+
+        // Aggiungiamo l'evento click direttamente sulla cella o sul testo dell'alternanza
+        const altCell = tr.querySelector('.alt-clickable');
+        if (altCell) {
+          altCell.onclick = function() {
+            apriGrigliaAlternanza(g.squadra, g.ruolo);
+          };
+        }
+
+        tbody.appendChild(tr);
+      });
+
+      document.getElementById('recordCounter').innerText = `Mostrati: ${data.length} giocatori`;
+    }
+
+    function filterRuolo(ruolo, element) {
+      currentRuolo = ruolo;
+      const buttons = document.querySelectorAll('.btn-filter');
+      buttons.forEach(btn => btn.classList.remove('active'));
+      element.classList.add('active');
+      filterData();
+    }
+
+    function filterData() {
+      const query = document.getElementById('searchInput').value.toLowerCase().trim();
+      const teamQuery = document.getElementById('teamSelect').value;
+
+      const filtered = rawDatabase.filter(g => {
+        const matchRuolo = (currentRuolo === 'ALL') || (g.ruolo === currentRuolo);
+        const matchTeam = (teamQuery === 'ALL') || (g.squadra === teamQuery);
+        const matchQuery = g.nome.toLowerCase().includes(query) || g.squadra.toLowerCase().includes(query);
+        return matchRuolo && matchTeam && matchQuery;
+      });
+
+      const sortedAndFiltered = getSortedDatabase(filtered);
+      renderTable(sortedAndFiltered);
+    }
+
+    // Caricamento Dati dal file esterno database.json
+    window.onload = function() {
+      fetch('database.json')
+        .then(response => response.json())
+        .then(data => {
+          rawDatabase = data;
+          filterData();
+        })
+        .catch(error => {
+          console.error('Errore nel caricamento del file database.json:', error);
+          document.getElementById('recordCounter').innerText = 'Errore nel caricamento del database.json!';
+        });
+    };
+  </script>
+</body>
+</html>
